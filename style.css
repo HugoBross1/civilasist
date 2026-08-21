@@ -163,8 +163,15 @@ section { padding: 66px 0; }
   color: var(--text); transition: transform .15s ease, box-shadow .15s ease;
 }
 .svc:hover { transform: translateY(-3px); box-shadow: 0 8px 22px rgba(0,0,0,.11); color: var(--text); }
-/* Ilustratiile de serviciu sunt in format 4:3 si se intind pe latimea cardului */
-.svc svg { width: 100%; max-width: 200px; height: auto; margin-bottom: 14px; }
+/* Ilustratia sau fotografia cardului sta intr-o caseta de inaltime fixa, ca
+   randurile grilei sa se alinieze indiferent de proportiile pozei. */
+.svc svg, .svc img {
+  width: 100%; max-width: 220px; height: 148px;
+  display: block; margin-bottom: 14px;
+}
+/* "contain", nu "cover": fotografiile au proportii foarte diferite, de la
+   patrat la panoramic, si niciuna nu trebuie taiata. */
+.svc img { object-fit: contain; }
 .svc h3 { margin-bottom: .45em; }
 .svc p { font-size: .93rem; color: var(--text-muted); margin-bottom: 1em; }
 .svc .go { margin-top: auto; margin-bottom: 0; color: var(--accent-dark); font-weight: 700; font-size: .87rem; text-transform: uppercase; letter-spacing: .05em; }
