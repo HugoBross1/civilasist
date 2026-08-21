@@ -340,6 +340,21 @@ footer .legal {
 }
 .callout p:last-child { margin-bottom: 0; }
 
+/* --- Galerie de lucrări: imagini late, cu legendă dedesubt --------------- */
+
+.galerie {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px; margin: 0 0 1.6em;
+}
+.galerie figure { margin: 0; }
+.galerie img {
+  width: 100%; height: auto; display: block;
+  border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.galerie figcaption {
+  margin-top: 9px; font-size: .87rem; line-height: 1.5; color: var(--text-muted);
+}
+
 /* --- Marcaj pentru textele de completat ---------------------------------- */
 /* Șterge această regulă după ce ai înlocuit toate placeholderele.            */
 
