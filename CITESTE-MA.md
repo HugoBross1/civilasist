@@ -14,7 +14,7 @@ site/
     carduri/                          aceleași fotografii, micșorate pentru pagina principală
   servicii/
     proiectare.html                   proiectare
-    dirigentie-santier.html           dirigenție de șantier (I.S.C.)
+    dirigentie-santier.html           diriginție de șantier (I.S.C.)
     asistenta-tehnica.html            asistență tehnică, supraveghere și RTE
     rsvti.html                        RSVTI (ISCIR)
     rvt.html                          responsabil cu verificarea tehnică (ISCIR)
@@ -23,7 +23,8 @@ site/
     termografie.html                  inspecție termografică de la sol
     inspectie-drone.html              inspecție și măsurători cu drona
     ofertare-seap.html                ofertare SEAP și devize
-    certificat-energetic.html         certificat de performanță energetică
+    examinare-vizuala-vt.html         examinare vizuală (VT) la îmbinări sudate
+    lichide-penetrante-pt.html        control cu lichide penetrante (PT)
 ```
 
 ## Cum se publică
