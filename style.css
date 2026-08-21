@@ -265,7 +265,12 @@ footer .legal {
   display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: center;
 }
 .page-hero h1 { text-transform: uppercase; margin-bottom: .25em; }
+.page-hero .art { justify-self: center; }
 .page-hero .art svg { width: 100%; height: auto; display: block; }
+.page-hero .art img {
+  width: 100%; height: auto; display: block;
+  border-radius: var(--radius); box-shadow: var(--shadow);
+}
 
 @media (max-width: 860px) {
   .page-hero .wrap { grid-template-columns: 1fr; gap: 22px; }
