@@ -11,6 +11,7 @@ site/
   style.css                           stilul comun, cu toate culorile mărcii
   favicon.svg                         emblema din bara browserului
   imagini/                            fotografiile din antetul paginilor
+    carduri/                          aceleași fotografii, micșorate pentru pagina principală
   servicii/
     proiectare.html                   proiectare
     dirigentie-santier.html           dirigenție de șantier (I.S.C.)
@@ -59,12 +60,23 @@ Textul rămas de scris apare **evidențiat cu galben** în browser — sunt marc
 drepte, `[așa]`. Au mai rămas:
 
 - cele trei lucrări din secțiunea **Lucrări** (denumire, localitate, an, rolul avut);
-- paragraful din **Despre**, despre cum lucrați în concret;
-- fotografia pentru pagina de **Proiectare** (acum e o ilustrație desenată).
+- paragraful din **Despre**, despre cum lucrați în concret.
 
 Când nu mai există niciun marcaj, se șterge regula `.todo` de la finalul lui `style.css` și se
 scoate `<meta name="robots" content="noindex">` din capul fiecărei pagini — abia atunci site-ul
 devine vizibil în căutări.
+
+## Fotografiile
+
+Fiecare pagină de serviciu are fotografia ei în antet, iar aceeași fotografie apare, micșorată,
+pe cardul din pagina principală. Miniaturile din `imagini/carduri` se generează la 420&nbsp;px
+lățime — pagina principală încarcă 183&nbsp;KB în loc de 310&nbsp;KB.
+
+Ofertarea SEAP și certificatul energetic n-au fotografie; cardurile lor au rămas cu ilustrația
+desenată. Dacă apar fotografii și pentru ele, se pun la fel ca celelalte.
+
+**Nu puneți `loading="lazy"`** pe imaginile cardurilor: grila de servicii e conținutul principal
+al paginii, iar în unele randări atributul lăsa cardurile goale.
 
 ## Formularul de contact
 
