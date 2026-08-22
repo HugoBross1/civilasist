@@ -412,6 +412,10 @@ a.valoare:hover { color: var(--accent); }
   .formular .randuri { grid-template-columns: 1fr; }
 }
 
+/* Datele de identificare ale societatii, cerute de Legea 31/1990 si
+   Legea 365/2002. Stau discret, in subsol, pe toate paginile. */
+.identificare { display: inline-block; margin-top: 7px; font-size: .78rem; opacity: .72; }
+
 /* --- Marcaj pentru textele de completat ---------------------------------- */
 /* Șterge această regulă după ce ai înlocuit toate placeholderele.            */
 
