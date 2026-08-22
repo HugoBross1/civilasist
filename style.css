@@ -514,6 +514,32 @@ a.valoare:hover { color: var(--accent); }
   background: rgba(245,133,31,.14); color: var(--accent-2); align-self: flex-start;
 }
 
+/* --- Întrebarea spre care s-a venit dintr-o legătură -------------------- */
+
+/* Bara de sus e lipită de ecran; fără marginea asta, titlul ar ajunge sub ea. */
+.prose h3[id] { scroll-margin-top: 104px; }
+
+/* Se colorează atât întrebarea, cât și răspunsul de sub ea, ca să se vadă
+   dintr-o privire unde ai aterizat. */
+.prose h3:target,
+.prose h3:target + p {
+  background: #fff4e8;
+  border-left: 3px solid var(--accent-2);
+}
+.prose h3:target {
+  margin-top: 1.7em; padding: 14px 18px 8px;
+  border-radius: 6px 6px 0 0;
+}
+.prose h3:target + p {
+  margin-top: 0; padding: 0 18px 16px;
+  border-radius: 0 0 6px 6px;
+}
+
+/* Alunecarea lină până la întrebare, dar nu pentru cine a cerut mișcare redusă */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
 /* --- Marcaj pentru textele de completat ---------------------------------- */
 /* Șterge această regulă după ce ai înlocuit toate placeholderele.            */
 
