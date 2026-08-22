@@ -510,18 +510,22 @@ a.valoare:hover { color: var(--accent); }
 .banda-intrebari .wrap { text-align: center; }
 .banda-intrebari .subtitlu { margin-left: auto; margin-right: auto; }
 
-/* Marginile se topesc, ca pastilele să nu apară tăiate brusc */
+/* Zonă derulabilă adevărată: se poate trage cu degetul sau cu mouse-ul.
+   Mișcarea automată o face scriptul, nu o animație — o transformare CSS
+   s-ar bate cap în cap cu derularea nativă. Marginile se topesc, ca
+   pastilele să nu apară tăiate brusc. */
 .derulare {
-  overflow: hidden; margin: 32px 0;
+  overflow-x: auto; overflow-y: hidden; margin: 32px 0;
+  scrollbar-width: none; -ms-overflow-style: none;
+  cursor: grab; touch-action: pan-x;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
           mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
 }
-.derulare-pista {
-  display: flex; gap: 13px; width: max-content;
-  animation: derulez 70s linear infinite;
-}
-.derulare:hover .derulare-pista,
-.derulare:focus-within .derulare-pista { animation-play-state: paused; }
+.derulare::-webkit-scrollbar { display: none; }
+.derulare.se-trage { cursor: grabbing; }
+.derulare.se-trage a { user-select: none; }
+
+.derulare-pista { display: flex; gap: 13px; width: max-content; }
 
 .derulare-pista a {
   flex: 0 0 auto; display: block; max-width: 30ch;
@@ -534,16 +538,8 @@ a.valoare:hover { color: var(--accent); }
   border-color: var(--accent-2); color: var(--accent-2); background: #16161b;
 }
 
-@keyframes derulez { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-
-/* Cine a cerut mișcare redusă primește o listă cuminte, fără animație */
-@media (prefers-reduced-motion: reduce) {
-  .derulare { -webkit-mask-image: none; mask-image: none; }
-  .derulare-pista {
-    animation: none; width: auto; flex-wrap: wrap; justify-content: center;
-    padding: 0 22px;
-  }
-}
+/* Cine a cerut mișcare redusă nu primește mișcare automată — dar poate
+   derula banda cu mâna, ca oricine altcineva. De asta se ocupă scriptul. */
 
 /* --- Buton portocaliu ---------------------------------------------------- */
 
