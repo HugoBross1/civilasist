@@ -141,7 +141,15 @@ section { padding: 66px 0; }
 .hero .btn { margin-top: 14px; }
 
 .hero-art { width: 100%; }
-.hero-art svg, .hero-art img { width: 100%; height: auto; display: block; }
+.hero-art svg { width: 100%; height: auto; display: block; }
+/* Fotografia din antet e verticala si inalta. O aratam intreaga, dar cu
+   inaltimea limitata, ca sa nu covarseasca textul de alaturi. */
+.hero-art img {
+  width: auto; max-width: 100%; max-height: 600px;
+  height: auto; display: block; margin: 0 auto;
+  border-radius: var(--radius);
+}
+@media (max-width: 860px) { .hero-art img { max-height: 440px; } }
 
 @media (max-width: 860px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 30px; }
