@@ -8,10 +8,13 @@ const postari = require("../postari-facebook.json");
 const GRAPH = "https://graph.facebook.com/v21.0";
 
 function aleasaPentruAzi() {
-  // zile scurse de la 1 ianuarie 1970, în ora României
-  const acum = new Date();
-  const zile = Math.floor(acum.getTime() / 86400000);
-  return postari[zile % postari.length];
+  /* Numărăm de la ziua pornirii, nu de la 1970 — altfel seria ar începe de
+     unde nimerește calendarul, iar întrebările puternice, așezate primele,
+     s-ar rata. Data se poate schimba din FB_START, în setările Vercel. */
+  const start = Date.parse((process.env.FB_START || "2026-08-22") + "T00:00:00Z");
+  const zile = Math.floor((Date.now() - start) / 86400000);
+  const i = ((zile % postari.length) + postari.length) % postari.length;
+  return postari[i];
 }
 
 function compune(p) {

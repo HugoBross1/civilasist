@@ -161,7 +161,7 @@
   "zi": 23
  },
  {
-  "i": "Cât costă?",
+  "i": "Cât costă un certificat de urbanism?",
   "c": "Taxa se calculează după suprafața terenului și diferă de la o primărie la alta, fiind stabilită prin hotărâre a consiliului local.",
   "u": "https://civilasist.vercel.app/ghiduri/certificat-de-urbanism.html#cat-costa",
   "sursa": "certificat-de-urbanism.html",
@@ -203,7 +203,7 @@
   "zi": 29
  },
  {
-  "i": "Cât costă avizele?",
+  "i": "Cât costă avizele de la apă, curent și gaz?",
   "c": "Fiecare operator are un tarif de analiză, de ordinul zecilor sau sutelor de lei.",
   "u": "https://civilasist.vercel.app/ghiduri/avize-utilitati.html#cat-costa-avizele",
   "sursa": "avize-utilitati.html",
@@ -273,14 +273,14 @@
   "zi": 39
  },
  {
-  "i": "Cât costă toate verificările astea?",
+  "i": "Cât costă verificările înainte de a cumpăra un teren?",
   "c": "Extrasul de carte funciară și certificatul de urbanism înseamnă, împreună, câteva sute de lei.",
   "u": "https://civilasist.vercel.app/ghiduri/verificari-inainte-de-cumparare-teren.html#cat-costa-toate-verificarile-astea",
   "sursa": "verificari-inainte-de-cumparare-teren.html",
   "zi": 40
  },
  {
-  "i": "Cât sunt valabile?",
+  "i": "Cât sunt valabile avizele de la furnizorii de utilități?",
   "c": "De obicei un an, uneori corelat cu valabilitatea certificatului de urbanism.",
   "u": "https://civilasist.vercel.app/ghiduri/avize-utilitati.html#cat-sunt-valabile",
   "sursa": "avize-utilitati.html",
