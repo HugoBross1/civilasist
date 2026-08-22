@@ -56,7 +56,12 @@
     if (!trage) return;
     var d = e.clientX - plecatDe;
     dus = Math.abs(d);
-    zona.scrollLeft = scrollLaStart - d;
+    var tinta = scrollLaStart - d;
+    /* Tras înapoi dincolo de început: sărim înainte cu o copie, ca banda să
+       pară fără capăt și în direcția asta. */
+    var j = jumatate();
+    while (tinta < 0 && j > 2) { tinta += j; scrollLaStart += j; }
+    zona.scrollLeft = tinta;
   });
 
   function lasa(e) {
@@ -86,15 +91,15 @@
   /* --- bucla ------------------------------------------------------------ */
   zona.addEventListener("scroll", roteste, { passive: true });
 
+  /* Numai rotirea înainte. Cea înapoi se face în timpul tragerii, altfel
+     cele două se declanșează una pe alta când poziția nimerește pe hotar,
+     iar banda pare încremenită. */
   function roteste() {
     var j = jumatate();
     if (j < 2) return;
     if (zona.scrollLeft >= j) {
       zona.scrollLeft -= j;
       scrollLaStart -= j;           // ca tragerea în curs să nu se smucească
-    } else if (zona.scrollLeft <= 0) {
-      zona.scrollLeft += j;
-      scrollLaStart += j;
     }
   }
 
