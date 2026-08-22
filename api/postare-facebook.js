@@ -6,6 +6,7 @@
 const postari = require("../postari-facebook.json");
 
 const GRAPH = "https://graph.facebook.com/v21.0";
+const SITE  = process.env.SITE_URL || "https://civilasist.vercel.app";
 
 function aleasaPentruAzi() {
   /* Numărăm de la ziua pornirii, nu de la 1970 — altfel seria ar începe de
@@ -28,7 +29,8 @@ module.exports = async function (req, res) {
 
   // La probă arătăm ce s-ar publica, fără să publicăm nimic.
   if (proba) {
-    return res.status(200).json({ proba: true, zi: p.zi, mesaj, legatura: p.u });
+    return res.status(200).json({ proba: true, zi: p.zi, mesaj,
+      imagine: SITE + p.img, legatura: p.u });
   }
 
   // Programarea Vercel se autentifică singură; în rest cerem secretul,
@@ -57,10 +59,17 @@ module.exports = async function (req, res) {
     return res.status(500).json({ eroare: "Lipsesc FB_PAGE_ID sau FB_PAGE_TOKEN" });
   }
 
-  const r = await fetch(GRAPH + "/" + PAGE + "/feed", {
+  /* Postare cu imagine, nu cu legătură. Ajunge la mai multă lume, iar
+     întrebarea se citește din fotografie, fără să fie nevoie de clic.
+     Facebook aduce singur imaginea de la adresa dată. */
+  const r = await fetch(GRAPH + "/" + PAGE + "/photos", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message: mesaj, link: p.u, access_token: TOKEN }),
+    body: JSON.stringify({
+      url: SITE + p.img,
+      caption: mesaj,
+      access_token: TOKEN,
+    }),
   });
   const raspuns = await r.json();
 
