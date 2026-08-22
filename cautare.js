@@ -34,6 +34,13 @@
       });
   }
 
+  /* Româna schimbă terminațiile: „recepție", „recepția", „recepții".
+     Căutăm după rădăcină — cuvântul fără ultimele două litere, dar nu mai
+     scurt de patru — ca „receptie" să găsească și „recepția". */
+  function radacina(c) {
+    return c.length > 5 ? c.slice(0, Math.max(4, c.length - 2)) : c;
+  }
+
   function caut(q) {
     var cuvinte = fara(q).split(/\s+/).filter(Boolean);
     if (!cuvinte.length) return [];
@@ -41,14 +48,15 @@
       .map(function (x) {
         var scor = 0;
         for (var i = 0; i < cuvinte.length; i++) {
-          var c = cuvinte[i];
-          if (x._t.indexOf(c) === -1 && x._c.indexOf(c) === -1) return null;
-          if (x._t.indexOf(c) === 0) scor += 3;          // începe cu termenul
-          else if (x._t.indexOf(" " + c) > -1) scor += 2; // cuvânt întreg
-          else if (x._t.indexOf(c) > -1) scor += 1;
-          if (x._c.indexOf(c) > -1) scor += 1;            // e în titlul paginii
+          var c = cuvinte[i], r = radacina(c);
+          if (x._t.indexOf(r) === -1 && x._c.indexOf(r) === -1) return null;
+          if (x._t.indexOf(c) === 0) scor += 4;            // începe fix cu termenul
+          else if (x._t.indexOf(" " + c) > -1) scor += 3;  // cuvânt întreg
+          else if (x._t.indexOf(c) > -1) scor += 2;        // potrivire exactă
+          else if (x._t.indexOf(r) > -1) scor += 1;        // doar rădăcina
+          if (x._c.indexOf(r) > -1) scor += 1;             // e în titlul paginii
         }
-        if (x.k === "întrebare") scor += 1;               // întrebările primele
+        if (x.k === "întrebare") scor += 1;                // întrebările primele
         return { x: x, scor: scor };
       })
       .filter(Boolean)
