@@ -1,9 +1,8 @@
 /* Banda cu întrebări.
-   Se mișcă singură spre stânga. Se oprește când cursorul stă deasupra ei.
+   Se mișcă singură spre stânga; se oprește când cursorul stă deasupra ei.
    Cu butonul apăsat se trage în orice direcție, iar pe telefon se trage cu
-   degetul, prin derularea nativă. Lista e scrisă de două ori: când s-a
-   parcurs o copie întreagă sărim înapoi cu exact o copie, iar cusătura nu
-   se vede. */
+   degetul, prin derularea nativă. Lista e scrisă de două ori: după o copie
+   întreagă sărim înapoi cu exact o copie, iar cusătura nu se vede. */
 (function () {
   "use strict";
 
@@ -18,11 +17,12 @@
   var trage  = false;
   var reia;
 
-  function jumatate() { return pista.scrollWidth / 2; }
+  /* Poziția se ține aici, nu în scrollLeft: browserul rotunjește scrollLeft
+     la pixel întreg, iar pașii de sub un pixel s-ar pierde toți, cadru după
+     cadru, și banda ar sta pe loc. */
+  var poz = 0;
 
-  /* Pornim de la 1, nu de la 0: la zero, verificarea de rotire ar sări
-     înainte și înapoi în fiecare cadru, iar banda ar părea încremenită. */
-  zona.scrollLeft = 1;
+  function jumatate() { return pista.scrollWidth / 2; }
 
   function opreste() { clearTimeout(reia); oprit = true; }
   function porneste(dupa) {
@@ -37,16 +37,16 @@
   zona.addEventListener("focusout", function () { porneste(600); });
 
   /* --- tragerea cu mouse-ul --------------------------------------------- */
-  /* Doar pentru mouse. Degetul are derulare nativă, cu inerție — mai bună
+  /* Doar pentru mouse: degetul are derulare nativă, cu inerție, mai bună
      decât orice am scrie noi. */
-  var plecatDe = 0, scrollLaStart = 0, dus = 0;
+  var plecatDe = 0, pozLaStart = 0, dus = 0;
 
   zona.addEventListener("pointerdown", function (e) {
     if (e.pointerType !== "mouse" || e.button !== 0) return;
     e.preventDefault();             // altfel browserul începe să tragă legătura
     trage = true; dus = 0;
     plecatDe = e.clientX;
-    scrollLaStart = zona.scrollLeft;
+    pozLaStart = poz;
     opreste();
     zona.setPointerCapture(e.pointerId);
     zona.classList.add("se-trage");
@@ -56,12 +56,8 @@
     if (!trage) return;
     var d = e.clientX - plecatDe;
     dus = Math.abs(d);
-    var tinta = scrollLaStart - d;
-    /* Tras înapoi dincolo de început: sărim înainte cu o copie, ca banda să
-       pară fără capăt și în direcția asta. */
-    var j = jumatate();
-    while (tinta < 0 && j > 2) { tinta += j; scrollLaStart += j; }
-    zona.scrollLeft = tinta;
+    poz = pozLaStart - d;
+    aseaza();
   });
 
   function lasa(e) {
@@ -85,26 +81,26 @@
   zona.addEventListener("dragstart", function (e) { e.preventDefault(); });
 
   /* --- degetul, pe telefon ---------------------------------------------- */
+  /* Aici derulează browserul; noi doar oprim mișcarea automată și, la final,
+     ne luăm poziția de la el. */
   zona.addEventListener("touchstart", opreste, { passive: true });
-  zona.addEventListener("touchend",   function () { porneste(1500); }, { passive: true });
+  zona.addEventListener("touchend", function () {
+    poz = zona.scrollLeft;
+    porneste(1500);
+  }, { passive: true });
 
   /* --- bucla ------------------------------------------------------------ */
-  zona.addEventListener("scroll", roteste, { passive: true });
-
-  /* Numai rotirea înainte. Cea înapoi se face în timpul tragerii, altfel
-     cele două se declanșează una pe alta când poziția nimerește pe hotar,
-     iar banda pare încremenită. */
-  function roteste() {
+  function aseaza() {
     var j = jumatate();
-    if (j < 2) return;
-    if (zona.scrollLeft >= j) {
-      zona.scrollLeft -= j;
-      scrollLaStart -= j;           // ca tragerea în curs să nu se smucească
+    if (j > 2) {
+      while (poz >= j) { poz -= j; pozLaStart -= j; }
+      while (poz < 0)  { poz += j; pozLaStart += j; }
     }
+    zona.scrollLeft = poz;
   }
 
   function cadru() {
-    if (!oprit && !trage) zona.scrollLeft += VITEZA;
+    if (!oprit && !trage) { poz += VITEZA; aseaza(); }
     requestAnimationFrame(cadru);
   }
   requestAnimationFrame(cadru);
