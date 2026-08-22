@@ -65,23 +65,28 @@ a:hover { color: var(--accent); }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
 
-/* --- Bara de sus: localitate + pictograme sociale ------------------------ */
+/* --- Contactul rapid, în bara cu meniul --------------------------------- */
 
-.topbar { background: var(--bg); font-size: .82rem; }
-.topbar .wrap {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 16px; min-height: 46px; flex-wrap: wrap;
+.masthead-contact { display: flex; align-items: center; gap: 14px; }
+.masthead-contact .loc {
+  color: rgba(255,255,255,.72); font-size: .8rem; font-weight: 500; white-space: nowrap;
 }
-.topbar-loc { color: var(--accent-dark); font-weight: 500; }
-.topbar-social { display: flex; gap: 8px; }
-.topbar-social a {
+.contact-icoane { display: flex; gap: 8px; }
+.contact-icoane a {
   width: 30px; height: 30px; border-radius: 50%;
-  background: var(--header); color: #fff;
+  background: rgba(255,255,255,.1); color: #fff;
   display: inline-flex; align-items: center; justify-content: center;
   transition: background .15s ease;
 }
-.topbar-social a:hover { background: var(--accent); }
-.topbar-social svg { width: 15px; height: 15px; fill: currentColor; display: block; }
+.contact-icoane a:hover { background: var(--accent-2); color: #0e0e12; }
+.contact-icoane svg { width: 15px; height: 15px; fill: currentColor; display: block; }
+
+/* Pe ecrane înguste, judetele dispar — sunt oricum in subsol si la contact */
+@media (max-width: 900px) { .masthead-contact .loc { display: none; } }
+@media (max-width: 720px) {
+  .masthead .wrap { row-gap: 10px; }
+  .masthead-contact { margin-left: auto; }
+}
 
 /* --- Bara bleumarin cu logo și navigație -------------------------------- */
 
