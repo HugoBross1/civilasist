@@ -437,6 +437,83 @@ a.valoare:hover { color: var(--accent); }
    Legea 365/2002. Stau discret, in subsol, pe toate paginile. */
 .identificare { display: inline-block; margin-top: 7px; font-size: .78rem; opacity: .72; }
 
+/* --- Bandă cu întrebări, care se derulează singură ---------------------- */
+
+.banda-intrebari {
+  background: var(--bg-deep); color: #fff; padding: 62px 0 58px; overflow: hidden;
+}
+.banda-intrebari h2 { color: #fff; margin-bottom: .3em; }
+.banda-intrebari .eyebrow { color: var(--accent-2); }
+.banda-intrebari .subtitlu { color: #b8b8c0; max-width: 62ch; margin-bottom: 0; }
+.banda-intrebari .wrap { text-align: center; }
+.banda-intrebari .subtitlu { margin-left: auto; margin-right: auto; }
+
+/* Marginile se topesc, ca pastilele să nu apară tăiate brusc */
+.derulare {
+  overflow: hidden; margin: 32px 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+}
+.derulare-pista {
+  display: flex; gap: 13px; width: max-content;
+  animation: derulez 70s linear infinite;
+}
+.derulare:hover .derulare-pista,
+.derulare:focus-within .derulare-pista { animation-play-state: paused; }
+
+.derulare-pista a {
+  flex: 0 0 auto; display: block; max-width: 30ch;
+  padding: 13px 20px; border-radius: 999px;
+  background: #1a1a20; border: 1px solid #2d2d35;
+  color: #eeeef0; text-decoration: none; font-size: .93rem; line-height: 1.35;
+  transition: border-color .15s ease, color .15s ease, background .15s ease;
+}
+.derulare-pista a:hover, .derulare-pista a:focus-visible {
+  border-color: var(--accent-2); color: var(--accent-2); background: #16161b;
+}
+
+@keyframes derulez { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* Cine a cerut mișcare redusă primește o listă cuminte, fără animație */
+@media (prefers-reduced-motion: reduce) {
+  .derulare { -webkit-mask-image: none; mask-image: none; }
+  .derulare-pista {
+    animation: none; width: auto; flex-wrap: wrap; justify-content: center;
+    padding: 0 22px;
+  }
+}
+
+/* --- Buton portocaliu ---------------------------------------------------- */
+
+.btn.portocaliu {
+  background: var(--accent-2); border-color: var(--accent-2); color: #0e0e12;
+}
+.btn.portocaliu:hover {
+  background: #ffa040; border-color: #ffa040; color: #0e0e12;
+}
+
+/* --- Ghidurile scoase în față ------------------------------------------- */
+
+.ghiduri-fierbinti { background: var(--bg-deep); padding: 54px 0 58px; margin-bottom: 46px; }
+.ghiduri-fierbinti .eyebrow { color: var(--accent-2); }
+.ghiduri-fierbinti > .wrap > h2 { color: #fff; }
+.ghiduri-fierbinti > .wrap > p { color: #b8b8c0; max-width: 64ch; margin-bottom: 30px; }
+
+.ghiduri-fierbinti .svc {
+  background: #1a1a20; border: 1px solid #2d2d35; border-top: 3px solid var(--accent-2);
+  color: #eeeef0; box-shadow: none; text-align: left;
+}
+.ghiduri-fierbinti .svc:hover {
+  background: #1e1e25; border-color: #3a3a44; border-top-color: var(--accent-2);
+  color: #eeeef0; box-shadow: 0 10px 26px rgba(0,0,0,.35);
+}
+.ghiduri-fierbinti .svc h3 { color: #fff; }
+.ghiduri-fierbinti .svc p  { color: #b8b8c0; }
+.ghiduri-fierbinti .svc .go { color: var(--accent-2); align-self: flex-start; }
+.ghiduri-fierbinti .svc .tag {
+  background: rgba(245,133,31,.14); color: var(--accent-2); align-self: flex-start;
+}
+
 /* --- Marcaj pentru textele de completat ---------------------------------- */
 /* Șterge această regulă după ce ai înlocuit toate placeholderele.            */
 
