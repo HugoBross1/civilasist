@@ -437,6 +437,22 @@ a.valoare:hover { color: var(--accent); }
    Legea 365/2002. Stau discret, in subsol, pe toate paginile. */
 .identificare { display: inline-block; margin-top: 7px; font-size: .78rem; opacity: .72; }
 
+/* --- Carduri cu întrebare și răspuns ------------------------------------ */
+
+/* Întrebarea e capul cardului, deci se citește ca o frază, nu ca un titlu
+   de rubrică: aliniată la stânga, cu rândurile apropiate. */
+.svc.intrebare { text-align: left; align-items: stretch; }
+.svc.intrebare h3 {
+  font-size: 1.14rem; line-height: 1.3; margin-bottom: .6em;
+}
+.svc.intrebare p { text-align: left; }
+.svc.intrebare .tag { align-self: flex-start; }
+.svc.intrebare .go { align-self: flex-start; }
+
+/* Termenul care conteaza din raspuns iese in fata */
+.svc.intrebare p strong { color: var(--accent-2-dark); font-weight: 700; }
+.ghiduri-fierbinti .svc.intrebare p strong { color: var(--accent-2); }
+
 /* --- Bandă cu întrebări, care se derulează singură ---------------------- */
 
 .banda-intrebari {
