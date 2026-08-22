@@ -355,6 +355,17 @@ footer .legal {
   margin-top: 9px; font-size: .87rem; line-height: 1.5; color: var(--text-muted);
 }
 
+/* --- Figură singulară, mai îngustă decât coloana de text ---------------- */
+
+.figura { margin: 0 0 1.6em; max-width: 400px; }
+.figura img {
+  width: 100%; height: auto; display: block;
+  border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.figura figcaption {
+  margin-top: 9px; font-size: .87rem; line-height: 1.5; color: var(--text-muted);
+}
+
 /* --- Marcaj pentru textele de completat ---------------------------------- */
 /* Șterge această regulă după ce ai înlocuit toate placeholderele.            */
 
