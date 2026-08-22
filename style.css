@@ -6,27 +6,35 @@
    ========================================================================== */
 
 :root {
-  /* Culorile mărcii, din emblema CivilAsist.ro */
-  --brand:         #1f6fc4;   /* albastrul inelului */
-  --brand-dark:    #14315e;   /* bleumarinul discului interior */
-  --brand-light:   #5aa4e8;   /* pentru text pe fundal închis */
+  /* Paleta preluata de la uzinex.ro: neutre curate, fara tenta albastra,
+     cu doua accente — portocaliu si albastru. Albastrul lor, #1e6bb8, e
+     aproape identic cu cel al emblemei noastre, deci ramane accentul
+     principal; portocaliul lucreaza ca accent secundar. */
 
-  --accent:        #1f6fc4;   /* albastrul mărcii */
-  --accent-dark:   #17548f;   /* pentru hover și text mic pe fundal deschis */
-  --accent-soft:   #eaf2fb;
-  --text:          #0f1c2e;
-  --text-muted:    #33475f;
-  --text-light:    #6b7c93;
-  --bg:            #f8fafc;   /* alb ușor albastrui */
-  --bg-alt:        #eef3f9;   /* bleu foarte deschis */
-  --bg-deep:       #102a4f;   /* bleumarin, pentru subsol */
-  --border:        #dfe7f0;
-  --header:        #102a4f;   /* bara de navigație */
+  --brand:         #1e6bb8;   /* albastrul marcii */
+  --brand-dark:    #14315e;   /* discul interior al emblemei */
+  --brand-light:   #6aa9e0;   /* pentru text pe fundal inchis */
+
+  --accent:        #1e6bb8;
+  --accent-dark:   #175690;
+  --accent-soft:   #e8f0f9;
+  --accent-2:      #f5851f;   /* portocaliul, pentru accente mici */
+  --accent-2-dark: #d46f0d;
+
+  --text:          #0e0e12;   /* negru-cenusiu, nu albastrui */
+  --text-muted:    #5f5f6b;
+  --text-light:    #8a8a95;
+  --bg:            #ffffff;
+  --bg-alt:        #f7f7f8;
+  --bg-deep:       #0e0e12;   /* subsolul, aproape negru */
+  --border:        #eeeef0;
+  --header:        #0e0e12;   /* bara de navigatie */
 
   --radius:  8px;
   --shadow:  0 2px 10px rgba(0,0,0,.07);
   --maxw:    1140px;
-  --font: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --font:       Inter, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-titlu: "Space Grotesk", Inter, system-ui, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -41,7 +49,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 { line-height: 1.22; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 .55em; }
+h1, h2, h3, .logo-text {
+  font-family: var(--font-titlu);
+  line-height: 1.18; font-weight: 700; letter-spacing: -0.03em; margin: 0 0 .55em;
+}
+h3 { letter-spacing: -0.02em; }
 h1 { font-size: clamp(1.9rem, 4.4vw, 2.85rem); }
 h2 { font-size: clamp(1.5rem, 3.2vw, 2.1rem); }
 h3 { font-size: 1.08rem; }
@@ -182,7 +194,7 @@ section { padding: 66px 0; }
 .svc img { object-fit: contain; }
 .svc h3 { margin-bottom: .45em; }
 .svc p { font-size: .93rem; color: var(--text-muted); margin-bottom: 1em; }
-.svc .go { margin-top: auto; margin-bottom: 0; color: var(--accent-dark); font-weight: 700; font-size: .87rem; text-transform: uppercase; letter-spacing: .05em; }
+.svc .go { margin-top: auto; margin-bottom: 0; color: var(--accent-2-dark); font-weight: 700; font-size: .87rem; text-transform: uppercase; letter-spacing: .05em; }
 .svc .tag {
   display: inline-block; font-size: .68rem; font-weight: 700; letter-spacing: .08em;
   text-transform: uppercase; color: var(--accent-dark);
@@ -381,7 +393,7 @@ footer .legal {
   gap: 18px; margin-bottom: 38px;
 }
 .card-contact {
-  background: #fff; border: 1px solid var(--border); border-top: 3px solid var(--accent);
+  background: #fff; border: 1px solid var(--border); border-top: 3px solid var(--accent-2);
   border-radius: var(--radius); padding: 19px 22px 21px;
 }
 .card-contact .eticheta {
@@ -404,7 +416,7 @@ a.valoare:hover { color: var(--accent); }
 }
 .formular .randuri { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .formular .camp { min-width: 0; }
-.formular .oblig { color: var(--accent); }
+.formular .oblig { color: var(--accent-2); }
 .formular ::placeholder { color: var(--text-light); opacity: .75; }
 
 /* Bifa de acord: caseta si textul pe acelasi rand, aliniate sus */
