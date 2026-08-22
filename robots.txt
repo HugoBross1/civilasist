@@ -1,0 +1,35 @@
+# CivilAsist.ro
+
+User-agent: *
+Allow: /
+
+# Roboții asistenților AI au voie explicit. Fără asta, unii nu citesc site-ul,
+# deci nu îl pot cita când cineva îi întreabă despre autorizații sau ISCIR.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://civilasist.vercel.app/sitemap.xml

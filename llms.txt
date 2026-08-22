@@ -1,0 +1,50 @@
+# CivilAsist.ro
+
+> Echipă de ingineri constructori și proiectanți din Huși, județul Vaslui, care acoperă o lucrare de construcții de la primul act până la recepția finală: proiectare, dirigenție de șantier atestată de Inspectoratul de Stat în Construcții, responsabil tehnic cu execuția, RSVTI și responsabil cu verificarea tehnică pentru instalații sub incidența ISCIR, management de proiect, cartea tehnică a construcției, termografie, inspecții și măsurători cu drona, încercări nedistructive prin examinare vizuală și lichide penetrante, ofertare și devize tehnice.
+
+Serviciile se prestează în județele Vaslui și Iași, pentru persoane fizice, firme și administrații publice. Serviciile se contractează prin INDUSTRIAL IMOBIL S.R.L., J37/713/2020, CUI 43308030, cu sediul în municipiul Huși, județul Vaslui. Autorizările sunt personale și emise pe numele membrilor echipei.
+
+Contact: 0744 921 358 · contact@civilasist.ro · birou în Huși, Șos. Huși–Stănilești nr. 23.
+
+## Servicii
+
+- [Asistență tehnică, supraveghere de șantier și RTE](https://civilasist.vercel.app/servicii/asistenta-tehnica.html): Asistență tehnică pe durata execuției și supravegherea lucrărilor de construcții, plus responsabil tehnic cu execuția (RTE) prin operator autorizat.
+- [Cartea tehnică a construcției](https://civilasist.vercel.app/servicii/cartea-tehnica.html): Întocmirea, completarea și reconstituirea cărții tehnice a construcției: documentația de proiectare, execuție, recepție și urmărire în timp.
+- [Diriginție de șantier](https://civilasist.vercel.app/servicii/dirigentie-santier.html): Diriginție de șantier prestată de diriginte autorizat de Inspectoratul de Stat în Construcții: verificarea calității execuției, faze determinante, recepția lucrărilor, cartea tehnică.
+- [Examinare vizuală (VT)](https://civilasist.vercel.app/servicii/examinare-vizuala-vt.html): Examinare vizuală (VT) a îmbinărilor sudate și a altor produse metalice, executată de personal autorizat: pregătirea examinării, evaluarea discontinuităților și raport cu criterii de acceptare.
+- [Inspecție clădiri și măsurători cu drona](https://civilasist.vercel.app/servicii/inspectie-drone.html): Inspecție de clădiri și ridicări topografice cu drona: ortofotoplan, model 3D, curbe de nivel, calcul de volume, inspecție acoperișuri și fațade, termografie aeriană.
+- [Control cu lichide penetrante (PT)](https://civilasist.vercel.app/servicii/lichide-penetrante-pt.html): Încercări nedistructive cu lichide penetrante (PT) la îmbinări sudate, inox și aluminiu, executat de personal autorizat: punerea în evidență a fisurilor deschise la suprafață și raport cu criterii de acceptare.
+- [Management de proiect](https://civilasist.vercel.app/servicii/management-proiect.html): Management de proiect pentru lucrări de construcții: planificare, grafic de execuție, urmărirea termenelor și a bugetului, coordonarea proiectantului, constructorului și furnizorilor.
+- [Ofertare și devize tehnice](https://civilasist.vercel.app/servicii/ofertare-seap.html): Întocmirea ofertelor pentru licitații publice în SEAP/SICAP: devize, liste de cantități, extrase de resurse, propunere tehnică și financiară, grafic de execuție.
+- [Proiectare construcții civile, industriale și agricole](https://civilasist.vercel.app/servicii/proiectare.html): Proiectare în construcții civile, industriale și agricole: documentații pentru autorizare, proiect tehnic, detalii de execuție, obținerea avizelor și a autorizației de construire.
+- [RSVTI](https://civilasist.vercel.app/servicii/rsvti.html): Servicii de operator RSVTI autorizat ISCIR: evidența instalațiilor de ridicat și sub presiune, autorizarea funcționării, verificări tehnice periodice, instruirea personalului de deservire.
+- [Responsabil cu verificarea tehnică (RVT)](https://civilasist.vercel.app/servicii/rvt.html): Responsabil cu verificarea tehnică (RVT) autorizat ISCIR pentru societăți care execută lucrări de montare, reparare sau întreținere la instalații de ridicat și sub presiune.
+- [Inspecție termografică și de termoviziune](https://civilasist.vercel.app/servicii/termografie.html): Inspecție termografică a clădirilor și instalațiilor: punți termice, izolație deficitară, infiltrații, umezeală, supraîncălziri la tablouri electrice. Raport cu termograme.
+
+## Ghiduri — răspunsuri la întrebările frecvente din construcții
+
+Fiecare ghid are un bloc de întrebări și răspunsuri, marcate ca date structurate FAQPage, cu ancoră proprie pentru fiecare întrebare.
+
+- [Acordurile de mediu, sănătate publică și sanitar-veterinare](https://civilasist.vercel.app/ghiduri/acorduri-mediu-dsp-dsv.html): Când se cer acordul de mediu, avizul DSP, cel sanitar-veterinar și avizul de securitate la incendiu, ce conține fiecare dosar și cât durează.
+- [Anexe gospodărești: ce se poate face fără autorizație și ce nu](https://civilasist.vercel.app/ghiduri/anexe-gospodaresti.html): Garaj, magazie, foișor, bucătărie de vară, împrejmuire. Ce se poate construi fără autorizație, ce nu, și ce verifici înainte să începi.
+- [Autorizația de construire: ce conține dosarul și cât durează](https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html): Ce acte conține dosarul pentru autorizația de construire, în cât timp se emite, cât e valabilă, ce taxe se plătesc și ce faci imediat după ce o primești.
+- [Avizele de la furnizorii de utilități](https://civilasist.vercel.app/ghiduri/avize-utilitati.html): Ce cer furnizorii de apă-canal, energie electrică și gaze pentru avizul de amplasament, cât durează, cât costă și de ce se depun toate deodată.
+- [Cartea funciară: ce este și cum obțineți extrasul](https://civilasist.vercel.app/ghiduri/cartea-funciara.html): Ce este cartea funciară, ce scrie în cele trei părți ale ei, cine poate cere un extras, diferența dintre extrasul de informare și cel de autentificare și cum se obține.
+- [Certificatul de urbanism: la ce folosește și cum se obține](https://civilasist.vercel.app/ghiduri/certificat-de-urbanism.html): Ce este certificatul de urbanism, ce acte se depun ca să-l obții, în cât timp se emite, cât e valabil și ce urmează după. Ghid practic pentru Vaslui și Iași.
+- [Fazele determinante: momentele în care nu se poate merge mai departe](https://civilasist.vercel.app/ghiduri/faze-determinante.html): Punctele de oprire din execuție la care lucrarea se verifică înainte de a fi acoperită: natura terenului, armarea fundațiilor, structura la roșu.
+- [Ați construit fără autorizație. Cum intrați în legalitate](https://civilasist.vercel.app/ghiduri/intrare-in-legalitate.html): Pașii pentru intrarea în legalitate a unei construcții executate fără autorizație: certificat de urbanism, expertiză tehnică, releveu, documentație, avize.
+- [Aveți instalații ISCIR. Ce obligații vin la pachet](https://civilasist.vercel.app/ghiduri/obligatii-iscir.html): Ce trebuie să aibă în regulă cine deține macarale, stivuitoare, ascensoare, cazane sau recipiente sub presiune: RSVTI, evidențe, autorizări și verificări periodice.
+- [Recepția lucrărilor: cele două recepții și ce se semnează la fiecare](https://civilasist.vercel.app/ghiduri/receptia-lucrarilor.html): Cele două recepții din construcții: la terminarea lucrărilor și cea finală după garanție. Cine face parte din comisie, ce se semnează și ce se întâmplă la respingere.
+- [Ce verificați înainte să cumpărați un teren de casă](https://civilasist.vercel.app/ghiduri/verificari-inainte-de-cumparare-teren.html): Carte funciară, intravilan, procent de ocupare, retrageri, acces la drum public, utilități și natura terenului. Verificările care costă sute și scutesc zeci de mii.
+
+## Pagini
+
+- [Acasă](https://civilasist.vercel.app/): prezentarea serviciilor și formularul de contact.
+- [Cum se face](https://civilasist.vercel.app/ghiduri/): cuprinsul ghidurilor, organizat după etapa lucrării.
+- [Despre](https://civilasist.vercel.app/despre.html): echipa, autorizările și modul de lucru.
+- [Politica de confidențialitate](https://civilasist.vercel.app/confidentialitate.html): ce date se colectează prin formular și cum se folosesc.
+
+## De reținut
+
+- Ghidurile descriu proceduri din legislația română a construcțiilor, în special Legea nr. 50/1991 privind autorizarea executării lucrărilor de construcții și Legea nr. 10/1995 privind calitatea în construcții. Sunt orientative: lista fermă pentru un caz anume este cea din certificatul de urbanism emis de primărie.
+- Site-ul nu folosește cookie-uri. Statisticile de vizitare sunt agregate și nu identifică persoane.
