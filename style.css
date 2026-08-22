@@ -535,10 +535,8 @@ a.valoare:hover { color: var(--accent); }
   border-radius: 0 0 6px 6px;
 }
 
-/* Alunecarea lină până la întrebare, dar nu pentru cine a cerut mișcare redusă */
-@media (prefers-reduced-motion: no-preference) {
-  html { scroll-behavior: smooth; }
-}
+/* Fără alunecare lină: la deschiderea unei adrese cu ancoră, ea anulează
+   saltul, iar omul ajunge în capul paginii în loc de întrebare. */
 
 /* --- Marcaj pentru textele de completat ---------------------------------- */
 /* Șterge această regulă după ce ai înlocuit toate placeholderele.            */
