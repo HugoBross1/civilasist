@@ -538,9 +538,6 @@ a.valoare:hover { color: var(--accent); }
 /* Fără alunecare lină: la deschiderea unei adrese cu ancoră, ea anulează
    saltul, iar omul ajunge în capul paginii în loc de întrebare. */
 
-/* --- Marcaj pentru textele de completat ---------------------------------- */
-/* Șterge această regulă după ce ai înlocuit toate placeholderele.            */
-
 .todo { background: #fff3cd; color: #6b4e00; padding: 0 4px; border-radius: 3px; box-decoration-break: clone; }
 
 /* --- Print --------------------------------------------------------------- */
