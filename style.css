@@ -366,6 +366,52 @@ footer .legal {
   margin-top: 9px; font-size: .87rem; line-height: 1.5; color: var(--text-muted);
 }
 
+/* --- Carduri de contact, cu dungă colorată sus ------------------------- */
+
+.carduri-contact {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  gap: 18px; margin-bottom: 38px;
+}
+.card-contact {
+  background: #fff; border: 1px solid var(--border); border-top: 3px solid var(--accent);
+  border-radius: var(--radius); padding: 19px 22px 21px;
+}
+.card-contact .eticheta {
+  font-size: .71rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--text-light); margin: 0 0 9px;
+}
+.card-contact .valoare {
+  display: block; font-size: 1.1rem; font-weight: 700; color: var(--text);
+  text-decoration: none; margin-bottom: 6px; word-break: break-word;
+}
+a.valoare:hover { color: var(--accent); }
+.card-contact .nota { font-size: .83rem; line-height: 1.5; color: var(--text-muted); margin: 0; }
+
+/* --- Formularul de contact ---------------------------------------------- */
+
+.formular {
+  max-width: none; background: #fff; border: 1px solid var(--border);
+  border-radius: var(--radius); box-shadow: var(--shadow); padding: 30px;
+  gap: 20px;
+}
+.formular .randuri { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.formular .camp { min-width: 0; }
+.formular .oblig { color: var(--accent); }
+.formular ::placeholder { color: var(--text-light); opacity: .75; }
+
+/* Bifa de acord: caseta si textul pe acelasi rand, aliniate sus */
+.acord {
+  display: flex; align-items: flex-start; gap: 11px;
+  font-weight: 400; font-size: .9rem; line-height: 1.55; color: var(--text-muted);
+  cursor: pointer;
+}
+.acord input { width: auto; flex: 0 0 auto; margin-top: 3px; }
+
+@media (max-width: 640px) {
+  .formular { padding: 22px 18px; }
+  .formular .randuri { grid-template-columns: 1fr; }
+}
+
 /* --- Marcaj pentru textele de completat ---------------------------------- */
 /* Șterge această regulă după ce ai înlocuit toate placeholderele.            */
 

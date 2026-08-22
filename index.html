@@ -268,59 +268,100 @@
 <section id="contact">
   <div class="wrap">
     <div class="section-title">
-      <h2>Contact</h2>
-      <p>Prețul se stabilește pentru fiecare lucrare în parte, după ce vedem documentele.</p>
+      <p class="eyebrow">Scrie-ne</p>
+      <h2>Formular de contact</h2>
+      <p>Completați formularul și vă răspunde un inginer, nu un robot. Dacă e urgent, sunați direct.</p>
     </div>
 
-    <div class="grid grid-2">
-      <div>
-        <ul class="contact-list">
-          <li><span class="label">Telefon</span> <a href="tel:+40744921358">0744 921 358</a></li>
-          <li><span class="label">E-mail</span> <a href="mailto:contact@civilasist.ro">contact@civilasist.ro</a></li>
-          <li><span class="label">WhatsApp</span> <a href="https://wa.me/40744921358">0744 921 358</a></li>
-          <li><span class="label">Zonă</span> Județele Vaslui și Iași</li>
-          <li><span class="label">Program</span> Luni–vineri, 08:00–18:00</li>
-        </ul>
+    <div class="carduri-contact">
+      <div class="card-contact">
+        <p class="eticheta">Telefon</p>
+        <a class="valoare" href="tel:+40744921358">0744 921 358</a>
+        <p class="nota">Luni–vineri · 08:00–18:00</p>
+      </div>
+      <div class="card-contact">
+        <p class="eticheta">E-mail</p>
+        <a class="valoare" href="mailto:contact@civilasist.ro">contact@civilasist.ro</a>
+        <p class="nota">Pentru documente și oferte scrise</p>
+      </div>
+      <div class="card-contact">
+        <p class="eticheta">WhatsApp</p>
+        <a class="valoare" href="https://wa.me/40744921358" rel="noopener">0744 921 358</a>
+        <p class="nota">Mesaj rapid · fotografii de pe șantier</p>
+      </div>
+      <div class="card-contact">
+        <p class="eticheta">Birou</p>
+        <span class="valoare">Huși · jud. Vaslui</span>
+        <p class="nota">
+          Șos. Huși–Stănilești nr. 23 ·
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%C8%98os.%20Hu%C8%99i-St%C4%83nile%C8%99ti%2023%2C%20Hu%C8%99i%2C%20Vaslui"
+             target="_blank" rel="noopener">Vezi pe hartă</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Formularul trimite pe e-mail prin FormSubmit: gratuit, fără cont, fără server.
+         La prima trimitere se primește un e-mail de confirmare; se dă click o dată pe link. -->
+    <form class="formular" action="https://formsubmit.co/contact@civilasist.ro" method="POST">
+      <div class="randuri">
+        <div class="camp">
+          <label for="nume">Nume complet <span class="oblig">*</span></label>
+          <input id="nume" name="nume" type="text" placeholder="Andrei Popescu" required>
+        </div>
+        <div class="camp">
+          <label for="firma">Firmă sau CUI</label>
+          <input id="firma" name="firma" type="text" placeholder="opțional, dacă scrieți în numele unei societăți">
+        </div>
+        <div class="camp">
+          <label for="email">E-mail <span class="oblig">*</span></label>
+          <input id="email" name="email" type="email" placeholder="nume@exemplu.ro" required>
+        </div>
+        <div class="camp">
+          <label for="telefon">Telefon <span class="oblig">*</span></label>
+          <input id="telefon" name="telefon" type="tel" placeholder="+40 7xx xxx xxx" required>
+        </div>
       </div>
 
-      <!-- Formularul trimite pe e-mail prin FormSubmit: gratuit, fără cont, fără server.
-           La prima trimitere primești un e-mail de confirmare; dai click o dată pe link. -->
-      <form action="https://formsubmit.co/contact@civilasist.ro" method="POST">
-        <div>
-          <label for="nume">Nume</label>
-          <input id="nume" name="nume" type="text" required>
-        </div>
-        <div>
-          <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" required>
-        </div>
-        <div>
-          <label for="serviciu">Ce vă interesează</label>
-          <select id="serviciu" name="serviciu">
-            <option>Proiectare</option>
-            <option>Diriginție de șantier</option>
-            <option>Asistență tehnică / supraveghere / RTE</option>
-            <option>RSVTI</option>
-            <option>Responsabil cu verificarea tehnică (RVT)</option>
-            <option>Management de proiect</option>
-            <option>Cartea tehnică a construcției</option>
-            <option>Inspecție termografică</option>
-            <option>Inspecție și măsurători cu drona</option><option>Ofertare SEAP și devize</option>
-            <option>Examinare vizuală (VT) — îmbinări sudate</option>
-            <option>Lichide penetrante (PT) — îmbinări sudate</option>
-            <option>Nu sunt sigur — am nevoie de îndrumare</option>
-          </select>
-        </div>
-        <div>
-          <label for="mesaj">Descrieți pe scurt lucrarea</label>
-          <textarea id="mesaj" name="mesaj" required></textarea>
-        </div>
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="Cerere nouă de pe site">
-        <button class="btn" type="submit">Trimite mesajul</button>
-        <p class="form-note">Datele transmise sunt folosite exclusiv pentru a răspunde solicitării dumneavoastră.</p>
-      </form>
-    </div>
+      <div class="camp">
+        <label for="serviciu">Ce vă interesează <span class="oblig">*</span></label>
+        <select id="serviciu" name="serviciu" required>
+          <option>Proiectare</option>
+          <option>Diriginție de șantier</option>
+          <option>Asistență tehnică / supraveghere / RTE</option>
+          <option>RSVTI</option>
+          <option>Responsabil cu verificarea tehnică (RVT)</option>
+          <option>Management de proiect</option>
+          <option>Cartea tehnică a construcției</option>
+          <option>Inspecție termografică</option>
+          <option>Inspecție și măsurători cu drona</option>
+          <option>Ofertare SEAP și devize</option>
+          <option>Examinare vizuală (VT) — îmbinări sudate</option>
+          <option>Lichide penetrante (PT) — îmbinări sudate</option>
+          <option>Nu sunt sigur — am nevoie de îndrumare</option>
+        </select>
+      </div>
+
+      <div class="camp">
+        <label for="mesaj">Descrieți pe scurt lucrarea <span class="oblig">*</span></label>
+        <textarea id="mesaj" name="mesaj" required
+          placeholder="Ce aveți de făcut, unde este amplasamentul, în ce stadiu sunteți și până când aveți nevoie."></textarea>
+      </div>
+
+      <label class="acord">
+        <input type="checkbox" name="acord" value="da" required>
+        <span>Am citit și accept <a href="confidentialitate.html">politica de confidențialitate</a> și prelucrarea datelor mele pentru a fi contactat.</span>
+      </label>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="Cerere nouă de pe civilasist.ro">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div>
+        <button class="btn" type="submit">Trimite mesajul →</button>
+      </div>
+      <p class="form-note">Datele sunt folosite exclusiv ca să vă răspundem. Nu trimitem newsletter și nu le dăm nimănui.</p>
+    </form>
   </div>
 </section>
 
