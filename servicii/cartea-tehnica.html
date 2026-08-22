@@ -120,6 +120,14 @@
     <p class="subtitlu">Răspunsuri scrise, nu vorbe la telefon. Dați clic pe întrebarea care vă privește.</p>
   </div>
 
+  <div class="wrap">
+    <div class="cautare" data-cautare hidden>
+      <label class="sr" for="q">Căutați o întrebare</label>
+      <input id="q" type="search" autocomplete="off" placeholder="Scrieți un cuvânt: recepție, autorizație, teren, drona…">
+      <div class="rezultate" data-rezultate hidden></div>
+    </div>
+  </div>
+
   <div class="derulare">
     <div class="derulare-pista">
         <a href="../ghiduri/autorizatie-de-construire.html#am-schimbat-doar-forma-acoperisului-trebuie">Am schimbat doar forma acoperișului. Trebuie alt proiect?</a>
@@ -185,5 +193,6 @@
      sa identifice persoane. De aceea nu cere banner de consimtamant. -->
 <script defer src="/_vercel/insights/script.js"></script>
 
+<script src="../cautare.js" defer></script>
 </body>
 </html>
