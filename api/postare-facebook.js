@@ -94,6 +94,25 @@ module.exports = async function (req, res) {
     };
   });
 
+  /* Verificare: întreabă Facebook dacă jetonul chiar deschide fiecare pagină,
+     fără să publice nimic. Mai bine aflăm acum decât la 8 dimineața. */
+  if (req.query && (req.query.verifica === "1" || req.query.verifica === "da")) {
+    const stare = [];
+    for (const pg of lista) {
+      try {
+        const r = await fetch(GRAPH + "/" + pg.id +
+          "?fields=name,id&access_token=" + encodeURIComponent(pg.token));
+        const j = await r.json();
+        stare.push(r.ok
+          ? { pagina: pg.nume, acces: true, numeReal: j.name, id: j.id }
+          : { pagina: pg.nume, acces: false, motiv: (j.error && j.error.message) || "necunoscut" });
+      } catch (e) {
+        stare.push({ pagina: pg.nume, acces: false, motiv: e.message });
+      }
+    }
+    return res.status(stare.every(x => x.acces) ? 200 : 502).json({ verificare: true, pagini: stare });
+  }
+
   if (proba) {
     return res.status(200).json({
       proba: true, zi,
