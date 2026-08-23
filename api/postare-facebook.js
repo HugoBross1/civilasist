@@ -35,6 +35,23 @@ function pagini() {
   return lista;
 }
 
+/* Facebook cere ca postarea să vină „ca pagina", nu ca utilizatorul de
+   sistem — mai ales la ciorne. Jetonul paginii se cere o dată, cu cel de
+   sistem, și se folosește mai departe. Nu se scrie nicăieri și nu apare în
+   niciun mesaj de eroare. */
+async function jetonPagina(pg) {
+  if (pg._jeton) return pg._jeton;
+  const r = await fetch(GRAPH + "/" + pg.id +
+    "?fields=access_token&access_token=" + encodeURIComponent(pg.token));
+  const j = await r.json();
+  if (!r.ok || !j.access_token) {
+    throw new Error("nu s-a putut obține jetonul paginii" +
+      (j.error ? ": " + j.error.message : ""));
+  }
+  pg._jeton = j.access_token;
+  return pg._jeton;
+}
+
 function ziuaCurenta() {
   const start = Date.parse((process.env.FB_START || "2026-08-23") + "T00:00:00Z");
   return Math.floor((Date.now() - start) / 86400000);
@@ -62,7 +79,7 @@ async function publica(pagina, p) {
     body: JSON.stringify({
       url: SITE + p.img,
       caption: compune(p),
-      access_token: pagina.token,
+      access_token: await jetonPagina(pagina),
     }),
   });
   const raspuns = await r.json();
@@ -125,7 +142,7 @@ module.exports = async function (req, res) {
     try {
       const rf = await fetch(GRAPH + "/" + pg.id + "/photos", {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ url: SITE + p.img, published: false, access_token: pg.token }),
+        body: JSON.stringify({ url: SITE + p.img, published: false, access_token: await jetonPagina(pg) }),
       });
       const foto = await rf.json();
       if (!rf.ok) throw new Error("încărcarea fotografiei: " + JSON.stringify(foto));
@@ -136,7 +153,7 @@ module.exports = async function (req, res) {
           message: compune(p),
           attached_media: [{ media_fbid: foto.id }],
           published: false,
-          access_token: pg.token,
+          access_token: await jetonPagina(pg),
         }),
       });
       const post = await rp.json();
