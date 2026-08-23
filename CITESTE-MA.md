@@ -191,11 +191,35 @@ previzualizările care taie lateral.
    schimbă și adresa din marcaje: `civilasist.vercel.app` → `civilasist.ro`
    în canonical, Open Graph, `sitemap.xml`, `robots.txt`, `llms.txt`.
 
-### Cel mai valoros lucru care lipsește
+### Profilul de companie Google
 
-**Profilul de companie Google.** Gratuit. La căutarea „diriginte de șantier
-Huși" apare harta cu firme, deasupra oricărui site. Plus recenziile — cinci
-recenzii cântăresc, în căutarea locală, mai mult decât zece pagini de ghiduri.
+Există și e verificat. Cod: `09543091817909257320`. Se administrează de la
+business.google.com/locations sau direct din căutarea Google, cu contul
+radu@jciiasi.ro.
+
+| | |
+|---|---|
+| Nume | CivilAsist.ro (redenumit din „PROIECTE CASE HUSI") |
+| Categorii | Inginer în inginerie structurală (principală), Proiectant, Inspector de clădiri |
+| Adresă | Șos. Huși–Stănilești nr. 23, 735100 Huși |
+| Zonă de servicii | Iași, Vaslui |
+| Program | luni–vineri 08:00–18:00; sâmbătă și duminică închis |
+| Site | https://civilasist.vercel.app/ |
+| Recenzii | 2, medie 5,0 |
+
+Sigla, fotografia de copertă și zece fotografii din lucrări proprii sunt
+încărcate (drone, armături, săpături, proba de tasare, termografie, examinare
+vizuală a unei suduri). Google le verifică înainte să le arate — până atunci
+apar cu eticheta „ÎN AȘTEPTARE".
+
+**De curățat:** au rămas în galerie imaginile vechi ale profilului „Proiecte
+Case Husi" — randări de casă cu ștampilă străină („ID 26602"), un plan cu
+inscripția „Modify this plan" și o schemă de șarpantă cu text în rusă. Nu sunt
+fotografii proprii și contrazic regula stabilită. Se șterg din aceeași galerie,
+cu coșul din colțul fiecărei imagini.
+
+Când domeniul e legat, adresa site-ului din profil se schimbă în
+`https://civilasist.ro`.
 
 ### Conținut
 
