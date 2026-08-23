@@ -1,36 +1,18 @@
-# CivilAsist.ro — cum funcționează site-ul
+# CivilAsist.ro
 
-Site static: doar HTML și CSS, fără pas de compilare și fără dependențe. Orice fișier se poate
-deschide direct în browser.
+Site static — doar HTML, CSS și două scripturi mici. Fără pas de compilare, fără
+dependențe. Orice fișier se deschide direct în browser.
 
-## Structura
+**Adresa publică:** https://civilasist.vercel.app
+**Depozitul:** github.com/HugoBross1/civilasist
+**Găzduirea:** Vercel, proiectul `civilasist`, contul `hugo1-f91d`
 
-```
-site/
-  index.html                          pagina principală
-  style.css                           stilul comun, cu toate culorile mărcii
-  favicon.svg                         emblema din bara browserului
-  imagini/                            fotografiile din antetul paginilor
-    carduri/                          aceleași fotografii, micșorate pentru pagina principală
-  servicii/
-    proiectare.html                   proiectare
-    dirigentie-santier.html           diriginție de șantier (I.S.C.)
-    asistenta-tehnica.html            asistență tehnică, supraveghere și RTE
-    rsvti.html                        RSVTI (ISCIR)
-    rvt.html                          responsabil cu verificarea tehnică (ISCIR)
-    management-proiect.html           management de proiect
-    cartea-tehnica.html               cartea tehnică a construcției
-    termografie.html                  inspecție termografică de la sol
-    inspectie-drone.html              inspecție și măsurători cu drona
-    ofertare-seap.html                ofertare SEAP și devize
-    examinare-vizuala-vt.html         examinare vizuală (VT) la îmbinări sudate
-    lichide-penetrante-pt.html        control cu lichide penetrante (PT)
-```
+---
 
-## Cum se publică
+## Cum se lucrează
 
-Site-ul e legat la Vercel prin depozitul **github.com/HugoBross1/civilasist**.
-Orice modificare salvată și încărcată pe ramura `main` se publică singură, în câteva secunde:
+Orice modificare salvată și trimisă pe ramura `main` se publică singură, în
+câteva zeci de secunde:
 
 ```bash
 git add -A
@@ -38,72 +20,221 @@ git commit -m "ce am schimbat"
 git push
 ```
 
-Adresa publică: **https://civilasist.vercel.app**
+Se trimite doar ce s-a schimbat, deci fotografiile nu se reîncarcă de fiecare
+dată. Fiecare versiune rămâne în istoric — dacă ceva iese prost, se revine cu
+un pas: `git revert <commit>`.
 
-Se trimite doar ce s-a schimbat, deci fotografiile nu se reîncarcă de fiecare dată. Fiecare
-versiune rămâne în istoric — dacă ceva iese prost, se revine cu un pas.
+### Ca să continuați pe alt calculator
 
-## Culorile mărcii
+```bash
+git clone https://github.com/HugoBross1/civilasist.git
+```
 
-Sunt definite o singură dată, la începutul lui `style.css`. Schimbi acolo și se schimbă peste tot.
+Atât. Jetoanele și variabilele stau în Vercel, nu în depozit, deci nu se copiază
+nimic sensibil. Pentru fotografiile-sursă, montați Google Drive — folderele
+`4 Rapoarte drone/anunturi` și `17 Claude/site/imagini`.
 
-| Variabilă | Valoare | Unde apare |
-|---|---|---|
-| `--brand` / `--accent` | `#1f6fc4` | butoane, accente, inelul emblemei |
-| `--brand-dark` | `#14315e` | discul interior al emblemei |
-| `--header` / `--bg-deep` | `#102a4f` | bara de navigație și subsolul |
+---
 
-Emblema stă ca imagine de fundal în regula `.logo-badge`, o singură dată pentru tot site-ul.
+## Structura
 
-## Ce mai e de completat
+```
+index.html                  pagina principală
+despre.html                 despre echipă și datele societății
+confidentialitate.html      politica de confidențialitate
+style.css                   tot stilul, cu paleta la început
+favicon.svg                 emblema din bara browserului
 
-Textul rămas de scris apare **evidențiat cu galben** în browser — sunt marcajele dintre paranteze
-drepte, `[așa]`. Au mai rămas:
+servicii/                   12 pagini de serviciu
+ghiduri/                    11 ghiduri + cuprins („Cum se face")
+imagini/                    fotografiile din pagini
+  carduri/                  miniaturi pentru prima pagină
+  postari/                  58 de imagini pentru Facebook
+fonturi/                    Inter și Space Grotesk, găzduite local
 
-- cele trei lucrări din secțiunea **Lucrări** (denumire, localitate, an, rolul avut);
-- paragraful din **Despre**, despre cum lucrați în concret.
+cautare.js  cautare.json    căutarea din site, fără server
+banda.js                    banda cu întrebări care se derulează
+api/postare-facebook.js     publicarea zilnică pe Facebook
+postari-facebook.json       cele 58 de postări
+vercel.json                 programarea zilnică, ora 8
+robots.txt sitemap.xml llms.txt
+```
 
-Când nu mai există niciun marcaj, se șterge regula `.todo` de la finalul lui `style.css` și se
-scoate `<meta name="robots" content="noindex">` din capul fiecărei pagini — abia atunci site-ul
-devine vizibil în căutări.
+---
 
-## Fotografiile
+## Marca
 
-Fiecare pagină de serviciu are fotografia ei în antet, iar aceeași fotografie apare, micșorată,
-pe cardul din pagina principală. Miniaturile din `imagini/carduri` se generează la 420&nbsp;px
-lățime — pagina principală încarcă 183&nbsp;KB în loc de 310&nbsp;KB.
+| | |
+|---|---|
+| Nume | CivilAsist.ro |
+| Slogan | Inspectăm. Proiectăm. Construim. |
+| Titluri | Space Grotesk, spațiere strânsă |
+| Text | Inter |
+| Albastru | `#1e6bb8` — accentul principal, ca emblema |
+| Portocaliu | `#f5851f` — accent secundar; pentru **text** se folosește `#ab5d15`, altfel nu are contrast destul |
+| Negru-cenușiu | `#0e0e12` — bara de sus, subsolul, secțiunile închise |
 
-Ofertarea SEAP și certificatul energetic n-au fotografie; cardurile lor au rămas cu ilustrația
-desenată. Dacă apar fotografii și pentru ele, se pun la fel ca celelalte.
+Culorile sunt definite o singură dată, la începutul lui `style.css`.
 
-**Nu puneți `loading="lazy"`** pe imaginile cardurilor: grila de servicii e conținutul principal
-al paginii, iar în unele randări atributul lăsa cardurile goale.
+**Fonturile sunt găzduite local, intenționat.** Nu se pun înapoi de la Google:
+ar trimite adresa IP a fiecărui vizitator către Google înainte de orice
+consimțământ.
 
-## Formularul de contact
+---
 
-Merge prin [FormSubmit](https://formsubmit.co) — gratuit, fără cont și fără server. Trimite către
-`contact@civilasist.ro`.
+## Societatea
 
-**La prima trimitere**, FormSubmit cere o confirmare: completați o dată formularul de pe site,
-apoi deschideți cutia și dați clic pe linkul primit. Până atunci **formularele nu livrează nimic**.
+INDUSTRIAL IMOBIL S.R.L. · J37/713/2020 · CUI 43308030 (neplătitoare de TVA)
+Sediul social: mun. Huși, jud. Vaslui · Birou: Șos. Huși–Stănilești nr. 23
 
-## De verificat înainte de a scoate site-ul din `noindex`
+Verificat în registrul ANAF. **CUI-ul se scrie fără prefixul RO** — societatea
+nu e plătitoare de TVA.
 
-Descrierile atribuțiilor — diriginte de șantier, RSVTI, RVT, RTE, verificator de proiecte — sunt
-scrise pe baza cunoștințelor generale despre aceste roluri, **nu copiate din textul legal în
-vigoare**. Sunt corecte ca sens, dar prescripțiile tehnice se modifică, iar răspunderea pentru ce
-scrie pe site este a dumneavoastră. Citiți-le o dată, cu atenție la:
+Datele apar în subsolul tuturor paginilor, cerute de Legea 31/1990 art. 74 și
+de Legea 365/2002.
 
-- enumerarea atribuțiilor dirigintelui de șantier;
-- lista instalațiilor aflate sub incidența ISCIR;
-- delimitarea dintre RSVTI și RVT;
-- afirmația că operatorul de drone este înregistrat la AACR și pilotul are certificat de
-  competență — trebuie să fie adevărată la data publicării;
-- afirmația că în echipă există auditor energetic atestat.
+---
 
-## Ce nu are site-ul încă
+## Confidențialitate
 
-- **Politică de confidențialitate.** Formularul colectează date personale, deci este necesară
-  înainte de publicare.
-- Domeniul propriu `civilasist.ro` nu este încă legat.
-- Statistici de trafic.
+**Site-ul nu pune niciun cookie.** Nici propriu, nici al altcuiva. De aceea nu
+are banner de consimțământ — nu are pentru ce.
+
+Statisticile sunt Vercel Web Analytics: agregate, fără cookie-uri, fără
+identificarea persoanelor. Se văd la vercel.com → `civilasist` → Analytics.
+
+Dacă se adaugă vreodată Google Analytics, pixel de Facebook sau caseta
+încorporată de Facebook, **toate afirmațiile de mai sus devin false** și trebuie
+construit bannerul de consimțământ și rescrisă politica.
+
+---
+
+## Publicarea pe Facebook
+
+Rulează zilnic la ora 8, din `vercel.json`. Alege câte o întrebare pentru
+fiecare pagină, după temele ei, și o publică sub formă de fotografie cu legendă.
+
+### Paginile
+
+| Pagina | Identificator | Teme | Întrebări |
+|---|---|---|---|
+| Proiecte Case Husi | `113574381706396` | autorizare, teren | 43 |
+| Diriginte de Santier Husi | `1197148686823384` | executie | 10 |
+| Verificari Centrale Termice - VTP - Husi | `706458899219948` | iscir | 5 |
+
+Temele sunt scrise în `postari-facebook.json`, câmpul `tema`:
+`autorizare` (33), `executie` (10), `teren` (10), `iscir` (5).
+
+### Configurarea din Vercel
+
+Settings → Environment Variables:
+
+```
+FB_TOKEN            jetonul utilizatorului de sistem (Sensitive)
+FB_PAGINA_1_ID      113574381706396
+FB_PAGINA_1_NUME    Proiecte Case Husi
+FB_PAGINA_1_TEME    autorizare,teren
+FB_PAGINA_2_ID      1197148686823384
+FB_PAGINA_2_NUME    Diriginte de Santier Husi
+FB_PAGINA_2_TEME    executie
+FB_PAGINA_3_ID      706458899219948
+FB_PAGINA_3_NUME    Verificari Centrale Termice VTP
+FB_PAGINA_3_TEME    iscir
+FB_START            data de la care se numără seria
+FB_ACTIV            da   <- NU E PUS. Fără el nu se publică nimic.
+```
+
+**Variabilele intră în funcțiune doar după Redeploy.**
+
+### Pe partea Facebook
+
+- Aplicația: **Publicare Pagini Husi**, App ID `2061243851473221`, în Development
+- Caz de utilizare: *Manage everything on your Page*
+- Portofoliul de business: **Radu** (`9380150172079861`)
+- Utilizator de sistem: **Postare automata** (`61593731698968`), rol Employee,
+  cu cele trei pagini (doar permisiunea *Conținut*) și aplicația (*Dezvoltă*)
+- Jetonul e generat cu expirare **Niciodată**, permisiuni `pages_manage_posts`
+  și `pages_read_engagement`
+
+Codul cere singur jetonul **paginii** pornind de la cel de sistem — Facebook
+refuză ciornele trimise altfel.
+
+### Adrese de control
+
+| | |
+|---|---|
+| `?proba=1` | arată ce s-ar publica azi, pe fiecare pagină. Nu publică |
+| `?verifica=1` | întreabă Facebook dacă jetonul deschide fiecare pagină |
+| `?test=1` | creează o **ciornă nepublicată** pe pagina 1 (`?test=2`, `?test=3`) |
+
+Ciornele apar în Business Suite → Conținut → **Postări cu reclame**, nu la
+„Schițe". Se șterg de acolo.
+
+### Imaginile
+
+1080×1080, generate din fotografiile proprii, cu întrebarea scrisă peste.
+Marginea e de 11% din lățime — nu o micșorați, altfel textul se ciuntește în
+previzualizările care taie lateral.
+
+---
+
+## Ce a mai rămas de făcut
+
+### Blochează lansarea
+
+1. **E-mailul nu funcționează.** `contact@civilasist.ro` nu există. Domeniul e
+   cumpărat, dar fără căsuță poștală. Recomandarea: Google Workspace
+   (~6 €/lună, arhiva e deja în Drive) sau Zoho Mail gratuit.
+2. **Domeniul nu e legat.** La ROTLD, o singură înregistrare:
+   `A` · `@` · `216.198.79.1`. Apoi se adaugă și `www` în Vercel.
+3. **`noindex` e pe toate paginile.** Se scoate după primele două. Atunci se
+   schimbă și adresa din marcaje: `civilasist.vercel.app` → `civilasist.ro`
+   în canonical, Open Graph, `sitemap.xml`, `robots.txt`, `llms.txt`.
+
+### Cel mai valoros lucru care lipsește
+
+**Profilul de companie Google.** Gratuit. La căutarea „diriginte de șantier
+Huși" apare harta cu firme, deasupra oricărui site. Plus recenziile — cinci
+recenzii cântăresc, în căutarea locală, mai mult decât zece pagini de ghiduri.
+
+### Conținut
+
+- **Lucrări** — secțiunea a fost scoasă, era goală. Fotografiile există (hala
+  arcuită, casa A-frame, structura pe placă, amenajarea interioară). Trebuie:
+  denumire, localitate, an și rol, pentru trei lucrări.
+- **Prețuri orientative** — „cât costă" e prima întrebare din orice meserie.
+- **Încă 100 de întrebări**, cerute de beneficiar. Nevoia e clară: vreo 40 pe
+  execuție și dirigenție, vreo 40 pe centrale termice și ISCIR. Paginile 2 și 3
+  au acum prea puține și se repetă la 10, respectiv 5 zile.
+
+### Tehnic
+
+- **Fonturile cântăresc 471 KB** — de douăzeci de ori cât HTML-ul. Se pot tăia
+  la vreo 80 KB păstrând doar literele folosite efectiv.
+- Fotografia din antet, 128 KB, se poate duce la vreo 70 fără diferență vizibilă.
+- Două salturi în ierarhia titlurilor: pe prima pagină și la Proiectare.
+
+---
+
+## Reguli de conținut, stabilite de beneficiar
+
+- **Numai fotografii proprii.** Nimic luat de pe internet, oricât de bine ar
+  arăta. Mai multe propuneri au fost respinse pe motivul ăsta.
+- **Fără numere de autorizație și fără valabilități.** Se spune doar că echipa
+  are operatorul autorizat.
+- **Fără date personale ale clienților** în fotografii — numele beneficiarului
+  de pe o planșă se acoperă înainte de publicare.
+- Marca afișată e CivilAsist.ro; societatea apare doar în subsol și în politică.
+
+---
+
+## De verificat înainte de a scoate `noindex`
+
+Descrierile atribuțiilor și cele 11 ghiduri sunt scrise pe baza cadrului legal
+general — în special Legea 50/1991 și Legea 10/1995 — **nu copiate din textul
+în vigoare**. Sunt corecte ca sens, dar prescripțiile se modifică, iar
+răspunderea pentru ce scrie pe site este a beneficiarului. Fiecare ghid are o
+notă care spune că e orientativ.
+
+Autorizările au fost confirmate de beneficiar: pilot acreditat AACR, dronă
+înmatriculată, operatori autorizați, operator RSVTI cu legitimație nouă.
