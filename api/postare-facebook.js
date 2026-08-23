@@ -4,12 +4,14 @@
 
    Configurarea se face din variabilele de mediu ale proiectului, nu din cod:
 
+     FB_TOKEN           jetonul utilizatorului de sistem — unul singur,
+                        valabil pentru toate paginile
      FB_PAGINA_1_ID     identificatorul paginii
-     FB_PAGINA_1_TOKEN  jetonul de acces al paginii
      FB_PAGINA_1_TEME   temele, despărțite prin virgulă: autorizare,teren,executie,iscir
      FB_PAGINA_1_NUME   (opțional) un nume, doar ca să se citească în jurnal
+     FB_PAGINA_1_TOKEN  (opțional) jeton doar pentru pagina asta, dacă e nevoie
 
-   La fel pentru _2 și _3. Jetoanele stau numai acolo; în cod nu apar. */
+   La fel pentru _2 și _3. Jetonul stă numai acolo; în cod nu apare. */
 
 const toate = require("../postari-facebook.json");
 
@@ -20,7 +22,8 @@ function pagini() {
   const lista = [];
   for (let n = 1; n <= 5; n++) {
     const id = process.env["FB_PAGINA_" + n + "_ID"];
-    const token = process.env["FB_PAGINA_" + n + "_TOKEN"];
+    // jetonul propriu al paginii, dacă există; altfel cel comun
+    const token = process.env["FB_PAGINA_" + n + "_TOKEN"] || process.env.FB_TOKEN;
     if (!id || !token) continue;
     const teme = (process.env["FB_PAGINA_" + n + "_TEME"] || "")
       .split(",").map(t => t.trim()).filter(Boolean);
@@ -75,7 +78,7 @@ module.exports = async function (req, res) {
   if (!lista.length) {
     return res.status(200).json({
       publicat: false,
-      motiv: "Nicio pagină configurată. Se adaugă FB_PAGINA_1_ID, _TOKEN și _TEME în setările Vercel.",
+      motiv: "Nicio pagină configurată. Se adaugă FB_TOKEN, plus FB_PAGINA_1_ID și _TEME, în setările Vercel.",
       zi,
     });
   }
