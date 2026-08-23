@@ -5,7 +5,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/intrare-in-legalitate.html#se-poate-intra-in-legalitate-pentru",
   "sursa": "intrare-in-legalitate.html",
   "zi": 1,
-  "img": "/imagini/postari/01.jpg"
+  "img": "/imagini/postari/01.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Pot construi cu certificatul de urbanism?",
@@ -13,7 +14,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/certificat-de-urbanism.html#pot-construi-cu-certificatul-de-urbanism",
   "sursa": "certificat-de-urbanism.html",
   "zi": 2,
-  "img": "/imagini/postari/02.jpg"
+  "img": "/imagini/postari/02.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Pot să mă mut în casă înainte de recepție?",
@@ -21,7 +23,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/receptia-lucrarilor.html#pot-sa-ma-mut-in-casa",
   "sursa": "receptia-lucrarilor.html",
   "zi": 3,
-  "img": "/imagini/postari/03.jpg"
+  "img": "/imagini/postari/03.jpg",
+  "tema": "executie"
  },
  {
   "i": "Pot începe lucrările imediat ce am autorizația în mână?",
@@ -29,7 +32,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#pot-incepe-lucrarile-imediat-ce-am",
   "sursa": "autorizatie-de-construire.html",
   "zi": 4,
-  "img": "/imagini/postari/04.jpg"
+  "img": "/imagini/postari/04.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Am nevoie de autorizație pentru un foișor de grădină?",
@@ -37,7 +41,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/anexe-gospodaresti.html#am-nevoie-de-autorizatie-pentru-un",
   "sursa": "anexe-gospodaresti.html",
   "zi": 5,
-  "img": "/imagini/postari/05.jpg"
+  "img": "/imagini/postari/05.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Ce este cartea funciară?",
@@ -45,7 +50,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/cartea-funciara.html#ce-este-cartea-funciara",
   "sursa": "cartea-funciara.html",
   "zi": 6,
-  "img": "/imagini/postari/06.jpg"
+  "img": "/imagini/postari/06.jpg",
+  "tema": "teren"
  },
  {
   "i": "Pot cere certificat de urbanism pentru un teren care nu e al meu?",
@@ -53,7 +59,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/verificari-inainte-de-cumparare-teren.html#pot-cere-certificat-de-urbanism-pentru",
   "sursa": "verificari-inainte-de-cumparare-teren.html",
   "zi": 7,
-  "img": "/imagini/postari/07.jpg"
+  "img": "/imagini/postari/07.jpg",
+  "tema": "teren"
  },
  {
   "i": "Trebuie să cer avizele chiar dacă nu mă branșez la utilitatea aceea?",
@@ -61,7 +68,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/avize-utilitati.html#trebuie-sa-cer-avizele-chiar-daca",
   "sursa": "avize-utilitati.html",
   "zi": 8,
-  "img": "/imagini/postari/08.jpg"
+  "img": "/imagini/postari/08.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Cine convoacă fazele determinante?",
@@ -69,7 +77,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/faze-determinante.html#cine-convoaca-fazele-determinante",
   "sursa": "faze-determinante.html",
   "zi": 9,
-  "img": "/imagini/postari/09.jpg"
+  "img": "/imagini/postari/09.jpg",
+  "tema": "executie"
  },
  {
   "i": "Îmi trebuie acord de mediu pentru o casă?",
@@ -77,7 +86,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/acorduri-mediu-dsp-dsv.html#imi-trebuie-acord-de-mediu-pentru",
   "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 10,
-  "img": "/imagini/postari/10.jpg"
+  "img": "/imagini/postari/10.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Am un singur stivuitor. Chiar îmi trebuie RSVTI?",
@@ -85,7 +95,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/obligatii-iscir.html#am-un-singur-stivuitor-chiar-imi",
   "sursa": "obligatii-iscir.html",
   "zi": 11,
-  "img": "/imagini/postari/11.jpg"
+  "img": "/imagini/postari/11.jpg",
+  "tema": "iscir"
  },
  {
   "i": "Dacă demolez partea în plus, se rezolvă?",
@@ -93,7 +104,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/intrare-in-legalitate.html#daca-demolez-partea-in-plus-se",
   "sursa": "intrare-in-legalitate.html",
   "zi": 12,
-  "img": "/imagini/postari/12.jpg"
+  "img": "/imagini/postari/12.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Cine îl poate cere? Trebuie să fiu proprietar?",
@@ -101,7 +113,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/certificat-de-urbanism.html#cine-il-poate-cere-trebuie-sa",
   "sursa": "certificat-de-urbanism.html",
   "zi": 13,
-  "img": "/imagini/postari/13.jpg"
+  "img": "/imagini/postari/13.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Constructorul refuză să vină la recepție. Ce fac?",
@@ -109,7 +122,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/receptia-lucrarilor.html#constructorul-refuza-sa-vina-la-receptie",
   "sursa": "receptia-lucrarilor.html",
   "zi": 14,
-  "img": "/imagini/postari/14.jpg"
+  "img": "/imagini/postari/14.jpg",
+  "tema": "executie"
  },
  {
   "i": "Ce se întâmplă dacă modific ceva față de proiectul autorizat?",
@@ -117,7 +131,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#ce-se-intampla-daca-modific-ceva",
   "sursa": "autorizatie-de-construire.html",
   "zi": 15,
-  "img": "/imagini/postari/15.jpg"
+  "img": "/imagini/postari/15.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Dar pentru o magazie de tablă, cumpărată gata făcută?",
@@ -125,7 +140,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/anexe-gospodaresti.html#dar-pentru-o-magazie-de-tabla",
   "sursa": "anexe-gospodaresti.html",
   "zi": 16,
-  "img": "/imagini/postari/16.jpg"
+  "img": "/imagini/postari/16.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Cine poate cere un extras de carte funciară?",
@@ -133,7 +149,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/cartea-funciara.html#cine-poate-cere-un-extras-de",
   "sursa": "cartea-funciara.html",
   "zi": 17,
-  "img": "/imagini/postari/17.jpg"
+  "img": "/imagini/postari/17.jpg",
+  "tema": "teren"
  },
  {
   "i": "Vânzătorul îmi arată un certificat de urbanism. E de ajuns?",
@@ -141,7 +158,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/verificari-inainte-de-cumparare-teren.html#vanzatorul-imi-arata-un-certificat-de",
   "sursa": "verificari-inainte-de-cumparare-teren.html",
   "zi": 18,
-  "img": "/imagini/postari/18.jpg"
+  "img": "/imagini/postari/18.jpg",
+  "tema": "teren"
  },
  {
   "i": "Am primit aviz negativ. E o problemă?",
@@ -149,7 +167,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/avize-utilitati.html#am-primit-aviz-negativ-e-o",
   "sursa": "avize-utilitati.html",
   "zi": 19,
-  "img": "/imagini/postari/19.jpg"
+  "img": "/imagini/postari/19.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Ce fac dacă executantul vrea să toarne fără proces-verbal?",
@@ -157,7 +176,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/faze-determinante.html#ce-fac-daca-executantul-vrea-sa",
   "sursa": "faze-determinante.html",
   "zi": 20,
-  "img": "/imagini/postari/20.jpg"
+  "img": "/imagini/postari/20.jpg",
+  "tema": "executie"
  },
  {
   "i": "Cât durează acordul de mediu?",
@@ -165,7 +185,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/acorduri-mediu-dsp-dsv.html#cat-dureaza-acordul-de-mediu",
   "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 21,
-  "img": "/imagini/postari/21.jpg"
+  "img": "/imagini/postari/21.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Instalația e nouă, cu garanție de la producător. E de ajuns?",
@@ -173,7 +194,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/obligatii-iscir.html#instalatia-e-noua-cu-garantie-de",
   "sursa": "obligatii-iscir.html",
   "zi": 22,
-  "img": "/imagini/postari/22.jpg"
+  "img": "/imagini/postari/22.jpg",
+  "tema": "iscir"
  },
  {
   "i": "Am construit acum zece ani. S-a prescris?",
@@ -181,7 +203,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/intrare-in-legalitate.html#am-construit-acum-zece-ani-s",
   "sursa": "intrare-in-legalitate.html",
   "zi": 23,
-  "img": "/imagini/postari/23.jpg"
+  "img": "/imagini/postari/23.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Cât costă un certificat de urbanism?",
@@ -189,7 +212,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/certificat-de-urbanism.html#cat-costa",
   "sursa": "certificat-de-urbanism.html",
   "zi": 24,
-  "img": "/imagini/postari/24.jpg"
+  "img": "/imagini/postari/24.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Ce se întâmplă dacă recepția e respinsă?",
@@ -197,7 +221,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/receptia-lucrarilor.html#ce-se-intampla-daca-receptia-e",
   "sursa": "receptia-lucrarilor.html",
   "zi": 25,
-  "img": "/imagini/postari/25.jpg"
+  "img": "/imagini/postari/25.jpg",
+  "tema": "executie"
  },
  {
   "i": "Îmi trebuie autorizație pentru împrejmuire?",
@@ -205,7 +230,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#imi-trebuie-autorizatie-pentru-imprejmuire",
   "sursa": "autorizatie-de-construire.html",
   "zi": 26,
-  "img": "/imagini/postari/26.jpg"
+  "img": "/imagini/postari/26.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Vecinul și-a făcut fără acte. Pot și eu?",
@@ -213,7 +239,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/anexe-gospodaresti.html#vecinul-si-a-facut-fara-acte",
   "sursa": "anexe-gospodaresti.html",
   "zi": 27,
-  "img": "/imagini/postari/27.jpg"
+  "img": "/imagini/postari/27.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Cum obțin un extras de carte funciară?",
@@ -221,7 +248,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/cartea-funciara.html#cum-obtin-un-extras-de-carte",
   "sursa": "cartea-funciara.html",
   "zi": 28,
-  "img": "/imagini/postari/28.jpg"
+  "img": "/imagini/postari/28.jpg",
+  "tema": "teren"
  },
  {
   "i": "Terenul e agricol în intravilan. Pot construi?",
@@ -229,7 +257,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/verificari-inainte-de-cumparare-teren.html#terenul-e-agricol-in-intravilan-pot",
   "sursa": "verificari-inainte-de-cumparare-teren.html",
   "zi": 29,
-  "img": "/imagini/postari/29.jpg"
+  "img": "/imagini/postari/29.jpg",
+  "tema": "teren"
  },
  {
   "i": "Cât costă avizele de la apă, curent și gaz?",
@@ -237,7 +266,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/avize-utilitati.html#cat-costa-avizele",
   "sursa": "avize-utilitati.html",
   "zi": 30,
-  "img": "/imagini/postari/30.jpg"
+  "img": "/imagini/postari/30.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Vine Inspectoratul de Stat în Construcții la toate fazele?",
@@ -245,7 +275,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/faze-determinante.html#vine-inspectoratul-de-stat-in-constructii",
   "sursa": "faze-determinante.html",
   "zi": 31,
-  "img": "/imagini/postari/31.jpg"
+  "img": "/imagini/postari/31.jpg",
+  "tema": "executie"
  },
  {
   "i": "Ce se întâmplă dacă construiesc fără avizul de la pompieri?",
@@ -253,7 +284,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/acorduri-mediu-dsp-dsv.html#ce-se-intampla-daca-construiesc-fara",
   "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 32,
-  "img": "/imagini/postari/32.jpg"
+  "img": "/imagini/postari/32.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Cine face verificarea tehnică periodică?",
@@ -261,7 +293,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/obligatii-iscir.html#cine-face-verificarea-tehnica-periodica",
   "sursa": "obligatii-iscir.html",
   "zi": 33,
-  "img": "/imagini/postari/33.jpg"
+  "img": "/imagini/postari/33.jpg",
+  "tema": "iscir"
  },
  {
   "i": "Îmi trebuie neapărat expertiză tehnică?",
@@ -269,7 +302,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/intrare-in-legalitate.html#imi-trebuie-neaparat-expertiza-tehnica",
   "sursa": "intrare-in-legalitate.html",
   "zi": 34,
-  "img": "/imagini/postari/34.jpg"
+  "img": "/imagini/postari/34.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Mi-a expirat certificatul. Ce fac?",
@@ -277,7 +311,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/certificat-de-urbanism.html#mi-a-expirat-certificatul-ce-fac",
   "sursa": "certificat-de-urbanism.html",
   "zi": 35,
-  "img": "/imagini/postari/35.jpg"
+  "img": "/imagini/postari/35.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Recepția finală se face automat după trei ani?",
@@ -285,7 +320,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/receptia-lucrarilor.html#receptia-finala-se-face-automat-dupa",
   "sursa": "receptia-lucrarilor.html",
   "zi": 36,
-  "img": "/imagini/postari/36.jpg"
+  "img": "/imagini/postari/36.jpg",
+  "tema": "executie"
  },
  {
   "i": "Autorizația a expirat și lucrarea nu e gata. Ce fac?",
@@ -293,7 +329,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#autorizatia-a-expirat-si-lucrarea-nu",
   "sursa": "autorizatie-de-construire.html",
   "zi": 37,
-  "img": "/imagini/postari/37.jpg"
+  "img": "/imagini/postari/37.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Anexa mea are sub 50 de metri pătrați. Nu e sub prag?",
@@ -301,7 +338,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/anexe-gospodaresti.html#anexa-mea-are-sub-50-de",
   "sursa": "anexe-gospodaresti.html",
   "zi": 38,
-  "img": "/imagini/postari/38.jpg"
+  "img": "/imagini/postari/38.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Cât e valabil un extras de carte funciară?",
@@ -309,7 +347,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/cartea-funciara.html#cat-e-valabil-un-extras-de",
   "sursa": "cartea-funciara.html",
   "zi": 39,
-  "img": "/imagini/postari/39.jpg"
+  "img": "/imagini/postari/39.jpg",
+  "tema": "teren"
  },
  {
   "i": "Cât costă verificările înainte de a cumpăra un teren?",
@@ -317,7 +356,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/verificari-inainte-de-cumparare-teren.html#cat-costa-toate-verificarile-astea",
   "sursa": "verificari-inainte-de-cumparare-teren.html",
   "zi": 40,
-  "img": "/imagini/postari/40.jpg"
+  "img": "/imagini/postari/40.jpg",
+  "tema": "teren"
  },
  {
   "i": "Cât sunt valabile avizele de la furnizorii de utilități?",
@@ -325,7 +365,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/avize-utilitati.html#cat-sunt-valabile",
   "sursa": "avize-utilitati.html",
   "zi": 41,
-  "img": "/imagini/postari/41.jpg"
+  "img": "/imagini/postari/41.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Se pot recupera fazele determinante după ce lucrarea a avansat?",
@@ -333,7 +374,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/faze-determinante.html#se-pot-recupera-fazele-determinante-dupa",
   "sursa": "faze-determinante.html",
   "zi": 42,
-  "img": "/imagini/postari/42.jpg"
+  "img": "/imagini/postari/42.jpg",
+  "tema": "executie"
  },
  {
   "i": "Pot obține acordurile după ce am autorizația?",
@@ -341,7 +383,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/acorduri-mediu-dsp-dsv.html#pot-obtine-acordurile-dupa-ce-am",
   "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 43,
-  "img": "/imagini/postari/43.jpg"
+  "img": "/imagini/postari/43.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Ce se întâmplă dacă a expirat verificarea?",
@@ -349,7 +392,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/obligatii-iscir.html#ce-se-intampla-daca-a-expirat",
   "sursa": "obligatii-iscir.html",
   "zi": 44,
-  "img": "/imagini/postari/44.jpg"
+  "img": "/imagini/postari/44.jpg",
+  "tema": "iscir"
  },
  {
   "i": "Pot vinde casa până rezolv?",
@@ -357,7 +401,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/intrare-in-legalitate.html#pot-vinde-casa-pana-rezolv",
   "sursa": "intrare-in-legalitate.html",
   "zi": 45,
-  "img": "/imagini/postari/45.jpg"
+  "img": "/imagini/postari/45.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Îmi trebuie certificat pentru o simplă reparație?",
@@ -365,7 +410,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/certificat-de-urbanism.html#imi-trebuie-certificat-pentru-o-simpla",
   "sursa": "certificat-de-urbanism.html",
   "zi": 46,
-  "img": "/imagini/postari/46.jpg"
+  "img": "/imagini/postari/46.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Îmi trebuie diriginte de șantier la recepție?",
@@ -373,7 +419,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/receptia-lucrarilor.html#imi-trebuie-diriginte-de-santier-la",
   "sursa": "receptia-lucrarilor.html",
   "zi": 47,
-  "img": "/imagini/postari/47.jpg"
+  "img": "/imagini/postari/47.jpg",
+  "tema": "executie"
  },
  {
   "i": "Cine răspunde dacă proiectul e greșit?",
@@ -381,7 +428,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#cine-raspunde-daca-proiectul-e-gresit",
   "sursa": "autorizatie-de-construire.html",
   "zi": 48,
-  "img": "/imagini/postari/48.jpg"
+  "img": "/imagini/postari/48.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Am construit deja. Ce fac?",
@@ -389,7 +437,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/anexe-gospodaresti.html#am-construit-deja-ce-fac",
   "sursa": "anexe-gospodaresti.html",
   "zi": 49,
-  "img": "/imagini/postari/49.jpg"
+  "img": "/imagini/postari/49.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Casa mea nu apare în cartea funciară. Ce înseamnă?",
@@ -397,7 +446,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/cartea-funciara.html#casa-mea-nu-apare-in-cartea",
   "sursa": "cartea-funciara.html",
   "zi": 50,
-  "img": "/imagini/postari/50.jpg"
+  "img": "/imagini/postari/50.jpg",
+  "tema": "teren"
  },
  {
   "i": "Vânzătorul mă grăbește. E un semn rău?",
@@ -405,7 +455,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/verificari-inainte-de-cumparare-teren.html#vanzatorul-ma-grabeste-e-un-semn",
   "sursa": "verificari-inainte-de-cumparare-teren.html",
   "zi": 51,
-  "img": "/imagini/postari/51.jpg"
+  "img": "/imagini/postari/51.jpg",
+  "tema": "teren"
  },
  {
   "i": "Pot depune eu personal sau trebuie proiectant?",
@@ -413,7 +464,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/avize-utilitati.html#pot-depune-eu-personal-sau-trebuie",
   "sursa": "avize-utilitati.html",
   "zi": 52,
-  "img": "/imagini/postari/52.jpg"
+  "img": "/imagini/postari/52.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "La o casă mică chiar sunt obligatorii?",
@@ -421,7 +473,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/faze-determinante.html#la-o-casa-mica-chiar-sunt",
   "sursa": "faze-determinante.html",
   "zi": 53,
-  "img": "/imagini/postari/53.jpg"
+  "img": "/imagini/postari/53.jpg",
+  "tema": "executie"
  },
  {
   "i": "Cine întocmește documentațiile pentru acorduri?",
@@ -429,7 +482,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/acorduri-mediu-dsp-dsv.html#cine-intocmeste-documentatiile-pentru-acorduri",
   "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 54,
-  "img": "/imagini/postari/54.jpg"
+  "img": "/imagini/postari/54.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Am cumpărat o hală cu un pod rulant în ea. Ce fac primul lucru?",
@@ -437,7 +491,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/obligatii-iscir.html#am-cumparat-o-hala-cu-un",
   "sursa": "obligatii-iscir.html",
   "zi": 55,
-  "img": "/imagini/postari/55.jpg"
+  "img": "/imagini/postari/55.jpg",
+  "tema": "iscir"
  },
  {
   "i": "Am schimbat doar forma acoperișului. Trebuie alt proiect?",
@@ -445,7 +500,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#am-schimbat-doar-forma-acoperisului-trebuie",
   "sursa": "autorizatie-de-construire.html",
   "zi": 56,
-  "img": "/imagini/postari/56.jpg"
+  "img": "/imagini/postari/56.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Am făcut o fereastră mică în plus. Trebuie altă autorizație?",
@@ -453,7 +509,8 @@
   "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#am-facut-o-fereastra-mica-in",
   "sursa": "autorizatie-de-construire.html",
   "zi": 57,
-  "img": "/imagini/postari/57.jpg"
+  "img": "/imagini/postari/57.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Vreau să schimb doar tabla de pe acoperiș. Îmi trebuie autorizație?",
@@ -461,6 +518,7 @@
   "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#vreau-sa-schimb-doar-tabla-de",
   "sursa": "autorizatie-de-construire.html",
   "zi": 58,
-  "img": "/imagini/postari/58.jpg"
+  "img": "/imagini/postari/58.jpg",
+  "tema": "autorizare"
  }
 ]
