@@ -113,6 +113,45 @@ module.exports = async function (req, res) {
     return res.status(stare.every(x => x.acces) ? 200 : 502).json({ verificare: true, pagini: stare });
   }
 
+  /* Postare de probă, nepublicată: fotografia se încarcă ascunsă, apoi se
+     face o ciornă cu ea. Nu apare în feed și n-o vede decât administratorul
+     paginii, în Meta Business Suite, la conținut nepublicat. Se șterge de
+     acolo. Nu ține cont de FB_ACTIV, fiindcă nimic nu devine public. */
+  if (req.query && req.query.test) {
+    const care = String(req.query.test);
+    const pg = lista.find(x => x.nume === care) || lista[parseInt(care, 10) - 1] || lista[0];
+    const p = pentru(pg, ziuaCurenta());
+    if (!p) return res.status(400).json({ eroare: "Pagina nu are nicio întrebare pe temele ei" });
+    try {
+      const rf = await fetch(GRAPH + "/" + pg.id + "/photos", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ url: SITE + p.img, published: false, access_token: pg.token }),
+      });
+      const foto = await rf.json();
+      if (!rf.ok) throw new Error("încărcarea fotografiei: " + JSON.stringify(foto));
+
+      const rp = await fetch(GRAPH + "/" + pg.id + "/feed", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: compune(p),
+          attached_media: [{ media_fbid: foto.id }],
+          published: false,
+          access_token: pg.token,
+        }),
+      });
+      const post = await rp.json();
+      if (!rp.ok) throw new Error("crearea ciornei: " + JSON.stringify(post));
+
+      return res.status(200).json({
+        test: true, nepublicat: true, pagina: pg.nume,
+        idCiorna: post.id, intrebare: p.i,
+        unde: "Meta Business Suite → Conținut → postări nepublicate, pe pagina " + pg.nume,
+      });
+    } catch (e) {
+      return res.status(502).json({ test: true, pagina: pg.nume, eroare: e.message });
+    }
+  }
+
   if (proba) {
     return res.status(200).json({
       proba: true, zi,
