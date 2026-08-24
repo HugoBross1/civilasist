@@ -524,7 +524,7 @@
  {
   "id": "cat-costa-un-proiect-de-casa",
   "i": "Cât costă un proiect de casă?",
-  "r": "Depinde de suprafață și de cât de complicată e casa, iar se calculează de obicei pe metru pătrat construit. La o casă obișnuită, proiectul e o parte mică din costul construcției. Vă dăm un preț fix după ce vedem certificatul de urbanism, nu înainte — altfel ar fi o cifră aruncată.",
+  "r": "Depinde de suprafață și de cât de complicată e casa. Se calculează de obicei pe metru pătrat construit. La o casă obișnuită, proiectul e o parte mică din costul construcției. Vă dăm un preț fix după ce vedem certificatul de urbanism, nu înainte.",
   "serviciu": "proiectare",
   "ghid": "cat-costa-si-cat-dureaza-un-proiect",
   "fb": true,
@@ -533,7 +533,7 @@
  {
   "id": "cat-dureaza-pana-am-proiectul",
   "i": "Cât durează până am proiectul gata?",
-  "r": "Partea de desen, la o casă obișnuită, ia câteva săptămâni. Ce lungește termenul sunt avizele — acolo așteptăm răspunsul altora, iar fiecare operator are propriile termene. De aceea începem avizele în paralel cu desenul, nu după ce se termină.",
+  "r": "În general, proiectul complet se livrează între 4 și 6 săptămâni. Ce lungește termenul sunt avizele — acolo așteptăm răspunsul altora, iar fiecare operator are propriile termene. De aceea începem avizele în paralel cu desenul, nu după ce se termină.",
   "serviciu": "proiectare",
   "ghid": "cat-costa-si-cat-dureaza-un-proiect",
   "fb": true,
@@ -542,7 +542,7 @@
  {
   "id": "de-ce-e-mai-ieftin-la-altcineva",
   "i": "De ce la altcineva e mai ieftin?",
-  "r": "De obicei pentru că nu e același lucru. Un preț mic înseamnă adesea doar piesele minime pentru autorizație, fără detalii de execuție, fără proiectele de instalații și fără verificatorul plătit. Cereți în scris ce anume intră în preț — abia atunci comparați corect.",
+  "r": "De obicei pentru că nu e același lucru. Un preț mic înseamnă adesea doar piesele minime pentru autorizație, fără detalii de execuție, fără proiectele de instalații și fără verificatorul inclus. Cereți în scris ce anume intră în preț — abia atunci comparați corect.",
   "serviciu": "proiectare",
   "ghid": "cat-costa-si-cat-dureaza-un-proiect",
   "fb": true,
@@ -578,7 +578,7 @@
  {
   "id": "cat-de-aproape-de-gard-pot-construi",
   "i": "Cât de aproape de gard pot construi?",
-  "r": "Retragerile obligatorii față de vecini și față de stradă vin scrise în certificatul de urbanism și diferă de la o zonă la alta. Nu se negociază cu vecinul, chiar dacă el e de acord — sunt reguli de urbanism, nu o înțelegere între doi oameni.",
+  "r": "Retragerile obligatorii față de vecini și față de stradă vin scrise în certificatul de urbanism și diferă de la o zonă la alta. De asemenea, trebuie respectat regulamentul local de urbanism.",
   "serviciu": "proiectare",
   "ghid": "cat-pot-construi-pe-teren",
   "fb": true,
@@ -623,7 +623,7 @@
  {
   "id": "vreau-sa-adaug-o-camera-la-casa",
   "i": "Vreau să adaug o cameră la casă. E același lucru ca o casă nouă?",
-  "r": "Actele sunt aceleași — certificat de urbanism, proiect, avize, autorizație — dar proiectul e mai puțin de lucru. În schimb apare o parte pe care casa nouă nu o are: legătura dintre construcția veche și cea nouă, care trebuie gândită ca să nu apară fisuri la îmbinare.",
+  "r": "Actele sunt aceleași — certificat de urbanism, proiect, avize, autorizație — dar la proiect e mai puțin de lucru. În schimb apare o parte pe care casa nouă nu o are: legătura dintre construcția veche și cea nouă, care trebuie gândită ca să nu apară fisuri la îmbinare.",
   "serviciu": "proiectare",
   "ghid": "mansardare-si-modificari",
   "fb": true,
