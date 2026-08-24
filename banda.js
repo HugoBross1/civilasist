@@ -41,6 +41,12 @@
      decât orice am scrie noi. */
   var plecatDe = 0, pozLaStart = 0, dus = 0;
 
+  /* Cat poate aluneca mana intr-un clic normal si tot sa conteze clic.
+     Sase pixeli erau prea putin: orice om miscă mouse-ul atat, mai ales
+     pe laptop, iar intrebarea nu se mai deschidea. */
+  var PRAG = 14;
+  var aFostTragere = false;
+
   zona.addEventListener("pointerdown", function (e) {
     if (e.pointerType !== "mouse" || e.button !== 0) return;
     e.preventDefault();             // altfel browserul începe să tragă legătura
@@ -63,6 +69,7 @@
   function lasa(e) {
     if (!trage) return;
     trage = false;
+    aFostTragere = dus > PRAG;   /* se decide o data, aici, nu in click */
     zona.classList.remove("se-trage");
     if (e && e.pointerId != null && zona.hasPointerCapture(e.pointerId)) {
       zona.releasePointerCapture(e.pointerId);
@@ -72,9 +79,12 @@
   zona.addEventListener("pointerup", lasa);
   zona.addEventListener("pointercancel", lasa);
 
-  /* O tragere nu trebuie să deschidă întrebarea de sub cursor */
+  /* O tragere adevărată nu trebuie să deschidă întrebarea de sub cursor.
+     Steagul se șterge la fiecare clic, ca o tragere de acum să nu blocheze
+     apăsarea următoare. */
   zona.addEventListener("click", function (e) {
-    if (dus > 6) { e.preventDefault(); e.stopPropagation(); dus = 0; }
+    if (aFostTragere) { e.preventDefault(); e.stopPropagation(); }
+    aFostTragere = false;
   }, true);
 
   /* Browserul nu are voie să tragă legăturile ca pe niște fișiere */
