@@ -3,7 +3,7 @@
 Site static — doar HTML, CSS și două scripturi mici. Fără pas de compilare, fără
 dependențe. Orice fișier se deschide direct în browser.
 
-**Adresa publică:** https://civilasist.ro (până la propagarea DNS: https://civilasist.vercel.app)
+**Adresa publică:** https://civilasist.ro
 **Depozitul:** github.com/HugoBross1/civilasist
 **Găzduirea:** Vercel, proiectul `civilasist`, contul `hugo1-f91d`
 
@@ -61,6 +61,20 @@ robots.txt sitemap.xml llms.txt
 ```
 
 ---
+
+## Domeniul
+
+`civilasist.ro`, înregistrat la ROTLD pe 22 august 2026, expiră 22 august 2027.
+Administrare la rotld.ro/domadmin, cu numele domeniului și parola de
+administrare. Orice schimbare acolo cere confirmare printr-un link trimis pe
+`ing.radu.branici@gmail.com`, valabil 36 de ore.
+
+Nameserverele sunt ale Vercel: `ns1.vercel-dns.com` și `ns2.vercel-dns.com`.
+**DNS-ul se administrează deci din Vercel, nu de la ROTLD** — inclusiv
+înregistrările MX, când se va cumpăra găzduirea de e-mail.
+
+`www.civilasist.ro` redirectează permanent (308) către domeniul simplu, iar
+`http` către `https`. Forma canonică e cea fără `www`.
 
 ## Marca
 
@@ -182,17 +196,19 @@ previzualizările care taie lateral.
 
 ### Blochează lansarea
 
-1. **E-mailul nu funcționează.** `contact@civilasist.ro` nu există. Domeniul e
+1. **Găzduirea nu e conformă.** Planul Hobby al Vercel e, prin termenii lor,
+   **numai pentru uz personal, necomercial** — iar „promovarea vânzării unui
+   serviciu" e primul exemplu de uz comercial din lista lor. Site-ul e public
+   pe Hobby, cu acordul beneficiarului, urmând să treacă pe Pro (20 $/lună).
+   Riscul până atunci: Vercel poate suspenda proiectul. Alternativa gratuită
+   și permisă comercial e Cloudflare Pages — ar cere rescrierea funcției de
+   postare pe Facebook ca Worker.
+2. **E-mailul nu funcționează.** `contact@civilasist.ro` nu există. Domeniul e
    cumpărat, dar fără căsuță poștală. Recomandarea: Google Workspace
-   (~6 €/lună, arhiva e deja în Drive) sau Zoho Mail gratuit.
-2. **Domeniul.** `civilasist.ro` e adăugat în proiect, iar `www.civilasist.ro`
-   redirectează permanent (308) către el. La ROTLD au fost trimise
-   nameserverele `ns1.vercel-dns.com` și `ns2.vercel-dns.com`; operațiunea
-   cere confirmare pe e-mail. Din acel moment DNS-ul îl ține Vercel — tot
-   acolo se adaugă mai târziu înregistrările MX pentru e-mail.
-3. **`noindex` e pe toate paginile.** Se scoate după ce domeniul răspunde.
-   Adresele din marcaje (canonical, Open Graph, `sitemap.xml`, `robots.txt`,
-   `llms.txt`) sunt deja mutate pe `civilasist.ro`.
+   (~6 €/lună, arhiva e deja în Drive) sau Zoho Mail gratuit. Înregistrările
+   MX se adaugă în panoul DNS al Vercel.
+3. **Google Search Console.** Nu e configurat. Acolo se trimite `sitemap.xml`
+   și se vede ce indexează Google. E gratuit și e următorul pas firesc.
 
 ### Profilul de companie Google
 
@@ -207,7 +223,7 @@ radu@jciiasi.ro.
 | Adresă | Șos. Huși–Stănilești nr. 23, 735100 Huși |
 | Zonă de servicii | Iași, Vaslui |
 | Program | luni–vineri 08:00–18:00; sâmbătă și duminică închis |
-| Site | https://civilasist.vercel.app/ — de schimbat în `https://civilasist.ro/` |
+| Site | https://civilasist.ro/ |
 | Recenzii | 2, medie 5,0 |
 
 Sigla, fotografia de copertă și zece fotografii din lucrări proprii sunt
@@ -241,8 +257,7 @@ Atenție, numărul de schimbări ale numelui e limitat.
 **E-mailul din profil e `contact@civilasist.ro` și nu există.** Cine scrie
 acolo nu primește răspuns și nici nu află de ce.
 
-Site-ul din profil e `https://civilasist.vercel.app` — se schimbă în
-`https://civilasist.ro` odată ce domeniul răspunde.
+Site-ul din profil e `https://civilasist.ro`.
 
 ### Conținut
 
