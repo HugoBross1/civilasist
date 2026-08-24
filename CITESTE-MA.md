@@ -221,6 +221,26 @@ cu coșul din colțul fiecărei imagini.
 Când domeniul e legat, adresa site-ului din profil se schimbă în
 `https://civilasist.ro`.
 
+### Profilul WhatsApp Business
+
+Numărul: +40 744 921 358. Se editează din web.whatsapp.com (după conectarea
+telefonului) → **Instrumente pentru companii → Profil de companie**, sau din
+aplicația de pe telefon.
+
+Actualizat: descrierea (250 de caractere), programul (luni–vineri 08:00–18:00,
+sâmbătă și duminică închis) și adresa site-ului. Categoriile erau deja bune:
+Construction Company, Structural Engineer.
+
+**Numele și adresa se schimbă doar din aplicația de pe telefon** — pe web sunt
+doar de citit. Numele e încă „Radu Branici"; ar trebui „CivilAsist.ro".
+Atenție, numărul de schimbări ale numelui e limitat.
+
+**E-mailul din profil e `contact@civilasist.ro` și nu există.** Cine scrie
+acolo nu primește răspuns și nici nu află de ce.
+
+Site-ul din profil e `https://civilasist.vercel.app` — se schimbă în
+`https://civilasist.ro` odată cu legarea domeniului.
+
 ### Conținut
 
 - **Lucrări** — secțiunea a fost scoasă, era goală. Fotografiile există (hala
