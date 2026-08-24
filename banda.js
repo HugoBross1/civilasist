@@ -46,11 +46,16 @@
      pe laptop, iar intrebarea nu se mai deschidea. */
   var PRAG = 14;
   var aFostTragere = false;
+  var pilulaApasata = null;   /* pastila de sub cursor in clipa apasarii */
 
   zona.addEventListener("pointerdown", function (e) {
     if (e.pointerType !== "mouse" || e.button !== 0) return;
     e.preventDefault();             // altfel browserul începe să tragă legătura
     trage = true; dus = 0;
+    /* Ținem minte pe ce s-a apăsat. La eliberare nu ne mai putem lua după
+       ce se află sub cursor: banda a alunecat, iar clicul nativ ajunge pe
+       bandă, nu pe legătură — de asta întrebarea nu se deschidea. */
+    pilulaApasata = e.target.closest ? e.target.closest(".derulare-pista a") : null;
     plecatDe = e.clientX;
     pozLaStart = poz;
     opreste();
@@ -73,6 +78,14 @@
     zona.classList.remove("se-trage");
     if (e && e.pointerId != null && zona.hasPointerCapture(e.pointerId)) {
       zona.releasePointerCapture(e.pointerId);
+    }
+    /* A fost apăsare, nu tragere: deschidem noi întrebarea. */
+    var a = pilulaApasata;
+    pilulaApasata = null;
+    if (!aFostTragere && a && a.href) {
+      aFostTragere = true;          /* clicul nativ, dacă vine, se anulează */
+      window.location.href = a.href;
+      return;
     }
     porneste(1500);                 // răgaz, ca omul să apuce să citească
   }
