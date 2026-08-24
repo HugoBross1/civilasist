@@ -1,0 +1,524 @@
+[
+ {
+  "id": "imi-trebuie-acord-de-mediu-pentru",
+  "i": "Îmi trebuie acord de mediu pentru o casă?",
+  "r": "Aproape niciodată. La o locuință obișnuită, notificarea se clasează, iar actul primit intră în dosarul de autorizație. Evaluarea de impact se aplică proiectelor mari sau cu potențial de poluare, nu locuințelor unifamiliale.",
+  "serviciu": "proiectare",
+  "ghid": "acorduri-mediu-dsp-dsv",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "cat-dureaza-acordul-de-mediu",
+  "i": "Cât durează acordul de mediu?",
+  "r": "Clasarea notificării vine în câteva săptămâni. Etapa de încadrare durează luni. Evaluarea completă a impactului, cu raport și dezbatere publică, poate trece de un an. De aceea, la proiectele industriale, acordul de mediu se începe primul, nu ultimul.",
+  "serviciu": "proiectare",
+  "ghid": "acorduri-mediu-dsp-dsv",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "ce-se-intampla-daca-construiesc-fara",
+  "i": "Ce se întâmplă dacă construiesc fără avizul de la pompieri?",
+  "r": "Lucrarea rămâne fără autorizație de securitate la incendiu, iar clădirea nu poate fi pusă legal în funcțiune. Pentru spații comerciale sau publice asta înseamnă că nu puteți deschide. În plus, sunt sancțiuni și, la un incendiu, consecințe pe zona de răspundere și de asigurare.",
+  "serviciu": "proiectare",
+  "ghid": "acorduri-mediu-dsp-dsv",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "pot-obtine-acordurile-dupa-ce-am",
+  "i": "Pot obține acordurile după ce am autorizația?",
+  "r": "Nu. Sunt condiții pentru emiterea autorizației, nu formalități ulterioare. Primăria nu emite autorizația fără ele. Singura excepție e autorizația de securitate la incendiu, care vine firesc la finalul lucrării.",
+  "serviciu": "proiectare",
+  "ghid": "acorduri-mediu-dsp-dsv",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "cine-intocmeste-documentatiile-pentru-acorduri",
+  "i": "Cine întocmește documentațiile pentru acorduri?",
+  "r": "Descrierea proiectului și piesele desenate le face proiectantul. Scenariul de securitate la incendiu se întocmește de un specialist atestat. Depunerea o poate face beneficiarul sau, pe bază de împuternicire, noi.",
+  "serviciu": "proiectare",
+  "ghid": "acorduri-mediu-dsp-dsv",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "am-nevoie-de-autorizatie-pentru-un",
+  "i": "Am nevoie de autorizație pentru un foișor de grădină?",
+  "r": "Dacă are fundație și rămâne pe loc, în general da. Un foișor demontabil, așezat pe dale, fără fundație, poate intra la construcții provizorii — dar depinde de regulamentul local. Întrebați primăria înainte, nu după.",
+  "serviciu": "proiectare",
+  "ghid": "anexe-gospodaresti",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "dar-pentru-o-magazie-de-tabla",
+  "i": "Dar pentru o magazie de tablă, cumpărată gata făcută?",
+  "r": "Dacă se așază pe o platformă de beton și rămâne acolo, autoritatea o tratează ca pe o construcție. Faptul că ați cumpărat-o de-a gata nu schimbă regimul juridic.",
+  "serviciu": "proiectare",
+  "ghid": "anexe-gospodaresti",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "vecinul-si-a-facut-fara-acte",
+  "i": "Vecinul și-a făcut fără acte. Pot și eu?",
+  "r": "Nu. Faptul că o construcție nu a fost încă sancționată nu înseamnă că e legală. Iar dacă vecinul e reclamat, controlul ajunge de obicei și pe terenurile alăturate.",
+  "serviciu": "proiectare",
+  "ghid": "anexe-gospodaresti",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "anexa-mea-are-sub-50-de",
+  "i": "Anexa mea are sub 50 de metri pătrați. Nu e sub prag?",
+  "r": "Nu există un prag general de suprafață sub care se poate construi liber. Există categorii de lucrări exceptate, definite după tipul lucrării, nu după mărimea ei. O magazie de 12 metri pătrați cu fundație cere autorizație la fel ca una de 60.",
+  "serviciu": "proiectare",
+  "ghid": "anexe-gospodaresti",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "am-construit-deja-ce-fac",
+  "i": "Am construit deja. Ce fac?",
+  "r": "Se poate intra în legalitate, dacă anexa respectă regulile de urbanism. Parcursul e în <a href=\"intrare-in-legalitate.html\">ghidul despre intrarea în legalitate</a>. Cu cât începeți mai devreme, cu atât e mai simplu.",
+  "serviciu": "proiectare",
+  "ghid": "anexe-gospodaresti",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "pot-incepe-lucrarile-imediat-ce-am",
+  "i": "Pot începe lucrările imediat ce am autorizația în mână?",
+  "r": "Nu. Trebuie anunțată începerea lucrărilor la Inspectoratul de Stat în Construcții și la emitent, cu cel puțin 10 zile înainte. Începerea fără această înștiințare este contravenție, chiar dacă autorizația există.",
+  "serviciu": "proiectare",
+  "ghid": "autorizatie-de-construire",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "ce-se-intampla-daca-modific-ceva",
+  "i": "Ce se întâmplă dacă modific ceva față de proiectul autorizat?",
+  "r": "Modificările care schimbă suprafața, regimul de înălțime, aspectul exterior, structura de rezistență sau destinația cer autorizație nouă. Abaterile minore, care nu ating aceste elemente, se pot rezolva prin dispoziție de șantier dată de proiectant. Dirigintele de șantier vă spune în care categorie intrați, înainte să se execute.",
+  "serviciu": "proiectare",
+  "ghid": "autorizatie-de-construire",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "imi-trebuie-autorizatie-pentru-imprejmuire",
+  "i": "Îmi trebuie autorizație pentru împrejmuire?",
+  "r": "De regulă da, pentru împrejmuirile la stradă. Multe primării au însă reglementări proprii, iar certificatul de urbanism vă lămurește exact. Nu porniți de la ce a făcut vecinul.",
+  "serviciu": "proiectare",
+  "ghid": "autorizatie-de-construire",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "autorizatia-a-expirat-si-lucrarea-nu",
+  "i": "Autorizația a expirat și lucrarea nu e gata. Ce fac?",
+  "r": "Dacă mai sunteți în termen, cereți prelungirea cu cel puțin 15 zile înainte de expirare. Dacă a expirat deja, lucrările trebuie oprite și se solicită autorizație nouă pentru restul de executat. Continuarea pe o autorizație expirată se sancționează la fel ca lipsa ei.",
+  "serviciu": "proiectare",
+  "ghid": "autorizatie-de-construire",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "cine-raspunde-daca-proiectul-e-gresit",
+  "i": "Cine răspunde dacă proiectul e greșit?",
+  "r": "Proiectantul răspunde pentru soluția tehnică, verificatorul atestat pentru conformitatea cu cerințele verificate, executantul pentru calitatea execuției, iar dirigintele pentru verificarea lucrărilor în numele beneficiarului. Răspunderile sunt separate prin lege și nu se transferă între ele.",
+  "serviciu": "proiectare",
+  "ghid": "autorizatie-de-construire",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "am-schimbat-doar-forma-acoperisului-trebuie",
+  "i": "Am schimbat doar forma acoperișului. Trebuie alt proiect?",
+  "r": "Da. Forma acoperișului schimbă volumul clădirii și aspectul exterior, iar de cele mai multe ori și șarpanta, adică structura. Se face documentație nouă și se cere autorizație. Nu se rezolvă cu o dispoziție de șantier, oricât de mică pare modificarea pe hârtie.",
+  "serviciu": "proiectare",
+  "ghid": "autorizatie-de-construire",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "am-facut-o-fereastra-mica-in",
+  "i": "Am făcut o fereastră mică în plus. Trebuie altă autorizație?",
+  "r": "De regulă da, din două motive. Un gol nou schimbă aspectul exterior, iar dacă peretele e portant, atinge structura de rezistență — acolo e nevoie și de avizul proiectantului de rezistență, cu buiandrug calculat. Chiar și într-un perete neportant, golul trebuie să apară în proiect. Întrebați înainte să spargeți, nu după.",
+  "serviciu": "proiectare",
+  "ghid": "autorizatie-de-construire",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "vreau-sa-schimb-doar-tabla-de",
+  "i": "Vreau să schimb doar tabla de pe acoperiș. Îmi trebuie autorizație?",
+  "r": "Dacă înlocuiți învelitoarea cu una <strong>de același fel</strong>, păstrând forma, panta și structura, e lucrare de reparație și întreținere — se poate face fără autorizație. Devine altceva dacă schimbați tipul de învelitoare, panta sau forma, dacă interveniți la șarpantă, sau dacă clădirea e monument istoric ori se află în zona de protecție a unuia. În cazurile astea e nevoie de autorizație.",
+  "serviciu": "proiectare",
+  "ghid": "autorizatie-de-construire",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "trebuie-sa-cer-avizele-chiar-daca",
+  "i": "Trebuie să cer avizele chiar dacă nu mă branșez la utilitatea aceea?",
+  "r": "Da, dacă certificatul de urbanism le trece în listă. Avizul de amplasament nu înseamnă că vă racordați — înseamnă că furnizorul a verificat dacă rețelele lui sunt afectate de construcția dumneavoastră. E o verificare de siguranță, nu o cerere de branșament.",
+  "serviciu": "proiectare",
+  "ghid": "avize-utilitati",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "am-primit-aviz-negativ-e-o",
+  "i": "Am primit aviz negativ. E o problemă?",
+  "r": "Depinde ce spune. „Nu deținem rețele în zonă\" este un aviz favorabil în fond și intră liniștit în dosar. „Amplasamentul afectează rețeaua noastră\" e altceva: acolo trebuie fie mutată construcția, fie deviată rețeaua pe cheltuiala dumneavoastră.",
+  "serviciu": "proiectare",
+  "ghid": "avize-utilitati",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "cat-costa-avizele",
+  "i": "Cât costă avizele?",
+  "r": "Fiecare operator are un tarif de analiză, de ordinul zecilor sau sutelor de lei. Costul mare nu e la aviz, ci la racordare — acolo se plătesc lucrările de branșament, care pot însemna mii de lei.",
+  "serviciu": "proiectare",
+  "ghid": "avize-utilitati",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "cat-sunt-valabile",
+  "i": "Cât sunt valabile?",
+  "r": "De obicei un an, uneori corelat cu valabilitatea certificatului de urbanism. Dacă vă întindeți cu dosarul, verificați ca primul aviz obținut să nu expire până depuneți pentru autorizație.",
+  "serviciu": "proiectare",
+  "ghid": "avize-utilitati",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "pot-depune-eu-personal-sau-trebuie",
+  "i": "Pot depune eu personal sau trebuie proiectant?",
+  "r": "Puteți depune și singur. Partea în care se greșește nu e depunerea, ci întocmirea: plan de situație corect, descrierea necesarului, datele tehnice ale investiției. O cerere formulată prost aduce un aviz care nu vă folosește la dosar.",
+  "serviciu": "proiectare",
+  "ghid": "avize-utilitati",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "ce-este-cartea-funciara",
+  "i": "Ce este cartea funciară?",
+  "r": "Registrul public în care se înscriu imobilele și drepturile asupra lor: cine e proprietar, ce suprafață are imobilul și ce sarcini apasă pe el. Se ține de oficiile de cadastru, iar ce scrie în ea este opozabil terților.",
+  "serviciu": "proiectare",
+  "ghid": "cartea-funciara",
+  "fb": true,
+  "tema": "teren"
+ },
+ {
+  "id": "cine-poate-cere-un-extras-de",
+  "i": "Cine poate cere un extras de carte funciară?",
+  "r": "Extrasul <strong>pentru informare</strong> îl poate cere oricine, fără să fie proprietar și fără să justifice un interes anume. Extrasul <strong>pentru autentificare</strong> se eliberează numai la cererea unui notar public, în vederea unei tranzacții.",
+  "serviciu": "proiectare",
+  "ghid": "cartea-funciara",
+  "fb": true,
+  "tema": "teren"
+ },
+ {
+  "id": "cum-obtin-un-extras-de-carte",
+  "i": "Cum obțin un extras de carte funciară?",
+  "r": "Cel mai simplu online, prin portalul agenției naționale de cadastru: cont, cerere după numărul cadastral sau după adresă, plata tarifului, iar documentul vine electronic. Se poate și la ghișeul biroului de cadastru județean, sau prin notar.",
+  "serviciu": "proiectare",
+  "ghid": "cartea-funciara",
+  "fb": true,
+  "tema": "teren"
+ },
+ {
+  "id": "cat-e-valabil-un-extras-de",
+  "i": "Cât e valabil un extras de carte funciară?",
+  "r": "Cel de informare arată situația din momentul eliberării și nu are un termen propriu-zis, dar instituțiile cer, de regulă, unul emis recent — la dosarele de autorizație se cere actualizat. Cel de autentificare blochează cartea funciară zece zile lucrătoare, iar tranzacția trebuie încheiată în acest interval.",
+  "serviciu": "proiectare",
+  "ghid": "cartea-funciara",
+  "fb": true,
+  "tema": "teren"
+ },
+ {
+  "id": "casa-mea-nu-apare-in-cartea",
+  "i": "Casa mea nu apare în cartea funciară. Ce înseamnă?",
+  "r": "Că nu a fost intabulată. Terenul poate fi înscris, iar construcția nu — situație obișnuită la clădirile ridicate fără autorizație sau nerecepționate. Până la intabulare, construcția nu se poate vinde ca atare, nu se poate ipoteca și nu se poate moșteni curat. Vedeți <a href=\"intrare-in-legalitate.html\">ghidul despre intrarea în legalitate</a>.",
+  "serviciu": "proiectare",
+  "ghid": "cartea-funciara",
+  "fb": true,
+  "tema": "teren"
+ },
+ {
+  "id": "pot-construi-cu-certificatul-de-urbanism",
+  "i": "Pot construi cu certificatul de urbanism?",
+  "r": "Nu. Certificatul e un act de informare. Dreptul de a construi vine numai din autorizația de construire. Cine începe lucrările doar cu certificatul comite o contravenție.",
+  "serviciu": "proiectare",
+  "ghid": "certificat-de-urbanism",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "cine-il-poate-cere-trebuie-sa",
+  "i": "Cine îl poate cere? Trebuie să fiu proprietar?",
+  "r": "Îl poate cere orice persoană interesată, nu doar proprietarul. Tocmai de aceea se cere frecvent înainte de cumpărarea unui teren: vă spune ce se poate construi acolo, înainte să dați banii.",
+  "serviciu": "proiectare",
+  "ghid": "certificat-de-urbanism",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "cat-costa",
+  "i": "Cât costă?",
+  "r": "Taxa se calculează după suprafața terenului și diferă de la o primărie la alta, fiind stabilită prin hotărâre a consiliului local. Pentru un teren obișnuit de casă vorbim de zeci de lei, nu de mii. Cheltuiala adevărată vine după, la avize și la proiect.",
+  "serviciu": "proiectare",
+  "ghid": "certificat-de-urbanism",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "mi-a-expirat-certificatul-ce-fac",
+  "i": "Mi-a expirat certificatul. Ce fac?",
+  "r": "Dacă n-ați cerut prelungirea înainte de expirare, se solicită unul nou, cu dosar complet. Avizele obținute între timp rămân valabile pe durata lor proprie, deci nu se pierde chiar tot.",
+  "serviciu": "proiectare",
+  "ghid": "certificat-de-urbanism",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "imi-trebuie-certificat-pentru-o-simpla",
+  "i": "Îmi trebuie certificat pentru o simplă reparație?",
+  "r": "Lucrările de reparații și întreținere care nu modifică structura de rezistență, aspectul exterior sau destinația se pot executa fără autorizație, deci fără certificat. Dacă atingeți însă structura, fațada, acoperișul sau destinația spațiului, intrați pe alt regim. Când aveți dubii, cereți certificatul: e ieftin și lămurește situația în scris.",
+  "serviciu": "proiectare",
+  "ghid": "certificat-de-urbanism",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "cine-convoaca-fazele-determinante",
+  "i": "Cine convoacă fazele determinante?",
+  "r": "Executantul anunță că a ajuns la stadiul respectiv, iar convocarea se face în scris către toți factorii, cu câteva zile înainte. În practică, dirigintele de șantier e cel care ține calendarul și se asigură că nimeni nu uită.",
+  "serviciu": "dirigintie",
+  "ghid": "faze-determinante",
+  "fb": true,
+  "tema": "executie"
+ },
+ {
+  "id": "ce-fac-daca-executantul-vrea-sa",
+  "i": "Ce fac dacă executantul vrea să toarne fără proces-verbal?",
+  "r": "Lucrarea se oprește. Dirigintele de șantier are dreptul și obligația să dispună sistarea până la efectuarea verificării. Dacă nu aveți diriginte, opriți dumneavoastră și convocați — o zi de întârziere e nimic față de o structură pe care n-a văzut-o nimeni.",
+  "serviciu": "dirigintie",
+  "ghid": "faze-determinante",
+  "fb": true,
+  "tema": "executie"
+ },
+ {
+  "id": "vine-inspectoratul-de-stat-in-constructii",
+  "i": "Vine Inspectoratul de Stat în Construcții la toate fazele?",
+  "r": "Nu. Participă doar la fazele la care programul de control avizat o prevede, în funcție de categoria de importanță a construcției. La o locuință obișnuită, prezența lui e limitată la câteva momente. Restul se verifică de proiectant și diriginte.",
+  "serviciu": "dirigintie",
+  "ghid": "faze-determinante",
+  "fb": true,
+  "tema": "executie"
+ },
+ {
+  "id": "se-pot-recupera-fazele-determinante-dupa",
+  "i": "Se pot recupera fazele determinante după ce lucrarea a avansat?",
+  "r": "Nu retroactiv. Nu se poate semna că s-a verificat ceva ce nu s-a văzut. Se poate face, în schimb, o expertiză tehnică care să evalueze ce s-a executat — un document diferit, mai scump, și care nu înlocuiește procesul-verbal în cartea tehnică.",
+  "serviciu": "dirigintie",
+  "ghid": "faze-determinante",
+  "fb": true,
+  "tema": "executie"
+ },
+ {
+  "id": "la-o-casa-mica-chiar-sunt",
+  "i": "La o casă mică chiar sunt obligatorii?",
+  "r": "Da, dacă proiectul are program de control cu faze determinante — și aproape toate proiectele autorizate îl au. Mărimea construcției schimbă numărul fazelor și cine participă, nu obligația în sine.",
+  "serviciu": "dirigintie",
+  "ghid": "faze-determinante",
+  "fb": true,
+  "tema": "executie"
+ },
+ {
+  "id": "se-poate-intra-in-legalitate-pentru",
+  "i": "Se poate intra în legalitate pentru orice construcție?",
+  "r": "Nu. Numai dacă lucrarea respectă documentațiile de urbanism în vigoare — procent de ocupare, coeficient de utilizare, regim de înălțime, retrageri, destinația terenului. Dacă le încalcă, autorizația nu se poate emite și rămâne desființarea, totală sau parțială.",
+  "serviciu": "proiectare",
+  "ghid": "intrare-in-legalitate",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "daca-demolez-partea-in-plus-se",
+  "i": "Dacă demolez partea în plus, se rezolvă?",
+  "r": "De multe ori, da. Desființarea parțială a ceea ce depășește limitele poate aduce restul în parametri. Expertiza și certificatul vă spun exact ce trebuie să dispară — și dacă restul rezistă structural după intervenție.",
+  "serviciu": "proiectare",
+  "ghid": "intrare-in-legalitate",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "am-construit-acum-zece-ani-s",
+  "i": "Am construit acum zece ani. S-a prescris?",
+  "r": "Aplicarea amenzii contravenționale se prescrie în termenele prevăzute de lege, dar <strong>construcția rămâne neautorizată</strong>. Nu o puteți înscrie în cartea funciară, nu o puteți vinde curat, nu o puteți ipoteca, iar dreptul autorității de a cere desființarea nu dispare odată cu amenda. Prescripția amenzii nu legalizează clădirea.",
+  "serviciu": "proiectare",
+  "ghid": "intrare-in-legalitate",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "imi-trebuie-neaparat-expertiza-tehnica",
+  "i": "Îmi trebuie neapărat expertiză tehnică?",
+  "r": "La lucrări executate fără proiect verificat, practic da. Nimeni nu poate certifica rezistența unei construcții pe care n-a proiectat-o și n-a urmărit-o nimeni în execuție. Expertiza e actul care spune dacă e sigură și în ce condiții poate rămâne.",
+  "serviciu": "proiectare",
+  "ghid": "intrare-in-legalitate",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "pot-vinde-casa-pana-rezolv",
+  "i": "Pot vinde casa până rezolv?",
+  "r": "Construcția neînscrisă în cartea funciară nu se poate vinde ca atare. Se vinde terenul, iar cumpărătorul preia problema — motiv pentru care prețul scade, iar băncile nu dau credit pe o astfel de situație.",
+  "serviciu": "proiectare",
+  "ghid": "intrare-in-legalitate",
+  "fb": true,
+  "tema": "autorizare"
+ },
+ {
+  "id": "am-un-singur-stivuitor-chiar-imi",
+  "i": "Am un singur stivuitor. Chiar îmi trebuie RSVTI?",
+  "r": "Da. Obligația vine din deținerea instalației, nu din numărul lor. Pentru o singură instalație, varianta obișnuită e contractarea unui RSVTI din exterior — costă mult mai puțin decât un angajat.",
+  "serviciu": "iscir",
+  "ghid": "obligatii-iscir",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "instalatia-e-noua-cu-garantie-de",
+  "i": "Instalația e nouă, cu garanție de la producător. E de ajuns?",
+  "r": "Nu. Garanția producătorului acoperă defectele de fabricație. Autorizarea funcționării și verificările periodice sunt obligații ale deținătorului și se fac indiferent de vârsta instalației.",
+  "serviciu": "iscir",
+  "ghid": "obligatii-iscir",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "cine-face-verificarea-tehnica-periodica",
+  "i": "Cine face verificarea tehnică periodică?",
+  "r": "Verificarea o efectuează ISCIR sau o persoană juridică autorizată în acest scop, după caz. RSVTI nu o face el însuși — el ține evidența, urmărește scadențele, pregătește instalația și dosarul, și vă anunță din timp.",
+  "serviciu": "iscir",
+  "ghid": "obligatii-iscir",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "ce-se-intampla-daca-a-expirat",
+  "i": "Ce se întâmplă dacă a expirat verificarea?",
+  "r": "Instalația nu mai are drept de funcționare. Trebuie oprită până la verificare. Exploatarea în afara termenului e contravenție și, la un incident, are consecințe mult mai grele.",
+  "serviciu": "iscir",
+  "ghid": "obligatii-iscir",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "am-cumparat-o-hala-cu-un",
+  "i": "Am cumpărat o hală cu un pod rulant în ea. Ce fac primul lucru?",
+  "r": "Căutați cartea instalației și ultimul proces-verbal de verificare. Dacă nu le găsiți, sunați un RSVTI înainte să porniți instalația. Preluarea unei instalații cu istoric necunoscut e situația cu cel mai mare risc dintre toate.",
+  "serviciu": "iscir",
+  "ghid": "obligatii-iscir",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "pot-sa-ma-mut-in-casa",
+  "i": "Pot să mă mut în casă înainte de recepție?",
+  "r": "Nu ar trebui. Până la recepția la terminarea lucrărilor, riscul asupra construcției e al executantului. În plus, folosirea clădirii înainte de recepție îi dă constructorului argumente să respingă reclamațiile ulterioare, spunând că degradările vin din utilizare.",
+  "serviciu": "dirigintie",
+  "ghid": "receptia-lucrarilor",
+  "fb": true,
+  "tema": "executie"
+ },
+ {
+  "id": "constructorul-refuza-sa-vina-la-receptie",
+  "i": "Constructorul refuză să vină la recepție. Ce fac?",
+  "r": "Recepția o organizează beneficiarul, nu executantul. Se convoacă în scris, cu confirmare de primire. Dacă nu se prezintă, comisia consemnează absența în proces-verbal și își continuă lucrările. Neprezentarea lui nu vă blochează.",
+  "serviciu": "dirigintie",
+  "ghid": "receptia-lucrarilor",
+  "fb": true,
+  "tema": "executie"
+ },
+ {
+  "id": "ce-se-intampla-daca-receptia-e",
+  "i": "Ce se întâmplă dacă recepția e respinsă?",
+  "r": "Se consemnează motivele și termenele de remediere, iar recepția se reia după ce s-a lucrat. Lucrarea nu se consideră terminată, garanția nu începe să curgă, iar plata ultimei tranșe rămâne de regulă blocată până la admitere.",
+  "serviciu": "dirigintie",
+  "ghid": "receptia-lucrarilor",
+  "fb": true,
+  "tema": "executie"
+ },
+ {
+  "id": "receptia-finala-se-face-automat-dupa",
+  "i": "Recepția finală se face automat după trei ani?",
+  "r": "Nu. Trebuie convocată. Dacă nimeni nu o organizează, pur și simplu nu are loc, iar garanția de bună execuție rămâne nereturnată. Puneți-vă un memento la trei ani.",
+  "serviciu": "dirigintie",
+  "ghid": "receptia-lucrarilor",
+  "fb": true,
+  "tema": "executie"
+ },
+ {
+  "id": "imi-trebuie-diriginte-de-santier-la",
+  "i": "Îmi trebuie diriginte de șantier la recepție?",
+  "r": "La lucrările unde dirigintele e obligatoriu, da: el pregătește dosarul, participă la recepție și răspunde de conformitatea lucrărilor verificate. Chiar și unde nu e obligatoriu, o recepție fără cineva tehnic de partea beneficiarului înseamnă că semnați ce vi se pune în față.",
+  "serviciu": "dirigintie",
+  "ghid": "receptia-lucrarilor",
+  "fb": true,
+  "tema": "executie"
+ },
+ {
+  "id": "pot-cere-certificat-de-urbanism-pentru",
+  "i": "Pot cere certificat de urbanism pentru un teren care nu e al meu?",
+  "r": "Da. Îl poate solicita orice persoană interesată, nu doar proprietarul. Exact de aceea e instrumentul potrivit înainte de cumpărare.",
+  "serviciu": "proiectare",
+  "ghid": "verificari-inainte-de-cumparare-teren",
+  "fb": true,
+  "tema": "teren"
+ },
+ {
+  "id": "vanzatorul-imi-arata-un-certificat-de",
+  "i": "Vânzătorul îmi arată un certificat de urbanism. E de ajuns?",
+  "r": "Verificați data și scopul. Un certificat vechi sau eliberat pentru altceva — de pildă pentru dezmembrare — nu vă spune ce puteți construi dumneavoastră. Și verificați dacă mai e valabil.",
+  "serviciu": "proiectare",
+  "ghid": "verificari-inainte-de-cumparare-teren",
+  "fb": true,
+  "tema": "teren"
+ },
+ {
+  "id": "terenul-e-agricol-in-intravilan-pot",
+  "i": "Terenul e agricol în intravilan. Pot construi?",
+  "r": "Categoria de folosință se poate schimba, dar e o procedură separată, cu taxe, iar posibilitatea de a construi vine din documentațiile de urbanism, nu din categoria de folosință. Certificatul de urbanism vă lămurește amândouă.",
+  "serviciu": "proiectare",
+  "ghid": "verificari-inainte-de-cumparare-teren",
+  "fb": true,
+  "tema": "teren"
+ },
+ {
+  "id": "cat-costa-toate-verificarile-astea",
+  "i": "Cât costă toate verificările astea?",
+  "r": "Extrasul de carte funciară și certificatul de urbanism înseamnă, împreună, câteva sute de lei. Un studiu geotehnic e o cheltuială mai mare, dar se face oricum pentru proiect — dacă îl faceți înainte, aflați din timp ce vă așteaptă.",
+  "serviciu": "proiectare",
+  "ghid": "verificari-inainte-de-cumparare-teren",
+  "fb": true,
+  "tema": "teren"
+ },
+ {
+  "id": "vanzatorul-ma-grabeste-e-un-semn",
+  "i": "Vânzătorul mă grăbește. E un semn rău?",
+  "r": "De obicei, da. Un teren bun suportă cincisprezece zile de așteptare pentru un certificat de urbanism. Graba insistentă e, în experiența noastră, cel mai frecvent semn că e ceva la mijloc.",
+  "serviciu": "proiectare",
+  "ghid": "verificari-inainte-de-cumparare-teren",
+  "fb": true,
+  "tema": "teren"
+ }
+]
