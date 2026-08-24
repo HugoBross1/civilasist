@@ -379,7 +379,7 @@
  },
  {
   "id": "pot-vinde-casa-pana-rezolv",
-  "i": "Pot vinde casa până rezolv?",
+  "i": "Pot vinde casa înainte de recepția lucrărilor?",
   "r": "Construcția neînscrisă în cartea funciară nu se poate vinde ca atare. Se vinde terenul, iar cumpărătorul preia problema — motiv pentru care prețul scade, iar băncile nu dau credit pe o astfel de situație.",
   "serviciu": "proiectare",
   "ghid": "intrare-in-legalitate",
