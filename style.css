@@ -467,15 +467,19 @@ a.valoare:hover { color: var(--accent); }
 }
 
 .cautare { position: relative; max-width: 620px; margin: 0 auto 4px; }
+/* Caseta stă pe fundalul aproape negru al benzii. Închisă pe închis nu se
+   vedea deloc, deci e albă, cu chenar portocaliu: se citește de la distanță
+   ca un loc unde se scrie. */
 .cautare input {
-  width: 100%; padding: 15px 20px; font-size: 1rem;
-  border-radius: 999px; border: 1px solid #2d2d35;
-  background: #16161b; color: #fff;
+  width: 100%; padding: 15px 22px; font-size: 1rem;
+  border-radius: 999px; border: 2px solid var(--accent-2);
+  background: #fff; color: var(--text);
+  box-shadow: 0 2px 14px rgba(0,0,0,.35);
 }
-.cautare input::placeholder { color: #8a8a95; }
+.cautare input::placeholder { color: var(--text-muted); }
 .cautare input:focus {
-  outline: none; border-color: var(--accent-2);
-  box-shadow: 0 0 0 3px rgba(245,133,31,.2);
+  outline: none; border-color: var(--accent-2-dark);
+  box-shadow: 0 0 0 4px rgba(245,133,31,.35), 0 2px 14px rgba(0,0,0,.35);
 }
 
 .rezultate {
