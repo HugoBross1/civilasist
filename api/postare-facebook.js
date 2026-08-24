@@ -16,7 +16,7 @@
 const toate = require("../postari-facebook.json");
 
 const GRAPH = "https://graph.facebook.com/v21.0";
-const SITE  = process.env.SITE_URL || "https://civilasist.vercel.app";
+const SITE  = process.env.SITE_URL || "https://civilasist.ro";
 
 function pagini() {
   const lista = [];

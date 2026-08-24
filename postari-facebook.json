@@ -2,7 +2,7 @@
  {
   "i": "Se poate intra în legalitate pentru orice construcție?",
   "c": "Nu. Numai dacă lucrarea respectă documentațiile de urbanism în vigoare — procent de ocupare, coeficient de utilizare, regim de înălțime, retrageri, destinația terenului.",
-  "u": "https://civilasist.vercel.app/ghiduri/intrare-in-legalitate.html#se-poate-intra-in-legalitate-pentru",
+  "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#se-poate-intra-in-legalitate-pentru",
   "sursa": "intrare-in-legalitate.html",
   "zi": 1,
   "img": "/imagini/postari/01.jpg",
@@ -11,7 +11,7 @@
  {
   "i": "Pot construi cu certificatul de urbanism?",
   "c": "Nu. Certificatul e un act de informare.",
-  "u": "https://civilasist.vercel.app/ghiduri/certificat-de-urbanism.html#pot-construi-cu-certificatul-de-urbanism",
+  "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#pot-construi-cu-certificatul-de-urbanism",
   "sursa": "certificat-de-urbanism.html",
   "zi": 2,
   "img": "/imagini/postari/02.jpg",
@@ -20,7 +20,7 @@
  {
   "i": "Pot să mă mut în casă înainte de recepție?",
   "c": "Nu ar trebui. Până la recepția la terminarea lucrărilor, riscul asupra construcției e al executantului.",
-  "u": "https://civilasist.vercel.app/ghiduri/receptia-lucrarilor.html#pot-sa-ma-mut-in-casa",
+  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#pot-sa-ma-mut-in-casa",
   "sursa": "receptia-lucrarilor.html",
   "zi": 3,
   "img": "/imagini/postari/03.jpg",
@@ -29,7 +29,7 @@
  {
   "i": "Pot începe lucrările imediat ce am autorizația în mână?",
   "c": "Nu. Trebuie anunțată începerea lucrărilor la Inspectoratul de Stat în Construcții și la emitent, cu cel puțin 10 zile înainte.",
-  "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#pot-incepe-lucrarile-imediat-ce-am",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#pot-incepe-lucrarile-imediat-ce-am",
   "sursa": "autorizatie-de-construire.html",
   "zi": 4,
   "img": "/imagini/postari/04.jpg",
@@ -38,7 +38,7 @@
  {
   "i": "Am nevoie de autorizație pentru un foișor de grădină?",
   "c": "Dacă are fundație și rămâne pe loc, în general da.",
-  "u": "https://civilasist.vercel.app/ghiduri/anexe-gospodaresti.html#am-nevoie-de-autorizatie-pentru-un",
+  "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#am-nevoie-de-autorizatie-pentru-un",
   "sursa": "anexe-gospodaresti.html",
   "zi": 5,
   "img": "/imagini/postari/05.jpg",
@@ -47,7 +47,7 @@
  {
   "i": "Ce este cartea funciară?",
   "c": "Registrul public în care se înscriu imobilele și drepturile asupra lor: cine e proprietar, ce suprafață are imobilul și ce sarcini apasă pe el.",
-  "u": "https://civilasist.vercel.app/ghiduri/cartea-funciara.html#ce-este-cartea-funciara",
+  "u": "https://civilasist.ro/ghiduri/cartea-funciara.html#ce-este-cartea-funciara",
   "sursa": "cartea-funciara.html",
   "zi": 6,
   "img": "/imagini/postari/06.jpg",
@@ -56,7 +56,7 @@
  {
   "i": "Pot cere certificat de urbanism pentru un teren care nu e al meu?",
   "c": "Da. Îl poate solicita orice persoană interesată, nu doar proprietarul.",
-  "u": "https://civilasist.vercel.app/ghiduri/verificari-inainte-de-cumparare-teren.html#pot-cere-certificat-de-urbanism-pentru",
+  "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#pot-cere-certificat-de-urbanism-pentru",
   "sursa": "verificari-inainte-de-cumparare-teren.html",
   "zi": 7,
   "img": "/imagini/postari/07.jpg",
@@ -65,7 +65,7 @@
  {
   "i": "Trebuie să cer avizele chiar dacă nu mă branșez la utilitatea aceea?",
   "c": "Da, dacă certificatul de urbanism le trece în listă.",
-  "u": "https://civilasist.vercel.app/ghiduri/avize-utilitati.html#trebuie-sa-cer-avizele-chiar-daca",
+  "u": "https://civilasist.ro/ghiduri/avize-utilitati.html#trebuie-sa-cer-avizele-chiar-daca",
   "sursa": "avize-utilitati.html",
   "zi": 8,
   "img": "/imagini/postari/08.jpg",
@@ -74,7 +74,7 @@
  {
   "i": "Cine convoacă fazele determinante?",
   "c": "Executantul anunță că a ajuns la stadiul respectiv, iar convocarea se face în scris către toți factorii, cu câteva zile înainte.",
-  "u": "https://civilasist.vercel.app/ghiduri/faze-determinante.html#cine-convoaca-fazele-determinante",
+  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#cine-convoaca-fazele-determinante",
   "sursa": "faze-determinante.html",
   "zi": 9,
   "img": "/imagini/postari/09.jpg",
@@ -83,7 +83,7 @@
  {
   "i": "Îmi trebuie acord de mediu pentru o casă?",
   "c": "Aproape niciodată. La o locuință obișnuită, notificarea se clasează, iar actul primit intră în dosarul de autorizație.",
-  "u": "https://civilasist.vercel.app/ghiduri/acorduri-mediu-dsp-dsv.html#imi-trebuie-acord-de-mediu-pentru",
+  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#imi-trebuie-acord-de-mediu-pentru",
   "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 10,
   "img": "/imagini/postari/10.jpg",
@@ -92,7 +92,7 @@
  {
   "i": "Am un singur stivuitor. Chiar îmi trebuie RSVTI?",
   "c": "Da. Obligația vine din deținerea instalației, nu din numărul lor.",
-  "u": "https://civilasist.vercel.app/ghiduri/obligatii-iscir.html#am-un-singur-stivuitor-chiar-imi",
+  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#am-un-singur-stivuitor-chiar-imi",
   "sursa": "obligatii-iscir.html",
   "zi": 11,
   "img": "/imagini/postari/11.jpg",
@@ -101,7 +101,7 @@
  {
   "i": "Dacă demolez partea în plus, se rezolvă?",
   "c": "De multe ori, da. Desființarea parțială a ceea ce depășește limitele poate aduce restul în parametri.",
-  "u": "https://civilasist.vercel.app/ghiduri/intrare-in-legalitate.html#daca-demolez-partea-in-plus-se",
+  "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#daca-demolez-partea-in-plus-se",
   "sursa": "intrare-in-legalitate.html",
   "zi": 12,
   "img": "/imagini/postari/12.jpg",
@@ -110,7 +110,7 @@
  {
   "i": "Cine îl poate cere? Trebuie să fiu proprietar?",
   "c": "Îl poate cere orice persoană interesată, nu doar proprietarul.",
-  "u": "https://civilasist.vercel.app/ghiduri/certificat-de-urbanism.html#cine-il-poate-cere-trebuie-sa",
+  "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#cine-il-poate-cere-trebuie-sa",
   "sursa": "certificat-de-urbanism.html",
   "zi": 13,
   "img": "/imagini/postari/13.jpg",
@@ -119,7 +119,7 @@
  {
   "i": "Constructorul refuză să vină la recepție. Ce fac?",
   "c": "Recepția o organizează beneficiarul, nu executantul.",
-  "u": "https://civilasist.vercel.app/ghiduri/receptia-lucrarilor.html#constructorul-refuza-sa-vina-la-receptie",
+  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#constructorul-refuza-sa-vina-la-receptie",
   "sursa": "receptia-lucrarilor.html",
   "zi": 14,
   "img": "/imagini/postari/14.jpg",
@@ -128,7 +128,7 @@
  {
   "i": "Ce se întâmplă dacă modific ceva față de proiectul autorizat?",
   "c": "Modificările care schimbă suprafața, regimul de înălțime, aspectul exterior, structura de rezistență sau destinația cer autorizație nouă.",
-  "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#ce-se-intampla-daca-modific-ceva",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#ce-se-intampla-daca-modific-ceva",
   "sursa": "autorizatie-de-construire.html",
   "zi": 15,
   "img": "/imagini/postari/15.jpg",
@@ -137,7 +137,7 @@
  {
   "i": "Dar pentru o magazie de tablă, cumpărată gata făcută?",
   "c": "Dacă se așază pe o platformă de beton și rămâne acolo, autoritatea o tratează ca pe o construcție.",
-  "u": "https://civilasist.vercel.app/ghiduri/anexe-gospodaresti.html#dar-pentru-o-magazie-de-tabla",
+  "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#dar-pentru-o-magazie-de-tabla",
   "sursa": "anexe-gospodaresti.html",
   "zi": 16,
   "img": "/imagini/postari/16.jpg",
@@ -146,7 +146,7 @@
  {
   "i": "Cine poate cere un extras de carte funciară?",
   "c": "Extrasul pentru informare îl poate cere oricine, fără să fie proprietar și fără să justifice un interes anume.",
-  "u": "https://civilasist.vercel.app/ghiduri/cartea-funciara.html#cine-poate-cere-un-extras-de",
+  "u": "https://civilasist.ro/ghiduri/cartea-funciara.html#cine-poate-cere-un-extras-de",
   "sursa": "cartea-funciara.html",
   "zi": 17,
   "img": "/imagini/postari/17.jpg",
@@ -155,7 +155,7 @@
  {
   "i": "Vânzătorul îmi arată un certificat de urbanism. E de ajuns?",
   "c": "Verificați data și scopul. Un certificat vechi sau eliberat pentru altceva — de pildă pentru dezmembrare — nu vă spune ce puteți construi dumneavoastră.",
-  "u": "https://civilasist.vercel.app/ghiduri/verificari-inainte-de-cumparare-teren.html#vanzatorul-imi-arata-un-certificat-de",
+  "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#vanzatorul-imi-arata-un-certificat-de",
   "sursa": "verificari-inainte-de-cumparare-teren.html",
   "zi": 18,
   "img": "/imagini/postari/18.jpg",
@@ -164,7 +164,7 @@
  {
   "i": "Am primit aviz negativ. E o problemă?",
   "c": "Depinde ce spune. „Nu deținem rețele în zonă\" este un aviz favorabil în fond și intră liniștit în dosar.",
-  "u": "https://civilasist.vercel.app/ghiduri/avize-utilitati.html#am-primit-aviz-negativ-e-o",
+  "u": "https://civilasist.ro/ghiduri/avize-utilitati.html#am-primit-aviz-negativ-e-o",
   "sursa": "avize-utilitati.html",
   "zi": 19,
   "img": "/imagini/postari/19.jpg",
@@ -173,7 +173,7 @@
  {
   "i": "Ce fac dacă executantul vrea să toarne fără proces-verbal?",
   "c": "Lucrarea se oprește. Dirigintele de șantier are dreptul și obligația să dispună sistarea până la efectuarea verificării.",
-  "u": "https://civilasist.vercel.app/ghiduri/faze-determinante.html#ce-fac-daca-executantul-vrea-sa",
+  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#ce-fac-daca-executantul-vrea-sa",
   "sursa": "faze-determinante.html",
   "zi": 20,
   "img": "/imagini/postari/20.jpg",
@@ -182,7 +182,7 @@
  {
   "i": "Cât durează acordul de mediu?",
   "c": "Clasarea notificării vine în câteva săptămâni.",
-  "u": "https://civilasist.vercel.app/ghiduri/acorduri-mediu-dsp-dsv.html#cat-dureaza-acordul-de-mediu",
+  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#cat-dureaza-acordul-de-mediu",
   "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 21,
   "img": "/imagini/postari/21.jpg",
@@ -191,7 +191,7 @@
  {
   "i": "Instalația e nouă, cu garanție de la producător. E de ajuns?",
   "c": "Nu. Garanția producătorului acoperă defectele de fabricație.",
-  "u": "https://civilasist.vercel.app/ghiduri/obligatii-iscir.html#instalatia-e-noua-cu-garantie-de",
+  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#instalatia-e-noua-cu-garantie-de",
   "sursa": "obligatii-iscir.html",
   "zi": 22,
   "img": "/imagini/postari/22.jpg",
@@ -200,7 +200,7 @@
  {
   "i": "Am construit acum zece ani. S-a prescris?",
   "c": "Aplicarea amenzii contravenționale se prescrie în termenele prevăzute de lege, dar construcția rămâne neautorizată.",
-  "u": "https://civilasist.vercel.app/ghiduri/intrare-in-legalitate.html#am-construit-acum-zece-ani-s",
+  "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#am-construit-acum-zece-ani-s",
   "sursa": "intrare-in-legalitate.html",
   "zi": 23,
   "img": "/imagini/postari/23.jpg",
@@ -209,7 +209,7 @@
  {
   "i": "Cât costă un certificat de urbanism?",
   "c": "Taxa se calculează după suprafața terenului și diferă de la o primărie la alta, fiind stabilită prin hotărâre a consiliului local.",
-  "u": "https://civilasist.vercel.app/ghiduri/certificat-de-urbanism.html#cat-costa",
+  "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#cat-costa",
   "sursa": "certificat-de-urbanism.html",
   "zi": 24,
   "img": "/imagini/postari/24.jpg",
@@ -218,7 +218,7 @@
  {
   "i": "Ce se întâmplă dacă recepția e respinsă?",
   "c": "Se consemnează motivele și termenele de remediere, iar recepția se reia după ce s-a lucrat.",
-  "u": "https://civilasist.vercel.app/ghiduri/receptia-lucrarilor.html#ce-se-intampla-daca-receptia-e",
+  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#ce-se-intampla-daca-receptia-e",
   "sursa": "receptia-lucrarilor.html",
   "zi": 25,
   "img": "/imagini/postari/25.jpg",
@@ -227,7 +227,7 @@
  {
   "i": "Îmi trebuie autorizație pentru împrejmuire?",
   "c": "De regulă da, pentru împrejmuirile la stradă.",
-  "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#imi-trebuie-autorizatie-pentru-imprejmuire",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#imi-trebuie-autorizatie-pentru-imprejmuire",
   "sursa": "autorizatie-de-construire.html",
   "zi": 26,
   "img": "/imagini/postari/26.jpg",
@@ -236,7 +236,7 @@
  {
   "i": "Vecinul și-a făcut fără acte. Pot și eu?",
   "c": "Nu. Faptul că o construcție nu a fost încă sancționată nu înseamnă că e legală.",
-  "u": "https://civilasist.vercel.app/ghiduri/anexe-gospodaresti.html#vecinul-si-a-facut-fara-acte",
+  "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#vecinul-si-a-facut-fara-acte",
   "sursa": "anexe-gospodaresti.html",
   "zi": 27,
   "img": "/imagini/postari/27.jpg",
@@ -245,7 +245,7 @@
  {
   "i": "Cum obțin un extras de carte funciară?",
   "c": "Cel mai simplu online, prin portalul agenției naționale de cadastru: cont, cerere după numărul cadastral sau după adresă, plata tarifului, iar documentul vine electronic.",
-  "u": "https://civilasist.vercel.app/ghiduri/cartea-funciara.html#cum-obtin-un-extras-de-carte",
+  "u": "https://civilasist.ro/ghiduri/cartea-funciara.html#cum-obtin-un-extras-de-carte",
   "sursa": "cartea-funciara.html",
   "zi": 28,
   "img": "/imagini/postari/28.jpg",
@@ -254,7 +254,7 @@
  {
   "i": "Terenul e agricol în intravilan. Pot construi?",
   "c": "Categoria de folosință se poate schimba, dar e o procedură separată, cu taxe, iar posibilitatea de a construi vine din documentațiile de urbanism, nu din categoria de folosință.",
-  "u": "https://civilasist.vercel.app/ghiduri/verificari-inainte-de-cumparare-teren.html#terenul-e-agricol-in-intravilan-pot",
+  "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#terenul-e-agricol-in-intravilan-pot",
   "sursa": "verificari-inainte-de-cumparare-teren.html",
   "zi": 29,
   "img": "/imagini/postari/29.jpg",
@@ -263,7 +263,7 @@
  {
   "i": "Cât costă avizele de la apă, curent și gaz?",
   "c": "Fiecare operator are un tarif de analiză, de ordinul zecilor sau sutelor de lei.",
-  "u": "https://civilasist.vercel.app/ghiduri/avize-utilitati.html#cat-costa-avizele",
+  "u": "https://civilasist.ro/ghiduri/avize-utilitati.html#cat-costa-avizele",
   "sursa": "avize-utilitati.html",
   "zi": 30,
   "img": "/imagini/postari/30.jpg",
@@ -272,7 +272,7 @@
  {
   "i": "Vine Inspectoratul de Stat în Construcții la toate fazele?",
   "c": "Nu. Participă doar la fazele la care programul de control avizat o prevede, în funcție de categoria de importanță a construcției.",
-  "u": "https://civilasist.vercel.app/ghiduri/faze-determinante.html#vine-inspectoratul-de-stat-in-constructii",
+  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#vine-inspectoratul-de-stat-in-constructii",
   "sursa": "faze-determinante.html",
   "zi": 31,
   "img": "/imagini/postari/31.jpg",
@@ -281,7 +281,7 @@
  {
   "i": "Ce se întâmplă dacă construiesc fără avizul de la pompieri?",
   "c": "Lucrarea rămâne fără autorizație de securitate la incendiu, iar clădirea nu poate fi pusă legal în funcțiune.",
-  "u": "https://civilasist.vercel.app/ghiduri/acorduri-mediu-dsp-dsv.html#ce-se-intampla-daca-construiesc-fara",
+  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#ce-se-intampla-daca-construiesc-fara",
   "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 32,
   "img": "/imagini/postari/32.jpg",
@@ -290,7 +290,7 @@
  {
   "i": "Cine face verificarea tehnică periodică?",
   "c": "Verificarea o efectuează ISCIR sau o persoană juridică autorizată în acest scop, după caz.",
-  "u": "https://civilasist.vercel.app/ghiduri/obligatii-iscir.html#cine-face-verificarea-tehnica-periodica",
+  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#cine-face-verificarea-tehnica-periodica",
   "sursa": "obligatii-iscir.html",
   "zi": 33,
   "img": "/imagini/postari/33.jpg",
@@ -299,7 +299,7 @@
  {
   "i": "Îmi trebuie neapărat expertiză tehnică?",
   "c": "La lucrări executate fără proiect verificat, practic da.",
-  "u": "https://civilasist.vercel.app/ghiduri/intrare-in-legalitate.html#imi-trebuie-neaparat-expertiza-tehnica",
+  "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#imi-trebuie-neaparat-expertiza-tehnica",
   "sursa": "intrare-in-legalitate.html",
   "zi": 34,
   "img": "/imagini/postari/34.jpg",
@@ -308,7 +308,7 @@
  {
   "i": "Mi-a expirat certificatul. Ce fac?",
   "c": "Dacă n-ați cerut prelungirea înainte de expirare, se solicită unul nou, cu dosar complet.",
-  "u": "https://civilasist.vercel.app/ghiduri/certificat-de-urbanism.html#mi-a-expirat-certificatul-ce-fac",
+  "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#mi-a-expirat-certificatul-ce-fac",
   "sursa": "certificat-de-urbanism.html",
   "zi": 35,
   "img": "/imagini/postari/35.jpg",
@@ -317,7 +317,7 @@
  {
   "i": "Recepția finală se face automat după trei ani?",
   "c": "Nu. Trebuie convocată.",
-  "u": "https://civilasist.vercel.app/ghiduri/receptia-lucrarilor.html#receptia-finala-se-face-automat-dupa",
+  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#receptia-finala-se-face-automat-dupa",
   "sursa": "receptia-lucrarilor.html",
   "zi": 36,
   "img": "/imagini/postari/36.jpg",
@@ -326,7 +326,7 @@
  {
   "i": "Autorizația a expirat și lucrarea nu e gata. Ce fac?",
   "c": "Dacă mai sunteți în termen, cereți prelungirea cu cel puțin 15 zile înainte de expirare.",
-  "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#autorizatia-a-expirat-si-lucrarea-nu",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#autorizatia-a-expirat-si-lucrarea-nu",
   "sursa": "autorizatie-de-construire.html",
   "zi": 37,
   "img": "/imagini/postari/37.jpg",
@@ -335,7 +335,7 @@
  {
   "i": "Anexa mea are sub 50 de metri pătrați. Nu e sub prag?",
   "c": "Nu există un prag general de suprafață sub care se poate construi liber.",
-  "u": "https://civilasist.vercel.app/ghiduri/anexe-gospodaresti.html#anexa-mea-are-sub-50-de",
+  "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#anexa-mea-are-sub-50-de",
   "sursa": "anexe-gospodaresti.html",
   "zi": 38,
   "img": "/imagini/postari/38.jpg",
@@ -344,7 +344,7 @@
  {
   "i": "Cât e valabil un extras de carte funciară?",
   "c": "Cel de informare arată situația din momentul eliberării și nu are un termen propriu-zis, dar instituțiile cer, de regulă, unul emis recent — la dosarele de autorizație se cere actualizat.",
-  "u": "https://civilasist.vercel.app/ghiduri/cartea-funciara.html#cat-e-valabil-un-extras-de",
+  "u": "https://civilasist.ro/ghiduri/cartea-funciara.html#cat-e-valabil-un-extras-de",
   "sursa": "cartea-funciara.html",
   "zi": 39,
   "img": "/imagini/postari/39.jpg",
@@ -353,7 +353,7 @@
  {
   "i": "Cât costă verificările înainte de a cumpăra un teren?",
   "c": "Extrasul de carte funciară și certificatul de urbanism înseamnă, împreună, câteva sute de lei.",
-  "u": "https://civilasist.vercel.app/ghiduri/verificari-inainte-de-cumparare-teren.html#cat-costa-toate-verificarile-astea",
+  "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#cat-costa-toate-verificarile-astea",
   "sursa": "verificari-inainte-de-cumparare-teren.html",
   "zi": 40,
   "img": "/imagini/postari/40.jpg",
@@ -362,7 +362,7 @@
  {
   "i": "Cât sunt valabile avizele de la furnizorii de utilități?",
   "c": "De obicei un an, uneori corelat cu valabilitatea certificatului de urbanism.",
-  "u": "https://civilasist.vercel.app/ghiduri/avize-utilitati.html#cat-sunt-valabile",
+  "u": "https://civilasist.ro/ghiduri/avize-utilitati.html#cat-sunt-valabile",
   "sursa": "avize-utilitati.html",
   "zi": 41,
   "img": "/imagini/postari/41.jpg",
@@ -371,7 +371,7 @@
  {
   "i": "Se pot recupera fazele determinante după ce lucrarea a avansat?",
   "c": "Nu retroactiv. Nu se poate semna că s-a verificat ceva ce nu s-a văzut.",
-  "u": "https://civilasist.vercel.app/ghiduri/faze-determinante.html#se-pot-recupera-fazele-determinante-dupa",
+  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#se-pot-recupera-fazele-determinante-dupa",
   "sursa": "faze-determinante.html",
   "zi": 42,
   "img": "/imagini/postari/42.jpg",
@@ -380,7 +380,7 @@
  {
   "i": "Pot obține acordurile după ce am autorizația?",
   "c": "Nu. Sunt condiții pentru emiterea autorizației, nu formalități ulterioare.",
-  "u": "https://civilasist.vercel.app/ghiduri/acorduri-mediu-dsp-dsv.html#pot-obtine-acordurile-dupa-ce-am",
+  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#pot-obtine-acordurile-dupa-ce-am",
   "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 43,
   "img": "/imagini/postari/43.jpg",
@@ -389,7 +389,7 @@
  {
   "i": "Ce se întâmplă dacă a expirat verificarea?",
   "c": "Instalația nu mai are drept de funcționare. Trebuie oprită până la verificare.",
-  "u": "https://civilasist.vercel.app/ghiduri/obligatii-iscir.html#ce-se-intampla-daca-a-expirat",
+  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#ce-se-intampla-daca-a-expirat",
   "sursa": "obligatii-iscir.html",
   "zi": 44,
   "img": "/imagini/postari/44.jpg",
@@ -398,7 +398,7 @@
  {
   "i": "Pot vinde casa până rezolv?",
   "c": "Construcția neînscrisă în cartea funciară nu se poate vinde ca atare.",
-  "u": "https://civilasist.vercel.app/ghiduri/intrare-in-legalitate.html#pot-vinde-casa-pana-rezolv",
+  "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#pot-vinde-casa-pana-rezolv",
   "sursa": "intrare-in-legalitate.html",
   "zi": 45,
   "img": "/imagini/postari/45.jpg",
@@ -407,7 +407,7 @@
  {
   "i": "Îmi trebuie certificat pentru o simplă reparație?",
   "c": "Lucrările de reparații și întreținere care nu modifică structura de rezistență, aspectul exterior sau destinația se pot executa fără autorizație, deci fără certificat.",
-  "u": "https://civilasist.vercel.app/ghiduri/certificat-de-urbanism.html#imi-trebuie-certificat-pentru-o-simpla",
+  "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#imi-trebuie-certificat-pentru-o-simpla",
   "sursa": "certificat-de-urbanism.html",
   "zi": 46,
   "img": "/imagini/postari/46.jpg",
@@ -416,7 +416,7 @@
  {
   "i": "Îmi trebuie diriginte de șantier la recepție?",
   "c": "La lucrările unde dirigintele e obligatoriu, da: el pregătește dosarul, participă la recepție și răspunde de conformitatea lucrărilor verificate.",
-  "u": "https://civilasist.vercel.app/ghiduri/receptia-lucrarilor.html#imi-trebuie-diriginte-de-santier-la",
+  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#imi-trebuie-diriginte-de-santier-la",
   "sursa": "receptia-lucrarilor.html",
   "zi": 47,
   "img": "/imagini/postari/47.jpg",
@@ -425,7 +425,7 @@
  {
   "i": "Cine răspunde dacă proiectul e greșit?",
   "c": "Proiectantul răspunde pentru soluția tehnică, verificatorul atestat pentru conformitatea cu cerințele verificate, executantul pentru calitatea execuției, iar dirigintele pentru verificarea lucrărilor în numele beneficiarului.",
-  "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#cine-raspunde-daca-proiectul-e-gresit",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#cine-raspunde-daca-proiectul-e-gresit",
   "sursa": "autorizatie-de-construire.html",
   "zi": 48,
   "img": "/imagini/postari/48.jpg",
@@ -434,7 +434,7 @@
  {
   "i": "Am construit deja. Ce fac?",
   "c": "Se poate intra în legalitate, dacă anexa respectă regulile de urbanism.",
-  "u": "https://civilasist.vercel.app/ghiduri/anexe-gospodaresti.html#am-construit-deja-ce-fac",
+  "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#am-construit-deja-ce-fac",
   "sursa": "anexe-gospodaresti.html",
   "zi": 49,
   "img": "/imagini/postari/49.jpg",
@@ -443,7 +443,7 @@
  {
   "i": "Casa mea nu apare în cartea funciară. Ce înseamnă?",
   "c": "Că nu a fost intabulată. Terenul poate fi înscris, iar construcția nu — situație obișnuită la clădirile ridicate fără autorizație sau nerecepționate.",
-  "u": "https://civilasist.vercel.app/ghiduri/cartea-funciara.html#casa-mea-nu-apare-in-cartea",
+  "u": "https://civilasist.ro/ghiduri/cartea-funciara.html#casa-mea-nu-apare-in-cartea",
   "sursa": "cartea-funciara.html",
   "zi": 50,
   "img": "/imagini/postari/50.jpg",
@@ -452,7 +452,7 @@
  {
   "i": "Vânzătorul mă grăbește. E un semn rău?",
   "c": "De obicei, da. Un teren bun suportă cincisprezece zile de așteptare pentru un certificat de urbanism.",
-  "u": "https://civilasist.vercel.app/ghiduri/verificari-inainte-de-cumparare-teren.html#vanzatorul-ma-grabeste-e-un-semn",
+  "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#vanzatorul-ma-grabeste-e-un-semn",
   "sursa": "verificari-inainte-de-cumparare-teren.html",
   "zi": 51,
   "img": "/imagini/postari/51.jpg",
@@ -461,7 +461,7 @@
  {
   "i": "Pot depune eu personal sau trebuie proiectant?",
   "c": "Puteți depune și singur. Partea în care se greșește nu e depunerea, ci întocmirea: plan de situație corect, descrierea necesarului, datele tehnice ale investiției.",
-  "u": "https://civilasist.vercel.app/ghiduri/avize-utilitati.html#pot-depune-eu-personal-sau-trebuie",
+  "u": "https://civilasist.ro/ghiduri/avize-utilitati.html#pot-depune-eu-personal-sau-trebuie",
   "sursa": "avize-utilitati.html",
   "zi": 52,
   "img": "/imagini/postari/52.jpg",
@@ -470,7 +470,7 @@
  {
   "i": "La o casă mică chiar sunt obligatorii?",
   "c": "Da, dacă proiectul are program de control cu faze determinante — și aproape toate proiectele autorizate îl au.",
-  "u": "https://civilasist.vercel.app/ghiduri/faze-determinante.html#la-o-casa-mica-chiar-sunt",
+  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#la-o-casa-mica-chiar-sunt",
   "sursa": "faze-determinante.html",
   "zi": 53,
   "img": "/imagini/postari/53.jpg",
@@ -479,7 +479,7 @@
  {
   "i": "Cine întocmește documentațiile pentru acorduri?",
   "c": "Descrierea proiectului și piesele desenate le face proiectantul.",
-  "u": "https://civilasist.vercel.app/ghiduri/acorduri-mediu-dsp-dsv.html#cine-intocmeste-documentatiile-pentru-acorduri",
+  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#cine-intocmeste-documentatiile-pentru-acorduri",
   "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 54,
   "img": "/imagini/postari/54.jpg",
@@ -488,7 +488,7 @@
  {
   "i": "Am cumpărat o hală cu un pod rulant în ea. Ce fac primul lucru?",
   "c": "Căutați cartea instalației și ultimul proces-verbal de verificare.",
-  "u": "https://civilasist.vercel.app/ghiduri/obligatii-iscir.html#am-cumparat-o-hala-cu-un",
+  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#am-cumparat-o-hala-cu-un",
   "sursa": "obligatii-iscir.html",
   "zi": 55,
   "img": "/imagini/postari/55.jpg",
@@ -497,7 +497,7 @@
  {
   "i": "Am schimbat doar forma acoperișului. Trebuie alt proiect?",
   "c": "Da. Forma acoperișului schimbă volumul clădirii și aspectul exterior, iar de cele mai multe ori și șarpanta, adică structura.",
-  "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#am-schimbat-doar-forma-acoperisului-trebuie",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#am-schimbat-doar-forma-acoperisului-trebuie",
   "sursa": "autorizatie-de-construire.html",
   "zi": 56,
   "img": "/imagini/postari/56.jpg",
@@ -506,7 +506,7 @@
  {
   "i": "Am făcut o fereastră mică în plus. Trebuie altă autorizație?",
   "c": "De regulă da, din două motive. Un gol nou schimbă aspectul exterior, iar dacă peretele e portant, atinge structura de rezistență — acolo e nevoie și de avizul proiectantului de rezistență, cu buiandrug calculat.",
-  "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#am-facut-o-fereastra-mica-in",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#am-facut-o-fereastra-mica-in",
   "sursa": "autorizatie-de-construire.html",
   "zi": 57,
   "img": "/imagini/postari/57.jpg",
@@ -515,7 +515,7 @@
  {
   "i": "Vreau să schimb doar tabla de pe acoperiș. Îmi trebuie autorizație?",
   "c": "Dacă înlocuiți învelitoarea cu una de același fel, păstrând forma, panta și structura, e lucrare de reparație și întreținere — se poate face fără autorizație.",
-  "u": "https://civilasist.vercel.app/ghiduri/autorizatie-de-construire.html#vreau-sa-schimb-doar-tabla-de",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#vreau-sa-schimb-doar-tabla-de",
   "sursa": "autorizatie-de-construire.html",
   "zi": 58,
   "img": "/imagini/postari/58.jpg",

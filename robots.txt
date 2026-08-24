@@ -32,4 +32,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://civilasist.vercel.app/sitemap.xml
+Sitemap: https://civilasist.ro/sitemap.xml

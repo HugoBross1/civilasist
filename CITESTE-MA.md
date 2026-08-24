@@ -3,7 +3,7 @@
 Site static — doar HTML, CSS și două scripturi mici. Fără pas de compilare, fără
 dependențe. Orice fișier se deschide direct în browser.
 
-**Adresa publică:** https://civilasist.vercel.app
+**Adresa publică:** https://civilasist.ro (până la propagarea DNS: https://civilasist.vercel.app)
 **Depozitul:** github.com/HugoBross1/civilasist
 **Găzduirea:** Vercel, proiectul `civilasist`, contul `hugo1-f91d`
 
@@ -185,11 +185,14 @@ previzualizările care taie lateral.
 1. **E-mailul nu funcționează.** `contact@civilasist.ro` nu există. Domeniul e
    cumpărat, dar fără căsuță poștală. Recomandarea: Google Workspace
    (~6 €/lună, arhiva e deja în Drive) sau Zoho Mail gratuit.
-2. **Domeniul nu e legat.** La ROTLD, o singură înregistrare:
-   `A` · `@` · `216.198.79.1`. Apoi se adaugă și `www` în Vercel.
-3. **`noindex` e pe toate paginile.** Se scoate după primele două. Atunci se
-   schimbă și adresa din marcaje: `civilasist.vercel.app` → `civilasist.ro`
-   în canonical, Open Graph, `sitemap.xml`, `robots.txt`, `llms.txt`.
+2. **Domeniul.** `civilasist.ro` e adăugat în proiect, iar `www.civilasist.ro`
+   redirectează permanent (308) către el. La ROTLD au fost trimise
+   nameserverele `ns1.vercel-dns.com` și `ns2.vercel-dns.com`; operațiunea
+   cere confirmare pe e-mail. Din acel moment DNS-ul îl ține Vercel — tot
+   acolo se adaugă mai târziu înregistrările MX pentru e-mail.
+3. **`noindex` e pe toate paginile.** Se scoate după ce domeniul răspunde.
+   Adresele din marcaje (canonical, Open Graph, `sitemap.xml`, `robots.txt`,
+   `llms.txt`) sunt deja mutate pe `civilasist.ro`.
 
 ### Profilul de companie Google
 
@@ -204,7 +207,7 @@ radu@jciiasi.ro.
 | Adresă | Șos. Huși–Stănilești nr. 23, 735100 Huși |
 | Zonă de servicii | Iași, Vaslui |
 | Program | luni–vineri 08:00–18:00; sâmbătă și duminică închis |
-| Site | https://civilasist.vercel.app/ |
+| Site | https://civilasist.vercel.app/ — de schimbat în `https://civilasist.ro/` |
 | Recenzii | 2, medie 5,0 |
 
 Sigla, fotografia de copertă și zece fotografii din lucrări proprii sunt
@@ -239,7 +242,7 @@ Atenție, numărul de schimbări ale numelui e limitat.
 acolo nu primește răspuns și nici nu află de ce.
 
 Site-ul din profil e `https://civilasist.vercel.app` — se schimbă în
-`https://civilasist.ro` odată cu legarea domeniului.
+`https://civilasist.ro` odată ce domeniul răspunde.
 
 ### Conținut
 
