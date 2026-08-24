@@ -96,6 +96,19 @@ consimțământ.
 
 ---
 
+## Banda cu întrebări
+
+`banda.js`. Se mișcă singură, se oprește la hover, se trage cu mouse-ul sau cu
+degetul.
+
+**Deschiderea întrebării o face scriptul, nu clicul nativ. Nu scoateți asta.**
+Când banda e trasă, pastilele alunecă sub cursor, iar Chrome pune clicul pe cel
+mai apropiat strămoș comun între locul apăsării și cel al eliberării — adică pe
+bandă, nu pe legătură. Rezultatul era că întrebarea nu se deschidea niciodată
+dacă mâna se mișca puțin. De aceea reținem pastila apăsată la `pointerdown` și
+navigăm noi la `pointerup`, dacă mișcarea a fost sub `PRAG` (14 px). Peste
+prag e tragere și nu se deschide nimic.
+
 ## Societatea
 
 INDUSTRIAL IMOBIL S.R.L. · J37/713/2020 · CUI 43308030 (neplătitoare de TVA)
