@@ -90,15 +90,6 @@
   "tema": "autorizare"
  },
  {
-  "i": "Am un singur stivuitor. Chiar îmi trebuie RSVTI?",
-  "c": "Da. Obligația vine din deținerea instalației, nu din numărul lor.",
-  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#am-un-singur-stivuitor-chiar-imi",
-  "sursa": "obligatii-iscir.html",
-  "zi": 11,
-  "img": "/imagini/postari/11.jpg",
-  "tema": "iscir"
- },
- {
   "i": "Dacă demolez partea în plus, se rezolvă?",
   "c": "De multe ori, da. Desființarea parțială a ceea ce depășește limitele poate aduce restul în parametri.",
   "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#daca-demolez-partea-in-plus-se",
@@ -187,15 +178,6 @@
   "zi": 21,
   "img": "/imagini/postari/21.jpg",
   "tema": "autorizare"
- },
- {
-  "i": "Instalația e nouă, cu garanție de la producător. E de ajuns?",
-  "c": "Nu. Garanția producătorului acoperă defectele de fabricație.",
-  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#instalatia-e-noua-cu-garantie-de",
-  "sursa": "obligatii-iscir.html",
-  "zi": 22,
-  "img": "/imagini/postari/22.jpg",
-  "tema": "iscir"
  },
  {
   "i": "Am construit acum zece ani. S-a prescris?",
@@ -288,15 +270,6 @@
   "tema": "autorizare"
  },
  {
-  "i": "Cine face verificarea tehnică periodică?",
-  "c": "Verificarea o efectuează ISCIR sau o persoană juridică autorizată în acest scop, după caz.",
-  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#cine-face-verificarea-tehnica-periodica",
-  "sursa": "obligatii-iscir.html",
-  "zi": 33,
-  "img": "/imagini/postari/33.jpg",
-  "tema": "iscir"
- },
- {
   "i": "Îmi trebuie neapărat expertiză tehnică?",
   "c": "La lucrări executate fără proiect verificat, practic da.",
   "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#imi-trebuie-neaparat-expertiza-tehnica",
@@ -387,15 +360,6 @@
   "tema": "autorizare"
  },
  {
-  "i": "Ce se întâmplă dacă a expirat verificarea?",
-  "c": "Instalația nu mai are drept de funcționare. Trebuie oprită până la verificare.",
-  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#ce-se-intampla-daca-a-expirat",
-  "sursa": "obligatii-iscir.html",
-  "zi": 44,
-  "img": "/imagini/postari/44.jpg",
-  "tema": "iscir"
- },
- {
   "i": "Pot vinde casa înainte de recepția lucrărilor?",
   "c": "Construcția neînscrisă în cartea funciară nu se poate vinde ca atare.",
   "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#pot-vinde-casa-pana-rezolv",
@@ -468,7 +432,7 @@
   "tema": "autorizare"
  },
  {
-  "i": "La o casă mică chiar sunt obligatorii?",
+  "i": "Fazele determinante sunt obligatorii și la o casă mică?",
   "c": "Da, dacă proiectul are program de control cu faze determinante — și aproape toate proiectele autorizate îl au.",
   "u": "https://civilasist.ro/ghiduri/faze-determinante.html#la-o-casa-mica-chiar-sunt",
   "sursa": "faze-determinante.html",
@@ -484,15 +448,6 @@
   "zi": 54,
   "img": "/imagini/postari/54.jpg",
   "tema": "autorizare"
- },
- {
-  "i": "Am cumpărat o hală cu un pod rulant în ea. Ce fac primul lucru?",
-  "c": "Căutați cartea instalației și ultimul proces-verbal de verificare.",
-  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#am-cumparat-o-hala-cu-un",
-  "sursa": "obligatii-iscir.html",
-  "zi": 55,
-  "img": "/imagini/postari/55.jpg",
-  "tema": "iscir"
  },
  {
   "i": "Am schimbat doar forma acoperișului. Trebuie alt proiect?",
@@ -520,5 +475,50 @@
   "zi": 58,
   "img": "/imagini/postari/58.jpg",
   "tema": "autorizare"
+ },
+ {
+  "i": "Am un singur stivuitor. Chiar îmi trebuie RSVTI?",
+  "c": "Da. Obligația vine din deținerea instalației, nu din numărul lor.",
+  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#am-un-singur-stivuitor-chiar-imi",
+  "sursa": "obligatii-iscir.html",
+  "zi": 11,
+  "img": "/imagini/postari/11.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Instalația e nouă, cu garanție de la producător. E de ajuns?",
+  "c": "Nu. Garanția producătorului acoperă defectele de fabricație.",
+  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#instalatia-e-noua-cu-garantie-de",
+  "sursa": "obligatii-iscir.html",
+  "zi": 22,
+  "img": "/imagini/postari/22.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Cine face verificarea tehnică periodică?",
+  "c": "Verificarea o efectuează ISCIR sau o persoană juridică autorizată în acest scop, după caz.",
+  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#cine-face-verificarea-tehnica-periodica",
+  "sursa": "obligatii-iscir.html",
+  "zi": 33,
+  "img": "/imagini/postari/33.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Am cumpărat o hală cu un pod rulant în ea. Ce fac primul lucru?",
+  "c": "Căutați cartea instalației și ultimul proces-verbal de verificare.",
+  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#am-cumparat-o-hala-cu-un",
+  "sursa": "obligatii-iscir.html",
+  "zi": 55,
+  "img": "/imagini/postari/55.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Ce se întâmplă dacă a expirat verificarea tehnică periodică?",
+  "c": "Instalația nu mai are drept de funcționare. Trebuie oprită până la verificare.",
+  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#ce-se-intampla-daca-a-expirat",
+  "sursa": "obligatii-iscir.html",
+  "zi": 44,
+  "img": "/imagini/postari/44.jpg",
+  "tema": "iscir"
  }
 ]

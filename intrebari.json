@@ -334,7 +334,7 @@
  },
  {
   "id": "la-o-casa-mica-chiar-sunt",
-  "i": "La o casă mică chiar sunt obligatorii?",
+  "i": "Fazele determinante sunt obligatorii și la o casă mică?",
   "r": "Da, dacă proiectul are program de control cu faze determinante — și aproape toate proiectele autorizate îl au. Mărimea construcției schimbă numărul fazelor și cine participă, nu obligația în sine.",
   "serviciu": "dirigintie",
   "ghid": "faze-determinante",
@@ -415,7 +415,7 @@
  },
  {
   "id": "ce-se-intampla-daca-a-expirat",
-  "i": "Ce se întâmplă dacă a expirat verificarea?",
+  "i": "Ce se întâmplă dacă a expirat verificarea tehnică periodică?",
   "r": "Instalația nu mai are drept de funcționare. Trebuie oprită până la verificare. Exploatarea în afara termenului e contravenție și, la un incident, are consecințe mult mai grele.",
   "serviciu": "iscir",
   "ghid": "obligatii-iscir",
