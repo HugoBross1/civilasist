@@ -109,6 +109,41 @@ de Legea 365/2002.
 
 ---
 
+## E-mail
+
+`contact@civilasist.ro`, la **Zoho Mail**, planul Forever Free: un utilizator,
+5 GB, centru de date european (zoho.eu). Cont de organizație „CivilAsist.ro",
+administrare la mailadmin.zoho.eu, citire la mail.zoho.eu.
+
+Aceeași adresă e și contul de super-administrator al organizației.
+
+**Planul gratuit nu are IMAP, POP sau SMTP.** Se citește doar din interfața web
+Zoho și din aplicația lor de telefon — nu se poate lega în Outlook sau în
+aplicația Gmail.
+
+Înregistrările DNS, toate în panoul Vercel:
+
+| Tip | Nume | Valoare | Prioritate |
+|---|---|---|---|
+| MX | @ | mx.zoho.eu | 10 |
+| MX | @ | mx2.zoho.eu | 20 |
+| MX | @ | mx3.zoho.eu | 50 |
+| TXT | @ | `v=spf1 include:zohomail.eu ~all` | — |
+| TXT | `zmail._domainkey` | cheia DKIM, 234 de caractere | — |
+| TXT | `_dmarc` | `v=DMARC1; p=none; rua=mailto:contact@civilasist.ro` | — |
+| TXT | @ | `zoho-verification=zb62135549.zmverify.zoho.eu` | — |
+
+DMARC e pe `p=none`, adică doar raportează, nu respinge. După câteva săptămâni,
+dacă rapoartele arată curat, se poate strânge la `p=quarantine`.
+
+## Google Search Console
+
+Proprietate de tip **domeniu** pentru `civilasist.ro` — acoperă și `www` și
+ambele protocoale. Confirmată prin TXT `google-site-verification=...`, tot în
+panoul Vercel. **Nu ștergeți acea înregistrare**, altfel se pierde confirmarea.
+
+Sitemap trimis: `https://civilasist.ro/sitemap.xml`, 26 de adrese.
+
 ## Confidențialitate
 
 **Site-ul nu pune niciun cookie.** Nici propriu, nici al altcuiva. De aceea nu
@@ -203,12 +238,10 @@ previzualizările care taie lateral.
    Riscul până atunci: Vercel poate suspenda proiectul. Alternativa gratuită
    și permisă comercial e Cloudflare Pages — ar cere rescrierea funcției de
    postare pe Facebook ca Worker.
-2. **E-mailul nu funcționează.** `contact@civilasist.ro` nu există. Domeniul e
-   cumpărat, dar fără căsuță poștală. Recomandarea: Google Workspace
-   (~6 €/lună, arhiva e deja în Drive) sau Zoho Mail gratuit. Înregistrările
-   MX se adaugă în panoul DNS al Vercel.
-3. **Google Search Console.** Nu e configurat. Acolo se trimite `sitemap.xml`
-   și se vede ce indexează Google. E gratuit și e următorul pas firesc.
+2. **Formularul de contact trebuie activat o singură dată.** Trimite prin
+   formsubmit.co către `contact@civilasist.ro`. La prima trimitere, FormSubmit
+   expediază un mesaj cu link de activare în cutia Zoho. Până se apasă acel
+   link, **mesajele din formular nu ajung nicăieri.**
 
 ### Profilul de companie Google
 
