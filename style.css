@@ -106,13 +106,13 @@ a:hover { color: var(--accent); }
 
 .logo small {
   display: block; color: rgba(255,255,255,.72);
-  font-size: .56rem; line-height: 1.4;
+  font-size: .6rem; line-height: 1.4;
   text-transform: uppercase; letter-spacing: .14em;
 }
 
 @media (max-width: 560px) {
   .logo-marca { height: 25px; }
-  .logo small { font-size: .5rem; letter-spacing: .1em; }
+  .logo small { font-size: .55rem; letter-spacing: .1em; }
 }
 
 .mainnav { display: flex; gap: 22px; flex-wrap: wrap; }
