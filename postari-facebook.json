@@ -1,43 +1,52 @@
 [
  {
-  "i": "Se poate intra în legalitate pentru orice construcție?",
-  "c": "Nu. Numai dacă lucrarea respectă documentațiile de urbanism în vigoare — procent de ocupare, coeficient de utilizare, regim de înălțime, retrageri, destinația terenului.",
-  "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#se-poate-intra-in-legalitate-pentru",
-  "sursa": "intrare-in-legalitate.html",
+  "i": "Îmi trebuie acord de mediu pentru o casă?",
+  "c": "Aproape niciodată. La o locuință obișnuită, notificarea se clasează, iar actul primit intră în dosarul de autorizație.",
+  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#imi-trebuie-acord-de-mediu-pentru",
+  "sursa": "acorduri-mediu-dsp-dsv.html",
+  "zi": 0,
+  "img": "/imagini/postari/10.jpg",
+  "tema": "autorizare"
+ },
+ {
+  "i": "Cât durează acordul de mediu?",
+  "c": "Clasarea notificării vine în câteva săptămâni. Etapa de încadrare durează luni. Evaluarea completă a impactului, cu raport și dezbatere publică, poate trece de un an.",
+  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#cat-dureaza-acordul-de-mediu",
+  "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 1,
-  "img": "/imagini/postari/01.jpg",
+  "img": "/imagini/postari/21.jpg",
   "tema": "autorizare"
  },
  {
-  "i": "Pot construi cu certificatul de urbanism?",
-  "c": "Nu. Certificatul e un act de informare.",
-  "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#pot-construi-cu-certificatul-de-urbanism",
-  "sursa": "certificat-de-urbanism.html",
+  "i": "Ce se întâmplă dacă construiesc fără avizul de la pompieri?",
+  "c": "Lucrarea rămâne fără autorizație de securitate la incendiu, iar clădirea nu poate fi pusă legal în funcțiune. Pentru spații comerciale sau publice asta înseamnă că nu puteți deschide.",
+  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#ce-se-intampla-daca-construiesc-fara",
+  "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 2,
-  "img": "/imagini/postari/02.jpg",
+  "img": "/imagini/postari/32.jpg",
   "tema": "autorizare"
  },
  {
-  "i": "Pot să mă mut în casă înainte de recepție?",
-  "c": "Nu ar trebui. Până la recepția la terminarea lucrărilor, riscul asupra construcției e al executantului.",
-  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#pot-sa-ma-mut-in-casa",
-  "sursa": "receptia-lucrarilor.html",
+  "i": "Pot obține acordurile după ce am autorizația?",
+  "c": "Nu. Sunt condiții pentru emiterea autorizației, nu formalități ulterioare. Primăria nu emite autorizația fără ele. Singura excepție e autorizația de securitate la incendiu, care vine firesc la finalul lucrării.",
+  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#pot-obtine-acordurile-dupa-ce-am",
+  "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 3,
-  "img": "/imagini/postari/03.jpg",
-  "tema": "executie"
+  "img": "/imagini/postari/43.jpg",
+  "tema": "autorizare"
  },
  {
-  "i": "Pot începe lucrările imediat ce am autorizația în mână?",
-  "c": "Nu. Trebuie anunțată începerea lucrărilor la Inspectoratul de Stat în Construcții și la emitent, cu cel puțin 10 zile înainte.",
-  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#pot-incepe-lucrarile-imediat-ce-am",
-  "sursa": "autorizatie-de-construire.html",
+  "i": "Cine întocmește documentațiile pentru acorduri?",
+  "c": "Descrierea proiectului și piesele desenate le face proiectantul. Scenariul de securitate la incendiu se întocmește de un specialist atestat.",
+  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#cine-intocmeste-documentatiile-pentru-acorduri",
+  "sursa": "acorduri-mediu-dsp-dsv.html",
   "zi": 4,
-  "img": "/imagini/postari/04.jpg",
+  "img": "/imagini/postari/54.jpg",
   "tema": "autorizare"
  },
  {
   "i": "Am nevoie de autorizație pentru un foișor de grădină?",
-  "c": "Dacă are fundație și rămâne pe loc, în general da.",
+  "c": "Dacă are fundație și rămâne pe loc, în general da. Un foișor demontabil, așezat pe dale, fără fundație, poate intra la construcții provizorii — dar depinde de regulamentul local.",
   "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#am-nevoie-de-autorizatie-pentru-un",
   "sursa": "anexe-gospodaresti.html",
   "zi": 5,
@@ -45,112 +54,121 @@
   "tema": "autorizare"
  },
  {
-  "i": "Ce este cartea funciară?",
-  "c": "Registrul public în care se înscriu imobilele și drepturile asupra lor: cine e proprietar, ce suprafață are imobilul și ce sarcini apasă pe el.",
-  "u": "https://civilasist.ro/ghiduri/cartea-funciara.html#ce-este-cartea-funciara",
-  "sursa": "cartea-funciara.html",
+  "i": "Dar pentru o magazie de tablă, cumpărată gata făcută?",
+  "c": "Dacă se așază pe o platformă de beton și rămâne acolo, autoritatea o tratează ca pe o construcție. Faptul că ați cumpărat-o de-a gata nu schimbă regimul juridic.",
+  "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#dar-pentru-o-magazie-de-tabla",
+  "sursa": "anexe-gospodaresti.html",
   "zi": 6,
-  "img": "/imagini/postari/06.jpg",
-  "tema": "teren"
+  "img": "/imagini/postari/16.jpg",
+  "tema": "autorizare"
  },
  {
-  "i": "Pot cere certificat de urbanism pentru un teren care nu e al meu?",
-  "c": "Da. Îl poate solicita orice persoană interesată, nu doar proprietarul.",
-  "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#pot-cere-certificat-de-urbanism-pentru",
-  "sursa": "verificari-inainte-de-cumparare-teren.html",
+  "i": "Vecinul și-a făcut fără acte. Pot și eu?",
+  "c": "Nu. Faptul că o construcție nu a fost încă sancționată nu înseamnă că e legală. Iar dacă vecinul e reclamat, controlul ajunge de obicei și pe terenurile alăturate.",
+  "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#vecinul-si-a-facut-fara-acte",
+  "sursa": "anexe-gospodaresti.html",
   "zi": 7,
-  "img": "/imagini/postari/07.jpg",
-  "tema": "teren"
+  "img": "/imagini/postari/27.jpg",
+  "tema": "autorizare"
  },
  {
-  "i": "Trebuie să cer avizele chiar dacă nu mă branșez la utilitatea aceea?",
-  "c": "Da, dacă certificatul de urbanism le trece în listă.",
-  "u": "https://civilasist.ro/ghiduri/avize-utilitati.html#trebuie-sa-cer-avizele-chiar-daca",
-  "sursa": "avize-utilitati.html",
+  "i": "Anexa mea are sub 50 de metri pătrați. Nu e sub prag?",
+  "c": "Nu există un prag general de suprafață sub care se poate construi liber. Există categorii de lucrări exceptate, definite după tipul lucrării, nu după mărimea ei.",
+  "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#anexa-mea-are-sub-50-de",
+  "sursa": "anexe-gospodaresti.html",
   "zi": 8,
-  "img": "/imagini/postari/08.jpg",
+  "img": "/imagini/postari/38.jpg",
   "tema": "autorizare"
  },
  {
-  "i": "Cine convoacă fazele determinante?",
-  "c": "Executantul anunță că a ajuns la stadiul respectiv, iar convocarea se face în scris către toți factorii, cu câteva zile înainte.",
-  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#cine-convoaca-fazele-determinante",
-  "sursa": "faze-determinante.html",
+  "i": "Am construit deja. Ce fac?",
+  "c": "Se poate intra în legalitate, dacă anexa respectă regulile de urbanism. Parcursul e în ghidul despre intrarea în legalitate. Cu cât începeți mai devreme, cu atât e mai simplu.",
+  "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#am-construit-deja-ce-fac",
+  "sursa": "anexe-gospodaresti.html",
   "zi": 9,
-  "img": "/imagini/postari/09.jpg",
-  "tema": "executie"
+  "img": "/imagini/postari/49.jpg",
+  "tema": "autorizare"
  },
  {
-  "i": "Îmi trebuie acord de mediu pentru o casă?",
-  "c": "Aproape niciodată. La o locuință obișnuită, notificarea se clasează, iar actul primit intră în dosarul de autorizație.",
-  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#imi-trebuie-acord-de-mediu-pentru",
-  "sursa": "acorduri-mediu-dsp-dsv.html",
+  "i": "Pot începe lucrările imediat ce am autorizația în mână?",
+  "c": "Nu. Trebuie anunțată începerea lucrărilor la Inspectoratul de Stat în Construcții și la emitent, cu cel puțin 10 zile înainte.",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#pot-incepe-lucrarile-imediat-ce-am",
+  "sursa": "autorizatie-de-construire.html",
   "zi": 10,
-  "img": "/imagini/postari/10.jpg",
+  "img": "/imagini/postari/04.jpg",
   "tema": "autorizare"
- },
- {
-  "i": "Dacă demolez partea în plus, se rezolvă?",
-  "c": "De multe ori, da. Desființarea parțială a ceea ce depășește limitele poate aduce restul în parametri.",
-  "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#daca-demolez-partea-in-plus-se",
-  "sursa": "intrare-in-legalitate.html",
-  "zi": 12,
-  "img": "/imagini/postari/12.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Cine îl poate cere? Trebuie să fiu proprietar?",
-  "c": "Îl poate cere orice persoană interesată, nu doar proprietarul.",
-  "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#cine-il-poate-cere-trebuie-sa",
-  "sursa": "certificat-de-urbanism.html",
-  "zi": 13,
-  "img": "/imagini/postari/13.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Constructorul refuză să vină la recepție. Ce fac?",
-  "c": "Recepția o organizează beneficiarul, nu executantul.",
-  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#constructorul-refuza-sa-vina-la-receptie",
-  "sursa": "receptia-lucrarilor.html",
-  "zi": 14,
-  "img": "/imagini/postari/14.jpg",
-  "tema": "executie"
  },
  {
   "i": "Ce se întâmplă dacă modific ceva față de proiectul autorizat?",
   "c": "Modificările care schimbă suprafața, regimul de înălțime, aspectul exterior, structura de rezistență sau destinația cer autorizație nouă.",
   "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#ce-se-intampla-daca-modific-ceva",
   "sursa": "autorizatie-de-construire.html",
-  "zi": 15,
+  "zi": 11,
   "img": "/imagini/postari/15.jpg",
   "tema": "autorizare"
  },
  {
-  "i": "Dar pentru o magazie de tablă, cumpărată gata făcută?",
-  "c": "Dacă se așază pe o platformă de beton și rămâne acolo, autoritatea o tratează ca pe o construcție.",
-  "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#dar-pentru-o-magazie-de-tabla",
-  "sursa": "anexe-gospodaresti.html",
-  "zi": 16,
-  "img": "/imagini/postari/16.jpg",
+  "i": "Îmi trebuie autorizație pentru împrejmuire?",
+  "c": "De regulă da, pentru împrejmuirile la stradă. Multe primării au însă reglementări proprii, iar certificatul de urbanism vă lămurește exact. Nu porniți de la ce a făcut vecinul.",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#imi-trebuie-autorizatie-pentru-imprejmuire",
+  "sursa": "autorizatie-de-construire.html",
+  "zi": 12,
+  "img": "/imagini/postari/26.jpg",
   "tema": "autorizare"
  },
  {
-  "i": "Cine poate cere un extras de carte funciară?",
-  "c": "Extrasul pentru informare îl poate cere oricine, fără să fie proprietar și fără să justifice un interes anume.",
-  "u": "https://civilasist.ro/ghiduri/cartea-funciara.html#cine-poate-cere-un-extras-de",
-  "sursa": "cartea-funciara.html",
-  "zi": 17,
-  "img": "/imagini/postari/17.jpg",
-  "tema": "teren"
+  "i": "Autorizația a expirat și lucrarea nu e gata. Ce fac?",
+  "c": "Dacă mai sunteți în termen, cereți prelungirea cu cel puțin 15 zile înainte de expirare. Dacă a expirat deja, lucrările trebuie oprite și se solicită autorizație nouă pentru restul de executat.",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#autorizatia-a-expirat-si-lucrarea-nu",
+  "sursa": "autorizatie-de-construire.html",
+  "zi": 13,
+  "img": "/imagini/postari/37.jpg",
+  "tema": "autorizare"
  },
  {
-  "i": "Vânzătorul îmi arată un certificat de urbanism. E de ajuns?",
-  "c": "Verificați data și scopul. Un certificat vechi sau eliberat pentru altceva — de pildă pentru dezmembrare — nu vă spune ce puteți construi dumneavoastră.",
-  "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#vanzatorul-imi-arata-un-certificat-de",
-  "sursa": "verificari-inainte-de-cumparare-teren.html",
+  "i": "Cine răspunde dacă proiectul e greșit?",
+  "c": "Proiectantul răspunde pentru soluția tehnică, verificatorul atestat pentru conformitatea cu cerințele verificate, executantul pentru calitatea execuției, iar dirigintele pentru verificarea lucrărilor în numele beneficiarului.",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#cine-raspunde-daca-proiectul-e-gresit",
+  "sursa": "autorizatie-de-construire.html",
+  "zi": 14,
+  "img": "/imagini/postari/48.jpg",
+  "tema": "autorizare"
+ },
+ {
+  "i": "Am schimbat doar forma acoperișului. Trebuie alt proiect?",
+  "c": "Da. Forma acoperișului schimbă volumul clădirii și aspectul exterior, iar de cele mai multe ori și șarpanta, adică structura. Se face documentație nouă și se cere autorizație.",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#am-schimbat-doar-forma-acoperisului-trebuie",
+  "sursa": "autorizatie-de-construire.html",
+  "zi": 15,
+  "img": "/imagini/postari/56.jpg",
+  "tema": "autorizare"
+ },
+ {
+  "i": "Am făcut o fereastră mică în plus. Trebuie altă autorizație?",
+  "c": "De regulă da, din două motive.",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#am-facut-o-fereastra-mica-in",
+  "sursa": "autorizatie-de-construire.html",
+  "zi": 16,
+  "img": "/imagini/postari/57.jpg",
+  "tema": "autorizare"
+ },
+ {
+  "i": "Vreau să schimb doar tabla de pe acoperiș. Îmi trebuie autorizație?",
+  "c": "Dacă înlocuiți învelitoarea cu una de același fel, păstrând forma, panta și structura, e lucrare de reparație și întreținere — se poate face fără autorizație.",
+  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#vreau-sa-schimb-doar-tabla-de",
+  "sursa": "autorizatie-de-construire.html",
+  "zi": 17,
+  "img": "/imagini/postari/58.jpg",
+  "tema": "autorizare"
+ },
+ {
+  "i": "Trebuie să cer avizele chiar dacă nu mă branșez la utilitatea aceea?",
+  "c": "Da, dacă certificatul de urbanism le trece în listă. Avizul de amplasament nu înseamnă că vă racordați — înseamnă că furnizorul a verificat dacă rețelele lui sunt afectate de construcția dumneavoastră.",
+  "u": "https://civilasist.ro/ghiduri/avize-utilitati.html#trebuie-sa-cer-avizele-chiar-daca",
+  "sursa": "avize-utilitati.html",
   "zi": 18,
-  "img": "/imagini/postari/18.jpg",
-  "tema": "teren"
+  "img": "/imagini/postari/08.jpg",
+  "tema": "autorizare"
  },
  {
   "i": "Am primit aviz negativ. E o problemă?",
@@ -162,210 +180,111 @@
   "tema": "autorizare"
  },
  {
-  "i": "Ce fac dacă executantul vrea să toarne fără proces-verbal?",
-  "c": "Lucrarea se oprește. Dirigintele de șantier are dreptul și obligația să dispună sistarea până la efectuarea verificării.",
-  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#ce-fac-daca-executantul-vrea-sa",
-  "sursa": "faze-determinante.html",
+  "i": "Cât costă avizele?",
+  "c": "Fiecare operator are un tarif de analiză, de ordinul zecilor sau sutelor de lei. Costul mare nu e la aviz, ci la racordare — acolo se plătesc lucrările de branșament, care pot însemna mii de lei.",
+  "u": "https://civilasist.ro/ghiduri/avize-utilitati.html#cat-costa-avizele",
+  "sursa": "avize-utilitati.html",
   "zi": 20,
-  "img": "/imagini/postari/20.jpg",
-  "tema": "executie"
+  "img": "/imagini/postari/30.jpg",
+  "tema": "autorizare"
  },
  {
-  "i": "Cât durează acordul de mediu?",
-  "c": "Clasarea notificării vine în câteva săptămâni.",
-  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#cat-dureaza-acordul-de-mediu",
-  "sursa": "acorduri-mediu-dsp-dsv.html",
+  "i": "Cât sunt valabile?",
+  "c": "De obicei un an, uneori corelat cu valabilitatea certificatului de urbanism. Dacă vă întindeți cu dosarul, verificați ca primul aviz obținut să nu expire până depuneți pentru autorizație.",
+  "u": "https://civilasist.ro/ghiduri/avize-utilitati.html#cat-sunt-valabile",
+  "sursa": "avize-utilitati.html",
   "zi": 21,
-  "img": "/imagini/postari/21.jpg",
+  "img": "/imagini/postari/41.jpg",
   "tema": "autorizare"
  },
  {
-  "i": "Am construit acum zece ani. S-a prescris?",
-  "c": "Aplicarea amenzii contravenționale se prescrie în termenele prevăzute de lege, dar construcția rămâne neautorizată.",
-  "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#am-construit-acum-zece-ani-s",
-  "sursa": "intrare-in-legalitate.html",
+  "i": "Pot depune eu personal sau trebuie proiectant?",
+  "c": "Puteți depune și singur. Partea în care se greșește nu e depunerea, ci întocmirea: plan de situație corect, descrierea necesarului, datele tehnice ale investiției.",
+  "u": "https://civilasist.ro/ghiduri/avize-utilitati.html#pot-depune-eu-personal-sau-trebuie",
+  "sursa": "avize-utilitati.html",
+  "zi": 22,
+  "img": "/imagini/postari/52.jpg",
+  "tema": "autorizare"
+ },
+ {
+  "i": "Ce este cartea funciară?",
+  "c": "Registrul public în care se înscriu imobilele și drepturile asupra lor: cine e proprietar, ce suprafață are imobilul și ce sarcini apasă pe el.",
+  "u": "https://civilasist.ro/ghiduri/cartea-funciara.html#ce-este-cartea-funciara",
+  "sursa": "cartea-funciara.html",
   "zi": 23,
-  "img": "/imagini/postari/23.jpg",
-  "tema": "autorizare"
+  "img": "/imagini/postari/06.jpg",
+  "tema": "teren"
  },
  {
-  "i": "Cât costă un certificat de urbanism?",
-  "c": "Taxa se calculează după suprafața terenului și diferă de la o primărie la alta, fiind stabilită prin hotărâre a consiliului local.",
-  "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#cat-costa",
-  "sursa": "certificat-de-urbanism.html",
+  "i": "Cine poate cere un extras de carte funciară?",
+  "c": "Extrasul pentru informare îl poate cere oricine, fără să fie proprietar și fără să justifice un interes anume.",
+  "u": "https://civilasist.ro/ghiduri/cartea-funciara.html#cine-poate-cere-un-extras-de",
+  "sursa": "cartea-funciara.html",
   "zi": 24,
-  "img": "/imagini/postari/24.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Ce se întâmplă dacă recepția e respinsă?",
-  "c": "Se consemnează motivele și termenele de remediere, iar recepția se reia după ce s-a lucrat.",
-  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#ce-se-intampla-daca-receptia-e",
-  "sursa": "receptia-lucrarilor.html",
-  "zi": 25,
-  "img": "/imagini/postari/25.jpg",
-  "tema": "executie"
- },
- {
-  "i": "Îmi trebuie autorizație pentru împrejmuire?",
-  "c": "De regulă da, pentru împrejmuirile la stradă.",
-  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#imi-trebuie-autorizatie-pentru-imprejmuire",
-  "sursa": "autorizatie-de-construire.html",
-  "zi": 26,
-  "img": "/imagini/postari/26.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Vecinul și-a făcut fără acte. Pot și eu?",
-  "c": "Nu. Faptul că o construcție nu a fost încă sancționată nu înseamnă că e legală.",
-  "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#vecinul-si-a-facut-fara-acte",
-  "sursa": "anexe-gospodaresti.html",
-  "zi": 27,
-  "img": "/imagini/postari/27.jpg",
-  "tema": "autorizare"
+  "img": "/imagini/postari/17.jpg",
+  "tema": "teren"
  },
  {
   "i": "Cum obțin un extras de carte funciară?",
   "c": "Cel mai simplu online, prin portalul agenției naționale de cadastru: cont, cerere după numărul cadastral sau după adresă, plata tarifului, iar documentul vine electronic.",
   "u": "https://civilasist.ro/ghiduri/cartea-funciara.html#cum-obtin-un-extras-de-carte",
   "sursa": "cartea-funciara.html",
-  "zi": 28,
+  "zi": 25,
   "img": "/imagini/postari/28.jpg",
   "tema": "teren"
- },
- {
-  "i": "Terenul e agricol în intravilan. Pot construi?",
-  "c": "Categoria de folosință se poate schimba, dar e o procedură separată, cu taxe, iar posibilitatea de a construi vine din documentațiile de urbanism, nu din categoria de folosință.",
-  "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#terenul-e-agricol-in-intravilan-pot",
-  "sursa": "verificari-inainte-de-cumparare-teren.html",
-  "zi": 29,
-  "img": "/imagini/postari/29.jpg",
-  "tema": "teren"
- },
- {
-  "i": "Cât costă avizele de la apă, curent și gaz?",
-  "c": "Fiecare operator are un tarif de analiză, de ordinul zecilor sau sutelor de lei.",
-  "u": "https://civilasist.ro/ghiduri/avize-utilitati.html#cat-costa-avizele",
-  "sursa": "avize-utilitati.html",
-  "zi": 30,
-  "img": "/imagini/postari/30.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Vine Inspectoratul de Stat în Construcții la toate fazele?",
-  "c": "Nu. Participă doar la fazele la care programul de control avizat o prevede, în funcție de categoria de importanță a construcției.",
-  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#vine-inspectoratul-de-stat-in-constructii",
-  "sursa": "faze-determinante.html",
-  "zi": 31,
-  "img": "/imagini/postari/31.jpg",
-  "tema": "executie"
- },
- {
-  "i": "Ce se întâmplă dacă construiesc fără avizul de la pompieri?",
-  "c": "Lucrarea rămâne fără autorizație de securitate la incendiu, iar clădirea nu poate fi pusă legal în funcțiune.",
-  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#ce-se-intampla-daca-construiesc-fara",
-  "sursa": "acorduri-mediu-dsp-dsv.html",
-  "zi": 32,
-  "img": "/imagini/postari/32.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Îmi trebuie neapărat expertiză tehnică?",
-  "c": "La lucrări executate fără proiect verificat, practic da.",
-  "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#imi-trebuie-neaparat-expertiza-tehnica",
-  "sursa": "intrare-in-legalitate.html",
-  "zi": 34,
-  "img": "/imagini/postari/34.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Mi-a expirat certificatul. Ce fac?",
-  "c": "Dacă n-ați cerut prelungirea înainte de expirare, se solicită unul nou, cu dosar complet.",
-  "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#mi-a-expirat-certificatul-ce-fac",
-  "sursa": "certificat-de-urbanism.html",
-  "zi": 35,
-  "img": "/imagini/postari/35.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Recepția finală se face automat după trei ani?",
-  "c": "Nu. Trebuie convocată.",
-  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#receptia-finala-se-face-automat-dupa",
-  "sursa": "receptia-lucrarilor.html",
-  "zi": 36,
-  "img": "/imagini/postari/36.jpg",
-  "tema": "executie"
- },
- {
-  "i": "Autorizația a expirat și lucrarea nu e gata. Ce fac?",
-  "c": "Dacă mai sunteți în termen, cereți prelungirea cu cel puțin 15 zile înainte de expirare.",
-  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#autorizatia-a-expirat-si-lucrarea-nu",
-  "sursa": "autorizatie-de-construire.html",
-  "zi": 37,
-  "img": "/imagini/postari/37.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Anexa mea are sub 50 de metri pătrați. Nu e sub prag?",
-  "c": "Nu există un prag general de suprafață sub care se poate construi liber.",
-  "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#anexa-mea-are-sub-50-de",
-  "sursa": "anexe-gospodaresti.html",
-  "zi": 38,
-  "img": "/imagini/postari/38.jpg",
-  "tema": "autorizare"
  },
  {
   "i": "Cât e valabil un extras de carte funciară?",
   "c": "Cel de informare arată situația din momentul eliberării și nu are un termen propriu-zis, dar instituțiile cer, de regulă, unul emis recent — la dosarele de autorizație se cere actualizat.",
   "u": "https://civilasist.ro/ghiduri/cartea-funciara.html#cat-e-valabil-un-extras-de",
   "sursa": "cartea-funciara.html",
-  "zi": 39,
+  "zi": 26,
   "img": "/imagini/postari/39.jpg",
   "tema": "teren"
  },
  {
-  "i": "Cât costă verificările înainte de a cumpăra un teren?",
-  "c": "Extrasul de carte funciară și certificatul de urbanism înseamnă, împreună, câteva sute de lei.",
-  "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#cat-costa-toate-verificarile-astea",
-  "sursa": "verificari-inainte-de-cumparare-teren.html",
-  "zi": 40,
-  "img": "/imagini/postari/40.jpg",
+  "i": "Casa mea nu apare în cartea funciară. Ce înseamnă?",
+  "c": "Că nu a fost intabulată. Terenul poate fi înscris, iar construcția nu — situație obișnuită la clădirile ridicate fără autorizație sau nerecepționate.",
+  "u": "https://civilasist.ro/ghiduri/cartea-funciara.html#casa-mea-nu-apare-in-cartea",
+  "sursa": "cartea-funciara.html",
+  "zi": 27,
+  "img": "/imagini/postari/50.jpg",
   "tema": "teren"
  },
  {
-  "i": "Cât sunt valabile avizele de la furnizorii de utilități?",
-  "c": "De obicei un an, uneori corelat cu valabilitatea certificatului de urbanism.",
-  "u": "https://civilasist.ro/ghiduri/avize-utilitati.html#cat-sunt-valabile",
-  "sursa": "avize-utilitati.html",
-  "zi": 41,
-  "img": "/imagini/postari/41.jpg",
+  "i": "Pot construi cu certificatul de urbanism?",
+  "c": "Nu. Certificatul e un act de informare. Dreptul de a construi vine numai din autorizația de construire. Cine începe lucrările doar cu certificatul comite o contravenție.",
+  "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#pot-construi-cu-certificatul-de-urbanism",
+  "sursa": "certificat-de-urbanism.html",
+  "zi": 28,
+  "img": "/imagini/postari/02.jpg",
   "tema": "autorizare"
  },
  {
-  "i": "Se pot recupera fazele determinante după ce lucrarea a avansat?",
-  "c": "Nu retroactiv. Nu se poate semna că s-a verificat ceva ce nu s-a văzut.",
-  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#se-pot-recupera-fazele-determinante-dupa",
-  "sursa": "faze-determinante.html",
-  "zi": 42,
-  "img": "/imagini/postari/42.jpg",
-  "tema": "executie"
- },
- {
-  "i": "Pot obține acordurile după ce am autorizația?",
-  "c": "Nu. Sunt condiții pentru emiterea autorizației, nu formalități ulterioare.",
-  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#pot-obtine-acordurile-dupa-ce-am",
-  "sursa": "acorduri-mediu-dsp-dsv.html",
-  "zi": 43,
-  "img": "/imagini/postari/43.jpg",
+  "i": "Cine îl poate cere? Trebuie să fiu proprietar?",
+  "c": "Îl poate cere orice persoană interesată, nu doar proprietarul. Tocmai de aceea se cere frecvent înainte de cumpărarea unui teren: vă spune ce se poate construi acolo, înainte să dați banii.",
+  "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#cine-il-poate-cere-trebuie-sa",
+  "sursa": "certificat-de-urbanism.html",
+  "zi": 29,
+  "img": "/imagini/postari/13.jpg",
   "tema": "autorizare"
  },
  {
-  "i": "Pot vinde casa înainte de recepția lucrărilor?",
-  "c": "Construcția neînscrisă în cartea funciară nu se poate vinde ca atare.",
-  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#pot-vinde-casa-pana-rezolv",
-  "sursa": "intrare-in-legalitate.html",
-  "zi": 45,
-  "img": "/imagini/postari/45.jpg",
+  "i": "Cât costă?",
+  "c": "Taxa se calculează după suprafața terenului și diferă de la o primărie la alta, fiind stabilită prin hotărâre a consiliului local. Pentru un teren obișnuit de casă vorbim de zeci de lei, nu de mii.",
+  "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#cat-costa",
+  "sursa": "certificat-de-urbanism.html",
+  "zi": 30,
+  "img": "/imagini/postari/24.jpg",
+  "tema": "autorizare"
+ },
+ {
+  "i": "Mi-a expirat certificatul. Ce fac?",
+  "c": "Dacă n-ați cerut prelungirea înainte de expirare, se solicită unul nou, cu dosar complet. Avizele obținute între timp rămân valabile pe durata lor proprie, deci nu se pierde chiar tot.",
+  "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#mi-a-expirat-certificatul-ce-fac",
+  "sursa": "certificat-de-urbanism.html",
+  "zi": 31,
+  "img": "/imagini/postari/35.jpg",
   "tema": "autorizare"
  },
  {
@@ -373,152 +292,296 @@
   "c": "Lucrările de reparații și întreținere care nu modifică structura de rezistență, aspectul exterior sau destinația se pot executa fără autorizație, deci fără certificat.",
   "u": "https://civilasist.ro/ghiduri/certificat-de-urbanism.html#imi-trebuie-certificat-pentru-o-simpla",
   "sursa": "certificat-de-urbanism.html",
-  "zi": 46,
+  "zi": 32,
   "img": "/imagini/postari/46.jpg",
   "tema": "autorizare"
+ },
+ {
+  "i": "Cine convoacă fazele determinante?",
+  "c": "Executantul anunță că a ajuns la stadiul respectiv, iar convocarea se face în scris către toți factorii, cu câteva zile înainte.",
+  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#cine-convoaca-fazele-determinante",
+  "sursa": "faze-determinante.html",
+  "zi": 33,
+  "img": "/imagini/postari/09.jpg",
+  "tema": "executie"
+ },
+ {
+  "i": "Ce fac dacă executantul vrea să toarne fără proces-verbal?",
+  "c": "Lucrarea se oprește. Dirigintele de șantier are dreptul și obligația să dispună sistarea până la efectuarea verificării.",
+  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#ce-fac-daca-executantul-vrea-sa",
+  "sursa": "faze-determinante.html",
+  "zi": 34,
+  "img": "/imagini/postari/20.jpg",
+  "tema": "executie"
+ },
+ {
+  "i": "Vine Inspectoratul de Stat în Construcții la toate fazele?",
+  "c": "Nu. Participă doar la fazele la care programul de control avizat o prevede, în funcție de categoria de importanță a construcției. La o locuință obișnuită, prezența lui e limitată la câteva momente.",
+  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#vine-inspectoratul-de-stat-in-constructii",
+  "sursa": "faze-determinante.html",
+  "zi": 35,
+  "img": "/imagini/postari/31.jpg",
+  "tema": "executie"
+ },
+ {
+  "i": "Se pot recupera fazele determinante după ce lucrarea a avansat?",
+  "c": "Nu retroactiv. Nu se poate semna că s-a verificat ceva ce nu s-a văzut.",
+  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#se-pot-recupera-fazele-determinante-dupa",
+  "sursa": "faze-determinante.html",
+  "zi": 36,
+  "img": "/imagini/postari/42.jpg",
+  "tema": "executie"
+ },
+ {
+  "i": "Fazele determinante sunt obligatorii și la o casă mică?",
+  "c": "Da, dacă proiectul are program de control cu faze determinante — și aproape toate proiectele autorizate îl au. Mărimea construcției schimbă numărul fazelor și cine participă, nu obligația în sine.",
+  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#la-o-casa-mica-chiar-sunt",
+  "sursa": "faze-determinante.html",
+  "zi": 37,
+  "img": "/imagini/postari/53.jpg",
+  "tema": "executie"
+ },
+ {
+  "i": "Se poate intra în legalitate pentru orice construcție?",
+  "c": "Nu. Numai dacă lucrarea respectă documentațiile de urbanism în vigoare — procent de ocupare, coeficient de utilizare, regim de înălțime, retrageri, destinația terenului.",
+  "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#se-poate-intra-in-legalitate-pentru",
+  "sursa": "intrare-in-legalitate.html",
+  "zi": 38,
+  "img": "/imagini/postari/01.jpg",
+  "tema": "autorizare"
+ },
+ {
+  "i": "Dacă demolez partea în plus, se rezolvă?",
+  "c": "De multe ori, da. Desființarea parțială a ceea ce depășește limitele poate aduce restul în parametri.",
+  "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#daca-demolez-partea-in-plus-se",
+  "sursa": "intrare-in-legalitate.html",
+  "zi": 39,
+  "img": "/imagini/postari/12.jpg",
+  "tema": "autorizare"
+ },
+ {
+  "i": "Am construit acum zece ani. S-a prescris?",
+  "c": "Aplicarea amenzii contravenționale se prescrie în termenele prevăzute de lege, dar construcția rămâne neautorizată.",
+  "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#am-construit-acum-zece-ani-s",
+  "sursa": "intrare-in-legalitate.html",
+  "zi": 40,
+  "img": "/imagini/postari/23.jpg",
+  "tema": "autorizare"
+ },
+ {
+  "i": "Îmi trebuie neapărat expertiză tehnică?",
+  "c": "La lucrări executate fără proiect verificat, practic da. Nimeni nu poate certifica rezistența unei construcții pe care n-a proiectat-o și n-a urmărit-o nimeni în execuție.",
+  "u": "https://civilasist.ro/ghiduri/intrare-in-legalitate.html#imi-trebuie-neaparat-expertiza-tehnica",
+  "sursa": "intrare-in-legalitate.html",
+  "zi": 41,
+  "img": "/imagini/postari/34.jpg",
+  "tema": "autorizare"
+ },
+ {
+  "i": "Pot vinde casa înainte de recepția lucrărilor?",
+  "c": "Construcția neînscrisă în cartea funciară nu se poate vinde ca atare. Se vinde terenul, iar cumpărătorul preia problema — motiv pentru care prețul scade, iar băncile nu dau credit pe o astfel de situație.",
+  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#pot-vinde-casa-pana-rezolv",
+  "sursa": "receptia-lucrarilor.html",
+  "zi": 42,
+  "img": "/imagini/postari/45.jpg",
+  "tema": "executie"
+ },
+ {
+  "i": "Centrala e nouă, cu garanție de la producător. Trebuie verificare tehnică periodică?",
+  "c": "Garanția acoperă defectele de fabricație, nu obligația legală de verificare. Instalația nouă intră în evidență de la punerea în funcțiune, iar termenele de verificare curg de atunci.",
+  "u": "https://civilasist.ro/ghiduri/verificari-tehnice-periodice.html#instalatia-e-noua-cu-garantie-de",
+  "sursa": "verificari-tehnice-periodice.html",
+  "zi": 43,
+  "img": "/imagini/postari/22.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Ce se întâmplă dacă a expirat verificarea tehnică periodică?",
+  "c": "Centrala nu mai are drept de funcționare, iar riscul concret e să vă fie sistată instalația de utilizare a gazelor.",
+  "u": "https://civilasist.ro/ghiduri/verificari-tehnice-periodice.html#ce-se-intampla-daca-a-expirat",
+  "sursa": "verificari-tehnice-periodice.html",
+  "zi": 44,
+  "img": "/imagini/postari/44.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Pot să mă mut în casă înainte de recepție?",
+  "c": "Nu ar trebui. Până la recepția la terminarea lucrărilor, riscul asupra construcției e al executantului.",
+  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#pot-sa-ma-mut-in-casa",
+  "sursa": "receptia-lucrarilor.html",
+  "zi": 45,
+  "img": "/imagini/postari/03.jpg",
+  "tema": "executie"
+ },
+ {
+  "i": "Constructorul refuză să vină la recepție. Ce fac?",
+  "c": "Recepția o organizează beneficiarul, nu executantul. Se convoacă în scris, cu confirmare de primire. Dacă nu se prezintă, comisia consemnează absența în proces-verbal și își continuă lucrările.",
+  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#constructorul-refuza-sa-vina-la-receptie",
+  "sursa": "receptia-lucrarilor.html",
+  "zi": 46,
+  "img": "/imagini/postari/14.jpg",
+  "tema": "executie"
+ },
+ {
+  "i": "Ce se întâmplă dacă recepția e respinsă?",
+  "c": "Se consemnează motivele și termenele de remediere, iar recepția se reia după ce s-a lucrat.",
+  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#ce-se-intampla-daca-receptia-e",
+  "sursa": "receptia-lucrarilor.html",
+  "zi": 47,
+  "img": "/imagini/postari/25.jpg",
+  "tema": "executie"
+ },
+ {
+  "i": "Recepția finală se face automat după trei ani?",
+  "c": "Nu. Trebuie convocată. Dacă nimeni nu o organizează, pur și simplu nu are loc, iar garanția de bună execuție rămâne nereturnată. Puneți-vă un memento la trei ani.",
+  "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#receptia-finala-se-face-automat-dupa",
+  "sursa": "receptia-lucrarilor.html",
+  "zi": 48,
+  "img": "/imagini/postari/36.jpg",
+  "tema": "executie"
  },
  {
   "i": "Îmi trebuie diriginte de șantier la recepție?",
   "c": "La lucrările unde dirigintele e obligatoriu, da: el pregătește dosarul, participă la recepție și răspunde de conformitatea lucrărilor verificate.",
   "u": "https://civilasist.ro/ghiduri/receptia-lucrarilor.html#imi-trebuie-diriginte-de-santier-la",
   "sursa": "receptia-lucrarilor.html",
-  "zi": 47,
+  "zi": 49,
   "img": "/imagini/postari/47.jpg",
   "tema": "executie"
  },
  {
-  "i": "Cine răspunde dacă proiectul e greșit?",
-  "c": "Proiectantul răspunde pentru soluția tehnică, verificatorul atestat pentru conformitatea cu cerințele verificate, executantul pentru calitatea execuției, iar dirigintele pentru verificarea lucrărilor în numele beneficiarului.",
-  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#cine-raspunde-daca-proiectul-e-gresit",
-  "sursa": "autorizatie-de-construire.html",
-  "zi": 48,
-  "img": "/imagini/postari/48.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Am construit deja. Ce fac?",
-  "c": "Se poate intra în legalitate, dacă anexa respectă regulile de urbanism.",
-  "u": "https://civilasist.ro/ghiduri/anexe-gospodaresti.html#am-construit-deja-ce-fac",
-  "sursa": "anexe-gospodaresti.html",
-  "zi": 49,
-  "img": "/imagini/postari/49.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Casa mea nu apare în cartea funciară. Ce înseamnă?",
-  "c": "Că nu a fost intabulată. Terenul poate fi înscris, iar construcția nu — situație obișnuită la clădirile ridicate fără autorizație sau nerecepționate.",
-  "u": "https://civilasist.ro/ghiduri/cartea-funciara.html#casa-mea-nu-apare-in-cartea",
-  "sursa": "cartea-funciara.html",
+  "i": "Pot cere certificat de urbanism pentru un teren care nu e al meu?",
+  "c": "Da. Îl poate solicita orice persoană interesată, nu doar proprietarul. Exact de aceea e instrumentul potrivit înainte de cumpărare.",
+  "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#pot-cere-certificat-de-urbanism-pentru",
+  "sursa": "verificari-inainte-de-cumparare-teren.html",
   "zi": 50,
-  "img": "/imagini/postari/50.jpg",
+  "img": "/imagini/postari/07.jpg",
+  "tema": "teren"
+ },
+ {
+  "i": "Vânzătorul îmi arată un certificat de urbanism. E de ajuns?",
+  "c": "Verificați data și scopul. Un certificat vechi sau eliberat pentru altceva — de pildă pentru dezmembrare — nu vă spune ce puteți construi dumneavoastră. Și verificați dacă mai e valabil.",
+  "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#vanzatorul-imi-arata-un-certificat-de",
+  "sursa": "verificari-inainte-de-cumparare-teren.html",
+  "zi": 51,
+  "img": "/imagini/postari/18.jpg",
+  "tema": "teren"
+ },
+ {
+  "i": "Terenul e agricol în intravilan. Pot construi?",
+  "c": "Categoria de folosință se poate schimba, dar e o procedură separată, cu taxe, iar posibilitatea de a construi vine din documentațiile de urbanism, nu din categoria de folosință.",
+  "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#terenul-e-agricol-in-intravilan-pot",
+  "sursa": "verificari-inainte-de-cumparare-teren.html",
+  "zi": 52,
+  "img": "/imagini/postari/29.jpg",
+  "tema": "teren"
+ },
+ {
+  "i": "Cât costă toate verificările astea?",
+  "c": "Extrasul de carte funciară și certificatul de urbanism înseamnă, împreună, câteva sute de lei.",
+  "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#cat-costa-toate-verificarile-astea",
+  "sursa": "verificari-inainte-de-cumparare-teren.html",
+  "zi": 53,
+  "img": "/imagini/postari/40.jpg",
   "tema": "teren"
  },
  {
   "i": "Vânzătorul mă grăbește. E un semn rău?",
-  "c": "De obicei, da. Un teren bun suportă cincisprezece zile de așteptare pentru un certificat de urbanism.",
+  "c": "De obicei, da. Un teren bun suportă cincisprezece zile de așteptare pentru un certificat de urbanism. Graba insistentă e, în experiența noastră, cel mai frecvent semn că e ceva la mijloc.",
   "u": "https://civilasist.ro/ghiduri/verificari-inainte-de-cumparare-teren.html#vanzatorul-ma-grabeste-e-un-semn",
   "sursa": "verificari-inainte-de-cumparare-teren.html",
-  "zi": 51,
+  "zi": 54,
   "img": "/imagini/postari/51.jpg",
   "tema": "teren"
  },
  {
-  "i": "Pot depune eu personal sau trebuie proiectant?",
-  "c": "Puteți depune și singur. Partea în care se greșește nu e depunerea, ci întocmirea: plan de situație corect, descrierea necesarului, datele tehnice ale investiției.",
-  "u": "https://civilasist.ro/ghiduri/avize-utilitati.html#pot-depune-eu-personal-sau-trebuie",
-  "sursa": "avize-utilitati.html",
-  "zi": 52,
-  "img": "/imagini/postari/52.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Fazele determinante sunt obligatorii și la o casă mică?",
-  "c": "Da, dacă proiectul are program de control cu faze determinante — și aproape toate proiectele autorizate îl au.",
-  "u": "https://civilasist.ro/ghiduri/faze-determinante.html#la-o-casa-mica-chiar-sunt",
-  "sursa": "faze-determinante.html",
-  "zi": 53,
-  "img": "/imagini/postari/53.jpg",
-  "tema": "executie"
- },
- {
-  "i": "Cine întocmește documentațiile pentru acorduri?",
-  "c": "Descrierea proiectului și piesele desenate le face proiectantul.",
-  "u": "https://civilasist.ro/ghiduri/acorduri-mediu-dsp-dsv.html#cine-intocmeste-documentatiile-pentru-acorduri",
-  "sursa": "acorduri-mediu-dsp-dsv.html",
-  "zi": 54,
-  "img": "/imagini/postari/54.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Am schimbat doar forma acoperișului. Trebuie alt proiect?",
-  "c": "Da. Forma acoperișului schimbă volumul clădirii și aspectul exterior, iar de cele mai multe ori și șarpanta, adică structura.",
-  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#am-schimbat-doar-forma-acoperisului-trebuie",
-  "sursa": "autorizatie-de-construire.html",
-  "zi": 56,
-  "img": "/imagini/postari/56.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Am făcut o fereastră mică în plus. Trebuie altă autorizație?",
-  "c": "De regulă da, din două motive. Un gol nou schimbă aspectul exterior, iar dacă peretele e portant, atinge structura de rezistență — acolo e nevoie și de avizul proiectantului de rezistență, cu buiandrug calculat.",
-  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#am-facut-o-fereastra-mica-in",
-  "sursa": "autorizatie-de-construire.html",
-  "zi": 57,
-  "img": "/imagini/postari/57.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Vreau să schimb doar tabla de pe acoperiș. Îmi trebuie autorizație?",
-  "c": "Dacă înlocuiți învelitoarea cu una de același fel, păstrând forma, panta și structura, e lucrare de reparație și întreținere — se poate face fără autorizație.",
-  "u": "https://civilasist.ro/ghiduri/autorizatie-de-construire.html#vreau-sa-schimb-doar-tabla-de",
-  "sursa": "autorizatie-de-construire.html",
-  "zi": 58,
-  "img": "/imagini/postari/58.jpg",
-  "tema": "autorizare"
- },
- {
-  "i": "Am un singur stivuitor. Chiar îmi trebuie RSVTI?",
-  "c": "Da. Obligația vine din deținerea instalației, nu din numărul lor.",
-  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#am-un-singur-stivuitor-chiar-imi",
-  "sursa": "obligatii-iscir.html",
-  "zi": 11,
-  "img": "/imagini/postari/11.jpg",
-  "tema": "iscir"
- },
- {
-  "i": "Instalația e nouă, cu garanție de la producător. E de ajuns?",
-  "c": "Nu. Garanția producătorului acoperă defectele de fabricație.",
-  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#instalatia-e-noua-cu-garantie-de",
-  "sursa": "obligatii-iscir.html",
-  "zi": 22,
-  "img": "/imagini/postari/22.jpg",
-  "tema": "iscir"
- },
- {
-  "i": "Cine face verificarea tehnică periodică?",
-  "c": "Verificarea o efectuează ISCIR sau o persoană juridică autorizată în acest scop, după caz.",
-  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#cine-face-verificarea-tehnica-periodica",
-  "sursa": "obligatii-iscir.html",
-  "zi": 33,
-  "img": "/imagini/postari/33.jpg",
-  "tema": "iscir"
- },
- {
-  "i": "Am cumpărat o hală cu un pod rulant în ea. Ce fac primul lucru?",
-  "c": "Căutați cartea instalației și ultimul proces-verbal de verificare.",
-  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#am-cumparat-o-hala-cu-un",
-  "sursa": "obligatii-iscir.html",
+  "i": "Ce este verificarea tehnică periodică a centralei termice?",
+  "c": "Este controlul făcut la termen de un operator autorizat, care confirmă că centrala mai poate funcționa în siguranță. Se verifică arderea, etanșeitatea, evacuarea gazelor arse și dispozitivele de siguranță.",
+  "u": "https://civilasist.ro/ghiduri/verificari-tehnice-periodice.html#ce-este-verificarea-tehnica-periodica",
+  "sursa": "verificari-tehnice-periodice.html",
   "zi": 55,
-  "img": "/imagini/postari/55.jpg",
+  "img": "/imagini/postari/76.jpg",
   "tema": "iscir"
  },
  {
-  "i": "Ce se întâmplă dacă a expirat verificarea tehnică periodică?",
-  "c": "Instalația nu mai are drept de funcționare. Trebuie oprită până la verificare.",
-  "u": "https://civilasist.ro/ghiduri/obligatii-iscir.html#ce-se-intampla-daca-a-expirat",
-  "sursa": "obligatii-iscir.html",
-  "zi": 44,
-  "img": "/imagini/postari/44.jpg",
+  "i": "Cât de des se face verificarea tehnică periodică?",
+  "c": "O dată la doi ani. Termenul curge de la verificarea precedentă, nu de la începutul anului, iar data următoare o aveți scrisă în procesul-verbal. Puneți-vă un memento — nimeni nu vă anunță că a expirat.",
+  "u": "https://civilasist.ro/ghiduri/verificari-tehnice-periodice.html#cat-de-des-se-face-verificarea",
+  "sursa": "verificari-tehnice-periodice.html",
+  "zi": 56,
+  "img": "/imagini/postari/77.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Cine are dreptul să facă verificarea tehnică periodică?",
+  "c": "Doar o persoană juridică autorizată, prin operator autorizat. Instalatorul care v-a montat centrala nu poate face verificarea dacă nu are această autorizare, oricât de bun ar fi la montaj.",
+  "u": "https://civilasist.ro/ghiduri/verificari-tehnice-periodice.html#cine-poate-face-verificarea",
+  "sursa": "verificari-tehnice-periodice.html",
+  "zi": 57,
+  "img": "/imagini/postari/78.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Ce se verifică efectiv la centrala mea?",
+  "c": "Etanșeitatea instalației, arzătorul și parametrii de ardere măsurați cu analizor de gaze, evacuarea gazelor arse și tirajul, dispozitivele de siguranță și automatizarea.",
+  "u": "https://civilasist.ro/ghiduri/verificari-tehnice-periodice.html#ce-se-verifica-la-o-centrala",
+  "sursa": "verificari-tehnice-periodice.html",
+  "zi": 58,
+  "img": "/imagini/postari/79.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Ce primesc după verificare?",
+  "c": "Un proces-verbal de verificare tehnică periodică, în care scrie dacă centrala e admisă în funcționare și până când. Documentul se prezintă la control și la cererea distribuitorului de gaze, deci păstrați-l.",
+  "u": "https://civilasist.ro/ghiduri/verificari-tehnice-periodice.html#ce-primesc-dupa-verificare",
+  "sursa": "verificari-tehnice-periodice.html",
+  "zi": 59,
+  "img": "/imagini/postari/80.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Am cumpărat o locuință cu centrală termică. Ce fac primul lucru?",
+  "c": "Cereți ultimul proces-verbal de verificare și documentele centralei. Din ele aflați dacă mai e în termen. Dacă lipsesc sau termenul a trecut, centrala trebuie verificată înainte să vă bazați pe ea la iarnă.",
+  "u": "https://civilasist.ro/ghiduri/verificari-tehnice-periodice.html#am-cumparat-o-cladire-cu-centrala",
+  "sursa": "verificari-tehnice-periodice.html",
+  "zi": 60,
+  "img": "/imagini/postari/81.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Ce documente trebuie să am pentru centrală?",
+  "c": "Cartea tehnică a aparatului, dovada punerii în funcțiune și ultimul proces-verbal de verificare periodică. Astea trei se cer la control, la vânzare și de către distribuitorul de gaze.",
+  "u": "https://civilasist.ro/ghiduri/verificari-tehnice-periodice.html#ce-e-cartea-instalatiei",
+  "sursa": "verificari-tehnice-periodice.html",
+  "zi": 61,
+  "img": "/imagini/postari/82.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Cine răspunde dacă centrala merge cu verificarea expirată?",
+  "c": "Dumneavoastră, ca deținător. Nu instalatorul, nu firma care a făcut ultima verificare. Iar în caz de accident, o verificare expirată e primul lucru pe care îl caută asigurătorul.",
+  "u": "https://civilasist.ro/ghiduri/verificari-tehnice-periodice.html#cine-raspunde-daca-merge-cu-verificarea-expirata",
+  "sursa": "verificari-tehnice-periodice.html",
+  "zi": 62,
+  "img": "/imagini/postari/83.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Cât durează o verificare tehnică periodică?",
+  "c": "La o centrală de apartament, de regulă mai puțin de o oră. Contează să aveți acces la centrală și documentele la vedere — atunci se termină pe loc, cu procesul-verbal în mână.",
+  "u": "https://civilasist.ro/ghiduri/verificari-tehnice-periodice.html#cat-dureaza-o-verificare",
+  "sursa": "verificari-tehnice-periodice.html",
+  "zi": 63,
+  "img": "/imagini/postari/84.jpg",
+  "tema": "iscir"
+ },
+ {
+  "i": "Centrala de apartament intră la verificare tehnică periodică?",
+  "c": "Da, și tocmai ele sunt cele de care ne ocupăm. Orice centrală pe gaz, inclusiv cea murală din apartament, se verifică o dată la doi ani. Faptul că e mică și stă în bucătărie nu o scoate de sub obligație.",
+  "u": "https://civilasist.ro/ghiduri/verificari-tehnice-periodice.html#centrala-de-apartament-intra-la-verificare",
+  "sursa": "verificari-tehnice-periodice.html",
+  "zi": 64,
+  "img": "/imagini/postari/85.jpg",
   "tema": "iscir"
  }
 ]

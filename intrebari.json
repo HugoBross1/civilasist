@@ -405,15 +405,6 @@
   "tema": "iscir"
  },
  {
-  "id": "cine-face-verificarea-tehnica-periodica",
-  "i": "Cine face verificarea tehnică periodică?",
-  "r": "Verificarea o efectuează ISCIR sau o persoană juridică autorizată în acest scop, după caz. RSVTI nu o face el însuși — el ține evidența, urmărește scadențele, pregătește instalația și dosarul, și vă anunță din timp.",
-  "serviciu": "vtp",
-  "ghid": "verificari-tehnice-periodice",
-  "fb": false,
-  "tema": "dublura"
- },
- {
   "id": "ce-se-intampla-daca-a-expirat",
   "i": "Ce se întâmplă dacă a expirat verificarea tehnică periodică?",
   "r": "Centrala nu mai are drept de funcționare, iar riscul concret e să vă fie sistată instalația de utilizare a gazelor. Adică rămâneți fără gaz până faceți verificarea — de obicei exact când aveți cea mai mare nevoie de ea.",
@@ -527,8 +518,9 @@
   "r": "Depinde de suprafață și de cât de complicată e casa. Se calculează de obicei pe metru pătrat construit. La o casă obișnuită, proiectul e o parte mică din costul construcției. Vă dăm un preț fix după ce vedem certificatul de urbanism, nu înainte.",
   "serviciu": "proiectare",
   "ghid": "cat-costa-si-cat-dureaza-un-proiect",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "cat-dureaza-pana-am-proiectul",
@@ -536,8 +528,9 @@
   "r": "În general, proiectul complet se livrează între 4 și 6 săptămâni. Ce lungește termenul sunt avizele — acolo așteptăm răspunsul altora, iar fiecare operator are propriile termene. De aceea începem avizele în paralel cu desenul, nu după ce se termină.",
   "serviciu": "proiectare",
   "ghid": "cat-costa-si-cat-dureaza-un-proiect",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "de-ce-e-mai-ieftin-la-altcineva",
@@ -545,8 +538,9 @@
   "r": "De obicei pentru că nu e același lucru. Un preț mic înseamnă adesea doar piesele minime pentru autorizație, fără detalii de execuție, fără proiectele de instalații și fără verificatorul inclus. Cereți în scris ce anume intră în preț — abia atunci comparați corect.",
   "serviciu": "proiectare",
   "ghid": "cat-costa-si-cat-dureaza-un-proiect",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "ce-documente-aduc-la-inceput",
@@ -554,8 +548,9 @@
   "r": "Actul de proprietate al terenului, extrasul de carte funciară, cartea de identitate și, dacă îl aveți deja, certificatul de urbanism. Dacă nu-l aveți, îl obținem noi. Restul îl construim de la zero, nu trebuie să pregătiți altceva.",
   "serviciu": "proiectare",
   "ghid": "cat-costa-si-cat-dureaza-un-proiect",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "ce-inseamna-pot-si-cut",
@@ -563,8 +558,9 @@
   "r": "Sunt cele două limite care spun cât aveți dreptul să construiți. POT arată cât la sută din teren poate fi acoperit de clădire, privită de sus. CUT compară suprafața tuturor nivelurilor cu suprafața terenului, deci ține cont și de etaje. Amândouă vă vin scrise în certificatul de urbanism.",
   "serviciu": "proiectare",
   "ghid": "cat-pot-construi-pe-teren",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "cat-de-mare-pot-face-casa",
@@ -572,8 +568,9 @@
   "r": "Se calculează din POT și CUT, aplicate la suprafața terenului dumneavoastră. La 500 de metri pătrați de teren cu POT 35%, amprenta casei nu poate trece de 175 de metri pătrați. Dacă CUT-ul mai lasă loc, diferența o câștigați pe verticală, cu etaj sau mansardă.",
   "serviciu": "proiectare",
   "ghid": "cat-pot-construi-pe-teren",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "cat-de-aproape-de-gard-pot-construi",
@@ -581,8 +578,9 @@
   "r": "Retragerile obligatorii față de vecini și față de stradă vin scrise în certificatul de urbanism și diferă de la o zonă la alta. De asemenea, trebuie respectat regulamentul local de urbanism.",
   "serviciu": "proiectare",
   "ghid": "cat-pot-construi-pe-teren",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "pot-construi-doua-case-pe-acelasi-teren",
@@ -590,8 +588,9 @@
   "r": "Uneori da, dacă POT-ul și CUT-ul mai lasă loc și dacă se pot respecta retragerile dintre ele. Apar însă întrebări de acces, de utilități și, mai târziu, de dezmembrare. Merită discutat înainte de a cumpăra terenul, nu după.",
   "serviciu": "proiectare",
   "ghid": "cat-pot-construi-pe-teren",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "terenul-nu-are-drum-de-acces",
@@ -599,8 +598,9 @@
   "r": "Fără acces la un drum public nu se autorizează. Se rezolvă prin drept de trecere înscris în cartea funciară sau prin drum realizat până la teren. Un teren fără acces se vinde ieftin exact din acest motiv — verificați asta înaintea prețului.",
   "serviciu": "proiectare",
   "ghid": "cat-pot-construi-pe-teren",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "vreau-sa-mansardez",
@@ -608,8 +608,9 @@
   "r": "Este o mărire a construcției, deci se face cu autorizație. În plus, mansarda adaugă greutate pe pereții și pe fundația care există deja, așa că e nevoie de expertiză tehnică înainte de proiect. Fără ea nu știe nimeni dacă structura duce noul nivel.",
   "serviciu": "proiectare",
   "ghid": "mansardare-si-modificari",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "vreau-sa-inchid-balconul-sau-terasa",
@@ -617,8 +618,9 @@
   "r": "Da, pentru că se schimbă atât aspectul exterior, cât și suprafața construită. La bloc mai apare și acordul asociației, iar unele primării interzic închiderile spre stradă. Închiderile făcute fără acte se cer desființate la prima reclamație.",
   "serviciu": "proiectare",
   "ghid": "mansardare-si-modificari",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "vreau-sa-adaug-o-camera-la-casa",
@@ -626,8 +628,9 @@
   "r": "Actele sunt aceleași — certificat de urbanism, proiect, avize, autorizație — dar la proiect e mai puțin de lucru. În schimb apare o parte pe care casa nouă nu o are: legătura dintre construcția veche și cea nouă, care trebuie gândită ca să nu apară fisuri la îmbinare.",
   "serviciu": "proiectare",
   "ghid": "mansardare-si-modificari",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "pot-folosi-un-proiect-gasit-pe-internet",
@@ -635,8 +638,9 @@
   "r": "Ca idee de plan, da, și e chiar util să veniți cu el. Ca documentație de autorizare, nu: proiectul trebuie adaptat la terenul dumneavoastră, la ce scrie în certificatul de urbanism, la studiul geotehnic și la zona seismică, apoi semnat de cineva care răspunde pentru el.",
   "serviciu": "proiectare",
   "ghid": "mansardare-si-modificari",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "imi-trebuie-studiu-geotehnic",
@@ -644,8 +648,9 @@
   "r": "Da, și e cheltuiala care vă scutește de cea mare. Studiul spune ce pământ aveți sub casă și la ce adâncime se așază fundația. Fără el, fundația se dimensionează din presupuneri — iar o fundație greșită nu se mai repară ieftin.",
   "serviciu": "proiectare",
   "ghid": "studii-si-verificari-de-proiect",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "ce-e-verificatorul-de-proiect",
@@ -653,8 +658,9 @@
   "r": "Este un specialist independent, atestat, care controlează proiectul înainte de autorizare. Se plătește separat tocmai pentru că trebuie să fie independent de proiectant — altfel verificarea nu ar însemna nimic. Fără referatul lui, dosarul nu se depune.",
   "serviciu": "proiectare",
   "ghid": "studii-si-verificari-de-proiect",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "ce-e-expertiza-tehnica",
@@ -662,8 +668,9 @@
   "r": "Este evaluarea unei construcții care există deja, făcută de un expert atestat. E necesară când interveniți la structură: mansardare, extindere, spargerea unui perete portant, consolidare, sau la intrarea în legalitate. La o casă nouă, pe teren liber, nu e nevoie.",
   "serviciu": "proiectare",
   "ghid": "studii-si-verificari-de-proiect",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "cine-semneaza-proiectul",
@@ -671,8 +678,9 @@
   "r": "Fiecare parte e semnată de specialistul cu drept de semnătură pentru ea: arhitectul pentru arhitectură, inginerul de rezistență pentru structură, proiectanții de instalații pentru instalații. Semnătura nu e o formalitate — ea atrage răspunderea pentru ce s-a desenat, pe toată durata construcției.",
   "serviciu": "proiectare",
   "ghid": "studii-si-verificari-de-proiect",
-  "fb": true,
-  "tema": "autorizare"
+  "fb": false,
+  "tema": "autorizare",
+  "fara_pagina": true
  },
  {
   "id": "ce-este-verificarea-tehnica-periodica",
