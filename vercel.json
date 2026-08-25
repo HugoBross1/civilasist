@@ -1,6 +1,1 @@
-{
-  "_comentariu": "Programarea zilnica e oprita la cererea beneficiarului, 25 august 2026. Ca sa reporneasca postarile automate, se pune inapoi blocul crons de mai jos si se face un deploy. Atentie: functioneaza doar daca FB_ACTIV=da e setat in Vercel.",
-  "_crons_oprite": [
-    { "path": "/api/postare-facebook", "schedule": "0 8 * * *" }
-  ]
-}
+{}
