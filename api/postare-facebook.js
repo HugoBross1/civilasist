@@ -84,18 +84,22 @@ function maineLaOpt() {
 /* Nu publicăm pe loc: programăm pentru a doua zi. Postarea apare imediat în
    Business Suite, la programate, unde beneficiarul o poate citi, schimba sau
    șterge. Dacă n-o atinge nimeni, pleacă singură. */
-async function publica(pagina, p) {
-  const cand = maineLaOpt();
+async function publica(pagina, p, acum) {
+  const corp = {
+    url: SITE + p.img,
+    caption: compune(p),
+    access_token: await jetonPagina(pagina),
+  };
+  /* Implicit programăm pe mâine. Cu ?acum=1 se publică pe loc — util când
+     vrem o rundă imediată, fără să așteptăm o zi. */
+  if (!acum) {
+    corp.published = false;
+    corp.scheduled_publish_time = maineLaOpt();
+  }
   const r = await fetch(GRAPH + "/" + pagina.id + "/photos", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      url: SITE + p.img,
-      caption: compune(p),
-      published: false,
-      scheduled_publish_time: cand,
-      access_token: await jetonPagina(pagina),
-    }),
+    body: JSON.stringify(corp),
   });
   const raspuns = await r.json();
   if (!r.ok) throw new Error(JSON.stringify(raspuns));
@@ -106,6 +110,7 @@ module.exports = async function (req, res) {
   const zi = ziuaCurenta();
   const lista = pagini();
   const proba = req.query && (req.query.proba === "1" || req.query.proba === "da");
+  const acum  = req.query && (req.query.acum === "1" || req.query.acum === "da");
 
   if (!lista.length) {
     return res.status(200).json({
@@ -211,14 +216,14 @@ module.exports = async function (req, res) {
   for (const x of planul) {
     if (!x._p) { rezultate.push({ pagina: x.pagina, sarit: "nicio întrebare pe temele ei" }); continue; }
     try {
-      const id = await publica(x._pg, x._p);
-      console.log("Programat pe " + x.pagina + " pentru mâine: " + x._p.i);
-      rezultate.push({ pagina: x.pagina, programat: true, id, intrebare: x._p.i });
+      const id = await publica(x._pg, x._p, acum);
+      console.log((acum ? "Publicat pe " : "Programat pe ") + x.pagina + ": " + x._p.i);
+      rezultate.push({ pagina: x.pagina, programat: !acum, publicat: acum, id, intrebare: x._p.i });
     } catch (e) {
       console.error("Eșec pe " + x.pagina + ": " + e.message);
       rezultate.push({ pagina: x.pagina, publicat: false, eroare: e.message });
     }
   }
-  const reusite = rezultate.filter(r => r.programat).length;
+  const reusite = rezultate.filter(r => r.programat || r.publicat).length;
   return res.status(reusite ? 200 : 502).json({ zi, rezultate });
 };
