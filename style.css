@@ -19,7 +19,8 @@
   --accent-dark:   #175690;
   --accent-soft:   #e8f0f9;
   --accent-2:      #f5851f;   /* portocaliul, pentru accente mici */
-  --accent-2-dark: #ab5d15;  /* portocaliul inchis cat sa fie lizibil:
+  --accent-2-dark: #ab5d15;
+  --auriu: #cf9b3f;          /* auriul din marca tipărită */  /* portocaliul inchis cat sa fie lizibil:
                                 4.87 pe alb, 4.55 pe fundalul alternat */
 
   --text:          #0e0e12;   /* negru-cenusiu, nu albastrui */
@@ -50,7 +51,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, .logo-text {
+h1, h2, h3 {
   font-family: var(--font-titlu);
   line-height: 1.18; font-weight: 700; letter-spacing: -0.03em; margin: 0 0 .55em;
 }
@@ -96,17 +97,22 @@ a:hover { color: var(--accent); }
   min-height: 74px; flex-wrap: wrap;
 }
 
-.logo { display: flex; align-items: center; gap: 13px; text-decoration: none; margin-right: auto; }
-/* Emblema CivilAsist.ro — cască de protecție în disc bleumarin, inel albastru */
-.logo-badge {
-  width: 52px; height: 52px; flex: 0 0 52px; display: block; border-radius: 50%;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%231f6fc4'/%3E%3Ccircle cx='32' cy='32' r='26' fill='none' stroke='%23ffffff' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%2314315e'/%3E%3Cg fill='%23ffffff'%3E%3Crect x='29' y='17' width='6' height='8' rx='2'/%3E%3Cpath d='M19 40v-5a13 13 0 0 1 26 0v5z'/%3E%3Crect x='14' y='42' width='36' height='6' rx='3'/%3E%3C/g%3E%3C/svg%3E") center/100% no-repeat;
+.logo { display: flex; flex-direction: column; align-items: flex-start; gap: 4px;
+  text-decoration: none; margin-right: auto; }
+
+/* Marca tipărită, varianta pentru fundal închis: CIVIL și casa în alb,
+   ASIST și fereastra în auriu. Fișierul e croit din logoul original. */
+.logo-marca { display: block; height: 30px; width: auto; }
+
+.logo small {
+  display: block; color: rgba(255,255,255,.72);
+  font-size: .56rem; line-height: 1.4;
+  text-transform: uppercase; letter-spacing: .14em;
 }
-.logo-text { color: #fff; font-weight: 700; font-size: 1.05rem; line-height: 1.25; }
-.logo-text .dot-ro { color: var(--brand-light); }
-.logo-text small {
-  display: block; font-weight: 400; font-size: .72rem;
-  text-transform: uppercase; letter-spacing: .05em; color: rgba(255,255,255,.85);
+
+@media (max-width: 560px) {
+  .logo-marca { height: 25px; }
+  .logo small { font-size: .5rem; letter-spacing: .1em; }
 }
 
 .mainnav { display: flex; gap: 22px; flex-wrap: wrap; }
