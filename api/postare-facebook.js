@@ -72,13 +72,28 @@ function compune(p) {
   return p.i + "\n\n" + p.c + "\n\nRăspunsul întreg 👉 " + p.u;
 }
 
+/* Mâine la ora 8, în ceasul serverului. Facebook cere între 10 minute și
+   6 luni în viitor, deci 24 de ore intră fără discuție. */
+function maineLaOpt() {
+  const d = new Date();
+  d.setUTCDate(d.getUTCDate() + 1);
+  d.setUTCHours(8, 0, 0, 0);
+  return Math.floor(d.getTime() / 1000);
+}
+
+/* Nu publicăm pe loc: programăm pentru a doua zi. Postarea apare imediat în
+   Business Suite, la programate, unde beneficiarul o poate citi, schimba sau
+   șterge. Dacă n-o atinge nimeni, pleacă singură. */
 async function publica(pagina, p) {
+  const cand = maineLaOpt();
   const r = await fetch(GRAPH + "/" + pagina.id + "/photos", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       url: SITE + p.img,
       caption: compune(p),
+      published: false,
+      scheduled_publish_time: cand,
       access_token: await jetonPagina(pagina),
     }),
   });
@@ -101,7 +116,7 @@ module.exports = async function (req, res) {
   }
 
   const planul = lista.map(pg => {
-    const p = pentru(pg, zi);
+    const p = pentru(pg, zi + 1);   /* se publică mâine */
     return {
       pagina: pg.nume, teme: pg.teme,
       intrebare: p ? p.i : null,
@@ -197,13 +212,13 @@ module.exports = async function (req, res) {
     if (!x._p) { rezultate.push({ pagina: x.pagina, sarit: "nicio întrebare pe temele ei" }); continue; }
     try {
       const id = await publica(x._pg, x._p);
-      console.log("Publicat pe " + x.pagina + ": " + x._p.i);
-      rezultate.push({ pagina: x.pagina, publicat: true, id, intrebare: x._p.i });
+      console.log("Programat pe " + x.pagina + " pentru mâine: " + x._p.i);
+      rezultate.push({ pagina: x.pagina, programat: true, id, intrebare: x._p.i });
     } catch (e) {
       console.error("Eșec pe " + x.pagina + ": " + e.message);
       rezultate.push({ pagina: x.pagina, publicat: false, eroare: e.message });
     }
   }
-  const reusite = rezultate.filter(r => r.publicat).length;
+  const reusite = rezultate.filter(r => r.programat).length;
   return res.status(reusite ? 200 : 502).json({ zi, rezultate });
 };

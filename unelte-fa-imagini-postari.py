@@ -41,18 +41,22 @@ def intunec(im):
 
 
 def emblema(d, x, y):
-    r = 26
+    r = 34
     d.ellipse([x, y, x + 2 * r, y + 2 * r], fill=(31, 111, 196))
-    d.ellipse([x + 8, y + 8, x + 2 * r - 8, y + 2 * r - 8], fill=(20, 49, 94))
+    g = r / 26.0                      # casca se scaleaza odata cu cercul
+    d.ellipse([x + 8 * g, y + 8 * g, x + 2 * r - 8 * g, y + 2 * r - 8 * g],
+              fill=(20, 49, 94))
     cx, cy = x + r, y + r
-    d.rounded_rectangle([cx - 2, cy - 11, cx + 2, cy - 6], radius=1, fill=ALB)
-    d.pieslice([cx - 10, cy - 8, cx + 10, cy + 12], 180, 360, fill=ALB)
-    d.rectangle([cx - 10, cy + 1, cx + 10, cy + 5], fill=ALB)
-    d.rounded_rectangle([cx - 13, cy + 6, cx + 13, cy + 11], radius=2, fill=ALB)
-    f = font(BOLD, 36)
-    d.text((x + 2 * r + 16, cy), "CivilAsist", font=f, fill=ALB, anchor="lm")
+    d.rounded_rectangle([cx - 2 * g, cy - 11 * g, cx + 2 * g, cy - 6 * g],
+                        radius=max(1, 1 * g), fill=ALB)
+    d.pieslice([cx - 10 * g, cy - 8 * g, cx + 10 * g, cy + 12 * g], 180, 360, fill=ALB)
+    d.rectangle([cx - 10 * g, cy + 1 * g, cx + 10 * g, cy + 5 * g], fill=ALB)
+    d.rounded_rectangle([cx - 13 * g, cy + 6 * g, cx + 13 * g, cy + 11 * g],
+                        radius=max(1, 2 * g), fill=ALB)
+    f = font(BOLD, 56)
+    d.text((x + 2 * r + 20, cy), "CivilAsist", font=f, fill=ALB, anchor="lm")
     w = d.textlength("CivilAsist", font=f)
-    d.text((x + 2 * r + 16 + w, cy), ".ro", font=f, fill=PORTOCALIU, anchor="lm")
+    d.text((x + 2 * r + 20 + w, cy), ".ro", font=f, fill=PORTOCALIU, anchor="lm")
 
 
 def rupe(d, text, f, lat):
@@ -76,23 +80,23 @@ def fa(foto, intrebare, iesire):
     emblema(d, MARJA, 76)
 
     lat = L - 2 * MARJA
-    dim = 62
-    while dim > 34:
+    dim = 88
+    while dim > 56:
         f = font(BOLD, dim)
         linii = rupe(d, intrebare, f, lat)
-        if len(linii) <= 3:
+        if len(linii) <= 4:
             break
         dim -= 2
     pas = int(dim * 1.30)
 
-    f_mic = font(REG, 27)
-    f_dom = font(BOLD, 30)
+    f_mic = font(REG, 38)
+    f_dom = font(BOLD, 52)
     jos = L - MARJA
-    y_dom = jos - 30
-    y_mic = y_dom - 38
-    y_text = y_mic - 42 - len(linii) * pas
+    y_dom = jos - 52
+    y_mic = y_dom - 50
+    y_text = y_mic - 54 - len(linii) * pas
 
-    d.rounded_rectangle([MARJA, y_text - 34, MARJA + 72, y_text - 28], radius=3,
+    d.rounded_rectangle([MARJA, y_text - 46, MARJA + 104, y_text - 37], radius=5,
                         fill=PORTOCALIU)
     for i, ln in enumerate(linii):
         d.text((MARJA, y_text + i * pas), ln, font=f, fill=ALB)
