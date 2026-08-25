@@ -392,15 +392,15 @@
   "r": "Da. Obligația vine din deținerea instalației, nu din numărul lor. Pentru o singură instalație, varianta obișnuită e contractarea unui RSVTI din exterior — costă mult mai puțin decât un angajat.",
   "serviciu": "iscir",
   "ghid": "obligatii-iscir",
-  "fb": true,
-  "tema": "iscir"
+  "fb": false,
+  "tema": "rsvti"
  },
  {
   "id": "instalatia-e-noua-cu-garantie-de",
-  "i": "Instalația e nouă, cu garanție de la producător. E de ajuns?",
-  "r": "Nu. Garanția producătorului acoperă defectele de fabricație. Autorizarea funcționării și verificările periodice sunt obligații ale deținătorului și se fac indiferent de vârsta instalației.",
-  "serviciu": "iscir",
-  "ghid": "obligatii-iscir",
+  "i": "Centrala e nouă, cu garanție de la producător. Trebuie verificare tehnică periodică?",
+  "r": "Garanția acoperă defectele de fabricație, nu obligația legală de verificare. Instalația nouă intră în evidență de la punerea în funcțiune, iar termenele de verificare curg de atunci. Producătorul nu vă scutește de ele.",
+  "serviciu": "vtp",
+  "ghid": "verificari-tehnice-periodice",
   "fb": true,
   "tema": "iscir"
  },
@@ -408,8 +408,8 @@
   "id": "cine-face-verificarea-tehnica-periodica",
   "i": "Cine face verificarea tehnică periodică?",
   "r": "Verificarea o efectuează ISCIR sau o persoană juridică autorizată în acest scop, după caz. RSVTI nu o face el însuși — el ține evidența, urmărește scadențele, pregătește instalația și dosarul, și vă anunță din timp.",
-  "serviciu": "iscir",
-  "ghid": "obligatii-iscir",
+  "serviciu": "vtp",
+  "ghid": "verificari-tehnice-periodice",
   "fb": true,
   "tema": "iscir"
  },
@@ -417,8 +417,8 @@
   "id": "ce-se-intampla-daca-a-expirat",
   "i": "Ce se întâmplă dacă a expirat verificarea tehnică periodică?",
   "r": "Instalația nu mai are drept de funcționare. Trebuie oprită până la verificare. Exploatarea în afara termenului e contravenție și, la un incident, are consecințe mult mai grele.",
-  "serviciu": "iscir",
-  "ghid": "obligatii-iscir",
+  "serviciu": "vtp",
+  "ghid": "verificari-tehnice-periodice",
   "fb": true,
   "tema": "iscir"
  },
@@ -428,8 +428,8 @@
   "r": "Căutați cartea instalației și ultimul proces-verbal de verificare. Dacă nu le găsiți, sunați un RSVTI înainte să porniți instalația. Preluarea unei instalații cu istoric necunoscut e situația cu cel mai mare risc dintre toate.",
   "serviciu": "iscir",
   "ghid": "obligatii-iscir",
-  "fb": true,
-  "tema": "iscir"
+  "fb": false,
+  "tema": "rsvti"
  },
  {
   "id": "pot-sa-ma-mut-in-casa",
@@ -673,5 +673,95 @@
   "ghid": "studii-si-verificari-de-proiect",
   "fb": true,
   "tema": "autorizare"
+ },
+ {
+  "id": "ce-este-verificarea-tehnica-periodica",
+  "i": "Ce este verificarea tehnică periodică la o centrală termică?",
+  "r": "Este controlul făcut la termen de un specialist autorizat, care confirmă că instalația mai poate funcționa în siguranță. Se verifică starea cazanului, instalația de ardere, dispozitivele de siguranță și aparatura de măsură. Fără ea, instalația nu are drept de funcționare.",
+  "serviciu": "vtp",
+  "ghid": "verificari-tehnice-periodice",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "cat-de-des-se-face-verificarea",
+  "i": "Cât de des se face verificarea tehnică periodică?",
+  "r": "Termenul e stabilit pentru fiecare tip de instalație și se trece în cartea instalației la fiecare verificare. La cazanele obișnuite din centralele termice vorbim de ordinul anilor, nu al lunilor. Data următoarei verificări o aveți scrisă negru pe alb în procesul-verbal precedent.",
+  "serviciu": "vtp",
+  "ghid": "verificari-tehnice-periodice",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "cine-poate-face-verificarea",
+  "i": "Cine are dreptul să facă verificarea tehnică periodică?",
+  "r": "Doar o persoană juridică autorizată de ISCIR pentru acest tip de lucrare, prin personal atestat. Nu o poate face instalatorul care v-a montat centrala, oricât de bun ar fi, dacă nu are autorizarea. Cereți să vedeți autorizația înainte să acceptați o ofertă.",
+  "serviciu": "vtp",
+  "ghid": "verificari-tehnice-periodice",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "ce-se-verifica-la-o-centrala",
+  "i": "Ce se verifică efectiv la o centrală termică?",
+  "r": "Starea cazanului și a elementelor sub presiune, dispozitivele de siguranță, arzătorul și instalația de ardere, aparatele de măsură și control, evacuarea gazelor de ardere. Se măsoară și parametrii de ardere cu analizor de gaze.",
+  "serviciu": "vtp",
+  "ghid": "verificari-tehnice-periodice",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "ce-primesc-dupa-verificare",
+  "i": "Ce primesc după verificare?",
+  "r": "Un proces-verbal de verificare tehnică, în care scrie dacă instalația e admisă în funcționare și până când. Se completează și cartea instalației. Documentele astea se cer la control și la vânzarea clădirii, deci nu le pierdeți.",
+  "serviciu": "vtp",
+  "ghid": "verificari-tehnice-periodice",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "am-cumparat-o-cladire-cu-centrala",
+  "i": "Am cumpărat o clădire cu centrală termică. Ce fac primul lucru?",
+  "r": "Căutați cartea instalației și ultimul proces-verbal de verificare. Din ele aflați ce aveți de fapt și dacă mai e în termen. Dacă documentele lipsesc sau termenul a trecut, instalația nu are drept de funcționare până la o verificare nouă.",
+  "serviciu": "vtp",
+  "ghid": "verificari-tehnice-periodice",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "ce-e-cartea-instalatiei",
+  "i": "Ce e cartea instalației și de ce mi-o cere verificatorul?",
+  "r": "E dosarul de viață al instalației: ce este, cine a montat-o, ce verificări a trecut și ce reparații a suferit. Fără ea nu se poate stabili istoricul, iar verificarea nu se poate încheia. Dacă s-a pierdut, se poate reconstitui, dar costă timp și bani.",
+  "serviciu": "vtp",
+  "ghid": "verificari-tehnice-periodice",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "cine-raspunde-daca-merge-cu-verificarea-expirata",
+  "i": "Cine răspunde dacă centrala merge cu verificarea expirată?",
+  "r": "Deținătorul instalației. Nu instalatorul, nu firma care a făcut ultima verificare. La un control se sancționează deținătorul, iar în caz de accident răspunderea e a lui, cu tot ce implică asta pentru asigurare.",
+  "serviciu": "vtp",
+  "ghid": "verificari-tehnice-periodice",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "cat-dureaza-o-verificare",
+  "i": "Cât durează o verificare tehnică periodică?",
+  "r": "La o centrală termică obișnuită, câteva ore pe teren. Ce lungește treaba nu e verificarea în sine, ci pregătirea instalației: acces, oprire, curățare, documentele la vedere. Dacă e totul pregătit când ajungem, se termină în aceeași zi.",
+  "serviciu": "vtp",
+  "ghid": "verificari-tehnice-periodice",
+  "fb": true,
+  "tema": "iscir"
+ },
+ {
+  "id": "centrala-de-apartament-intra-la-verificare",
+  "i": "Centrala de apartament intră la verificare tehnică periodică?",
+  "r": "Nu la cea de care ne ocupăm noi. Centralele murale de apartament merg pe alt regim: verificarea și revizia instalației de utilizare a gazelor, făcute de un operator autorizat, plus service-ul recomandat de producător. Noi vorbim de cazanele din centralele termice ale clădirilor.",
+  "serviciu": "vtp",
+  "ghid": "verificari-tehnice-periodice",
+  "fb": true,
+  "tema": "iscir"
  }
 ]
