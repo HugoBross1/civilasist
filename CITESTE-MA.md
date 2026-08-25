@@ -221,16 +221,8 @@ FB_ACTIV            da   <- NU E PUS. Fără el nu se publică nimic.
 Codul cere singur jetonul **paginii** pornind de la cel de sistem — Facebook
 refuză ciornele trimise altfel.
 
-**Programarea zilnică e OPRITĂ** (25 august 2026, la cererea beneficiarului).
-`vercel.json` e gol. Ca să repornească postările automate, se pune înapoi:
-
-```json
-{
-  "crons": [
-    { "path": "/api/postare-facebook", "schedule": "0 8 * * *" }
-  ]
-}
-```
+**Programarea zilnică e pornită**: `vercel.json`, în fiecare zi la ora 8.
+Ca s-o opriți, goliți fișierul la `{}` și faceți un deploy.
 
 Atenție: nu adăugați chei proprii în `vercel.json` — Vercel are schemă strictă
 și deployment-ul pică cu eroare. Comentariile se scriu aici, nu acolo.
