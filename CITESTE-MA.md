@@ -84,11 +84,27 @@ Nameserverele sunt ale Vercel: `ns1.vercel-dns.com` și `ns2.vercel-dns.com`.
 | Slogan | Inspectăm. Proiectăm. Construim. |
 | Titluri | Space Grotesk, spațiere strânsă |
 | Text | Inter |
-| Albastru | `#1e6bb8` — accentul principal, ca emblema |
-| Portocaliu | `#f5851f` — accent secundar; pentru **text** se folosește `#ab5d15`, altfel nu are contrast destul |
-| Negru-cenușiu | `#0e0e12` — bara de sus, subsolul, secțiunile închise |
+| Bleumarin | `#091d2f` — culoarea logoului: bara de sus, benzile închise, subsolul, textul butoanelor |
+| Auriu | `#c9903f` — auriul logoului: fundalul butoanelor, accentele de pe închis |
+| Bronz | `#8a6220` — auriul întunecat până devine lizibil ca **text pe alb** (5.5:1); auriul plin pe alb nu are contrast |
 
-Culorile sunt definite o singură dată, la începutul lui `style.css`.
+Culorile sunt definite o singură dată, la începutul lui `style.css`; fiecare
+pereche text/fundal a fost calculată WCAG înainte de alegere. Vechea paletă
+(albastru `#1e6bb8` + portocaliu `#f5851f`, după uzinex.ro) a fost înlocuită
+în august 2026, când site-ul a trecut pe culorile logoului. Imaginile de
+postare Facebook încă folosesc paleta veche cu emblema cu cască — de regenerat.
+
+**Butonul plutitor de WhatsApp** (`.ws-plutitor`) e pe toate paginile, verde
+oficial WhatsApp, dreapta-jos; ca siglă, e exceptat de pragul de contrast.
+
+**Animațiile.** Paginile din `servicii/` au în cap planșe SVG desenate în
+stilul unei planșe tehnice, care se trasează singure (`animatii.js` +
+secțiunea de animații din `style.css`). Regula jocului: liniile poartă clasa
+`tras` **și** `pathLength="1"` (perechea e obligatorie — dasharray-ul e
+calibrat pe 1); culorile vin doar din clasele `c1/c2/fin/pn/pa/pd`; mișcările
+continue permise sunt `pluteste/puls/baleiaj/pendul`. Sub fiecare `h1`,
+scriptul pune un ornament de cotă. Cine cere „mișcare redusă" primește totul
+desenat complet, nemișcat; la tipărire, desenele și butonul plutitor dispar.
 
 **Fonturile sunt găzduite local, intenționat.** Nu se pun înapoi de la Google:
 ar trimite adresa IP a fiecărui vizitator către Google înainte de orice
