@@ -618,6 +618,7 @@ a.valoare:hover { color: var(--accent); }
 @media print {
   .topbar, .masthead, footer, form, .callback, .btn,
   .ws-plutitor, .art-anim, .ornament-cota { display: none; }
+  .anima { opacity: 1 !important; transform: none !important; }
   body { font-size: 11pt; color: #000; }
   section { padding: 16px 0; border-top: 1px solid #ccc; }
   a { color: #000; text-decoration: none; }

@@ -53,6 +53,14 @@
       var dupa = Math.min(linii.length * 70, 1500) + 350;
       svg.style.setProperty("--apare-d", dupa + "ms");
 
+      /* Ce e deja pe ecran porneste direct, din masuratoare — nu asteapta
+         observatorul (care in taburi de fundal poate tacea pana la focus). */
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      var rr = svg.getBoundingClientRect();
+      if (vh > 0 && rr.top < vh && rr.bottom > 0) {
+        svg.classList.add("porneste");
+        return;
+      }
       if (!areIO) { svg.classList.add("porneste"); return; }
       var ob = new IntersectionObserver(function (intrari) {
         for (var q = 0; q < intrari.length; q++) {
