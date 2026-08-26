@@ -1,39 +1,40 @@
 /* ==========================================================================
    Stil comun pentru tot site-ul.
-   Paleta este cea a mărcii CivilAsist.ro: albastru pe fundal alb-rece,
-   secțiuni alternate cu bleu foarte deschis, carduri albe cu colțuri rotunjite.
-   Pentru altă culoare de brand, schimbă --accent și --accent-dark.
+   Paleta este cea a logoului CivilAsist: bleumarin #091d2f si auriu #c9903f,
+   culorile citite din fisierul marcii. Bleumarinul e structura (bara de sus,
+   benzile inchise, subsolul, titlurile), auriul e actiunea (butoane, accente).
+   Toate perechile au fost verificate WCAG inainte de alegere — vezi CITESTE-MA.
    ========================================================================== */
 
 :root {
-  /* Paleta preluata de la uzinex.ro: neutre curate, fara tenta albastra,
-     cu doua accente — portocaliu si albastru. Albastrul lor, #1e6bb8, e
-     aproape identic cu cel al emblemei noastre, deci ramane accentul
-     principal; portocaliul lucreaza ca accent secundar. */
+  --brand:       #091d2f;   /* bleumarinul logoului */
+  --brand-2:     #0e2940;   /* panouri pe fundal inchis */
+  --brand-3:     #1d3a55;   /* borduri pe fundal inchis */
+  --brand-light: #9db8cf;   /* text secundar pe fundal inchis */
 
-  --brand:         #1e6bb8;   /* albastrul marcii */
-  --brand-dark:    #14315e;   /* discul interior al emblemei */
-  --brand-light:   #6aa9e0;   /* pentru text pe fundal inchis */
+  --aur:          #c9903f;  /* auriul logoului: fundal de butoane, accente pe inchis */
+  --aur-hover:    #d9a54f;
+  --aur-deschis:  #d8b36a;  /* auriu lizibil pe bleumarin (8.6:1) */
 
-  --accent:        #1e6bb8;
-  --accent-dark:   #175690;
-  --accent-soft:   #e8f0f9;
-  --accent-2:      #f5851f;   /* portocaliul, pentru accente mici */
-  --accent-2-dark: #ab5d15;
-  --auriu: #cf9b3f;          /* auriul din marca tipărită */  /* portocaliul inchis cat sa fie lizibil:
-                                4.87 pe alb, 4.55 pe fundalul alternat */
+  /* bronzul: auriul intunecat pana devine lizibil ca TEXT pe alb (5.5:1) */
+  --accent:        #8a6220;
+  --accent-dark:   #6f4e18;
+  --accent-soft:   #f6efe2;
+  --accent-2:      #c9903f;   /* accente pe fundal inchis si borduri */
+  --accent-2-dark: #8a6220;
+  --auriu:         #c9903f;
 
-  --text:          #0e0e12;   /* negru-cenusiu, nu albastrui */
-  --text-muted:    #5f5f6b;
-  --text-light:    #8a8a95;
+  --text:          #10202d;   /* bleumarin aproape negru */
+  --text-muted:    #4d5c6b;
+  --text-light:    #64748b;
   --bg:            #ffffff;
-  --bg-alt:        #f7f7f8;
-  --bg-deep:       #0e0e12;   /* subsolul, aproape negru */
-  --border:        #eeeef0;
-  --header:        #0e0e12;   /* bara de navigatie */
+  --bg-alt:        #f2f5f8;   /* alternat, cu tenta rece de bleumarin */
+  --bg-deep:       #091d2f;   /* benzile inchise si subsolul */
+  --border:        #e1e8ef;
+  --header:        #091d2f;   /* bara de navigatie */
 
-  --radius:  8px;
-  --shadow:  0 2px 10px rgba(0,0,0,.07);
+  --radius:  10px;
+  --shadow:  0 6px 22px rgba(9,29,47,.08);
   --maxw:    1140px;
   --font:       Inter, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --font-titlu: "Space Grotesk", Inter, system-ui, sans-serif;
@@ -79,7 +80,7 @@ a:hover { color: var(--accent); }
   display: inline-flex; align-items: center; justify-content: center;
   transition: background .15s ease;
 }
-.contact-icoane a:hover { background: var(--accent-2); color: #0e0e12; }
+.contact-icoane a:hover { background: var(--aur); color: var(--brand); }
 .contact-icoane svg { width: 15px; height: 15px; fill: currentColor; display: block; }
 
 /* Pe ecrane înguste, judetele dispar — sunt oricum in subsol si la contact */
@@ -94,7 +95,7 @@ a:hover { color: var(--accent); }
 .masthead { background: var(--header); position: sticky; top: 0; z-index: 60; }
 .masthead .wrap {
   display: flex; align-items: center; gap: 20px;
-  min-height: 74px; flex-wrap: wrap;
+  min-height: 62px; flex-wrap: wrap;
 }
 
 .logo { display: flex; flex-direction: column; align-items: flex-start; gap: 4px;
@@ -102,17 +103,17 @@ a:hover { color: var(--accent); }
 
 /* Marca tipărită, varianta pentru fundal închis: CIVIL și casa în alb,
    ASIST și fereastra în auriu. Fișierul e croit din logoul original. */
-.logo-marca { display: block; height: 30px; width: auto; }
+.logo-marca { display: block; height: 21px; width: auto; }
 
 .logo small {
-  display: block; color: rgba(255,255,255,.72);
-  font-size: .6rem; line-height: 1.4;
-  text-transform: uppercase; letter-spacing: .14em;
+  display: block; color: rgba(255,255,255,.6);
+  font-size: .53rem; line-height: 1.35;
+  text-transform: uppercase; letter-spacing: .12em;
 }
 
 @media (max-width: 560px) {
-  .logo-marca { height: 25px; }
-  .logo small { font-size: .55rem; letter-spacing: .1em; }
+  .logo-marca { height: 17px; }
+  .logo small { font-size: .48rem; letter-spacing: .09em; }
 }
 
 .mainnav { display: flex; gap: 22px; flex-wrap: wrap; }
@@ -120,7 +121,7 @@ a:hover { color: var(--accent); }
   color: #fff; text-decoration: none; font-size: .93rem; font-weight: 500;
   padding: 4px 0; border-bottom: 2px solid transparent;
 }
-.mainnav a:hover { color: #fff; border-bottom-color: var(--accent); }
+.mainnav a:hover { color: #fff; border-bottom-color: var(--aur); }
 
 @media (max-width: 720px) {
   .masthead .wrap { min-height: 0; padding-top: 12px; padding-bottom: 12px; }
@@ -131,14 +132,18 @@ a:hover { color: var(--accent); }
 /* --- Butoane ------------------------------------------------------------- */
 
 .btn {
-  display: inline-block; padding: 14px 34px; border-radius: 4px;
-  background: var(--accent); color: #fff; text-decoration: none;
+  display: inline-block; padding: 14px 32px; border-radius: 999px;
+  background: var(--aur); color: var(--brand); text-decoration: none;
   font-weight: 700; font-size: .95rem; letter-spacing: .05em; text-transform: uppercase;
-  border: 2px solid var(--accent); cursor: pointer; transition: background .15s ease;
+  border: 2px solid var(--aur); cursor: pointer;
+  transition: background .15s ease, transform .15s ease, box-shadow .15s ease;
 }
-.btn:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: #fff; }
+.btn:hover {
+  background: var(--aur-hover); border-color: var(--aur-hover); color: var(--brand);
+  transform: translateY(-1px); box-shadow: 0 8px 20px rgba(201,144,63,.35);
+}
 .btn.ghost { background: transparent; color: var(--accent-dark); }
-.btn.ghost:hover { background: var(--accent-soft); }
+.btn.ghost:hover { background: var(--accent-soft); transform: none; box-shadow: none; }
 
 /* --- Secțiuni ------------------------------------------------------------ */
 
@@ -283,16 +288,16 @@ textarea { min-height: 130px; resize: vertical; }
 
 /* --- Footer -------------------------------------------------------------- */
 
-footer { background: var(--bg-deep); color: #d9dcde; padding: 50px 0 34px; font-size: .93rem; }
-footer a { color: #d9dcde; text-decoration: none; }
-footer a:hover { color: var(--accent); }
+footer { background: var(--bg-deep); color: #c6d2dd; padding: 50px 0 34px; font-size: .93rem; }
+footer a { color: #c6d2dd; text-decoration: none; }
+footer a:hover { color: var(--aur-deschis); }
 footer .cols { display: grid; gap: 30px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
 footer h4 { margin: 0 0 14px; font-size: 1rem; color: #fff; font-weight: 700; }
 footer ul { list-style: none; padding: 0; margin: 0; }
 footer li { padding: 4px 0; }
 footer .legal {
-  margin-top: 34px; padding-top: 20px; border-top: 1px solid #2a4162;
-  color: #8d9497; font-size: .85rem;
+  margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--brand-3);
+  color: #8ba0b4; font-size: .85rem;
 }
 
 /* --- Pagini de serviciu -------------------------------------------------- */
@@ -332,7 +337,7 @@ footer .legal {
   box-shadow: var(--shadow); overflow: hidden;
 }
 .listcol h3 {
-  background: var(--accent); color: #fff; margin: 0; padding: 17px 22px;
+  background: var(--brand); color: #fff; margin: 0; padding: 17px 22px;
   font-size: .98rem; text-transform: uppercase; letter-spacing: .04em; text-align: center;
 }
 .listcol ul { list-style: disc; margin: 0; padding: 24px 26px 26px 44px; }
@@ -428,7 +433,7 @@ a.valoare:hover { color: var(--accent); }
 }
 .formular .randuri { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .formular .camp { min-width: 0; }
-.formular .oblig { color: var(--accent-2); }
+.formular .oblig { color: var(--accent-2-dark); }
 .formular ::placeholder { color: var(--text-light); opacity: .75; }
 
 /* Bifa de acord: caseta si textul pe acelasi rand, aliniate sus */
@@ -462,7 +467,7 @@ a.valoare:hover { color: var(--accent); }
 
 /* Termenul care conteaza din raspuns iese in fata */
 .svc.intrebare p strong { color: var(--accent-2-dark); font-weight: 700; }
-.ghiduri-fierbinti .svc.intrebare p strong { color: var(--accent-2); }
+.ghiduri-fierbinti .svc.intrebare p strong { color: var(--aur-deschis); }
 
 /* --- Căutare -------------------------------------------------------------- */
 
@@ -485,7 +490,7 @@ a.valoare:hover { color: var(--accent); }
 .cautare input::placeholder { color: var(--text-muted); }
 .cautare input:focus {
   outline: none; border-color: var(--accent-2-dark);
-  box-shadow: 0 0 0 4px rgba(245,133,31,.35), 0 2px 14px rgba(0,0,0,.35);
+  box-shadow: 0 0 0 4px rgba(201,144,63,.4), 0 2px 14px rgba(0,0,0,.35);
 }
 
 .rezultate {
@@ -515,8 +520,8 @@ a.valoare:hover { color: var(--accent); }
   background: var(--bg-deep); color: #fff; padding: 62px 0 58px; overflow: hidden;
 }
 .banda-intrebari h2 { color: #fff; margin-bottom: .3em; }
-.banda-intrebari .eyebrow { color: var(--accent-2); }
-.banda-intrebari .subtitlu { color: #b8b8c0; max-width: 62ch; margin-bottom: 0; }
+.banda-intrebari .eyebrow { color: var(--aur-deschis); }
+.banda-intrebari .subtitlu { color: var(--brand-light); max-width: 62ch; margin-bottom: 0; }
 .banda-intrebari .wrap { text-align: center; }
 .banda-intrebari .subtitlu { margin-left: auto; margin-right: auto; }
 
@@ -540,12 +545,12 @@ a.valoare:hover { color: var(--accent); }
 .derulare-pista a {
   flex: 0 0 auto; display: block; max-width: 30ch;
   padding: 13px 20px; border-radius: 999px;
-  background: #1a1a20; border: 1px solid #2d2d35;
-  color: #eeeef0; text-decoration: none; font-size: .93rem; line-height: 1.35;
+  background: var(--brand-2); border: 1px solid var(--brand-3);
+  color: #e8eef4; text-decoration: none; font-size: .93rem; line-height: 1.35;
   transition: border-color .15s ease, color .15s ease, background .15s ease;
 }
 .derulare-pista a:hover, .derulare-pista a:focus-visible {
-  border-color: var(--accent-2); color: var(--accent-2); background: #16161b;
+  border-color: var(--aur); color: var(--aur-deschis); background: #0b2337;
 }
 
 /* Cine a cerut mișcare redusă nu primește mișcare automată — dar poate
@@ -554,32 +559,32 @@ a.valoare:hover { color: var(--accent); }
 /* --- Buton portocaliu ---------------------------------------------------- */
 
 .btn.portocaliu {
-  background: var(--accent-2); border-color: var(--accent-2); color: #0e0e12;
+  background: var(--aur); border-color: var(--aur); color: var(--brand);
 }
 .btn.portocaliu:hover {
-  background: #ffa040; border-color: #ffa040; color: #0e0e12;
+  background: var(--aur-hover); border-color: var(--aur-hover); color: var(--brand);
 }
 
 /* --- Ghidurile scoase în față ------------------------------------------- */
 
 .ghiduri-fierbinti { background: var(--bg-deep); padding: 54px 0 58px; margin-bottom: 46px; }
-.ghiduri-fierbinti .eyebrow { color: var(--accent-2); }
+.ghiduri-fierbinti .eyebrow { color: var(--aur-deschis); }
 .ghiduri-fierbinti > .wrap > h2 { color: #fff; }
-.ghiduri-fierbinti > .wrap > p { color: #b8b8c0; max-width: 64ch; margin-bottom: 30px; }
+.ghiduri-fierbinti > .wrap > p { color: var(--brand-light); max-width: 64ch; margin-bottom: 30px; }
 
 .ghiduri-fierbinti .svc {
-  background: #1a1a20; border: 1px solid #2d2d35; border-top: 3px solid var(--accent-2);
-  color: #eeeef0; box-shadow: none; text-align: left;
+  background: var(--brand-2); border: 1px solid var(--brand-3); border-top: 3px solid var(--aur);
+  color: #e8eef4; box-shadow: none; text-align: left;
 }
 .ghiduri-fierbinti .svc:hover {
-  background: #1e1e25; border-color: #3a3a44; border-top-color: var(--accent-2);
-  color: #eeeef0; box-shadow: 0 10px 26px rgba(0,0,0,.35);
+  background: #123049; border-color: #264763; border-top-color: var(--aur);
+  color: #e8eef4; box-shadow: 0 10px 26px rgba(0,0,0,.35);
 }
 .ghiduri-fierbinti .svc h3 { color: #fff; }
-.ghiduri-fierbinti .svc p  { color: #b8b8c0; }
-.ghiduri-fierbinti .svc .go { color: var(--accent-2); align-self: flex-start; }
+.ghiduri-fierbinti .svc p  { color: var(--brand-light); }
+.ghiduri-fierbinti .svc .go { color: var(--aur-deschis); align-self: flex-start; }
 .ghiduri-fierbinti .svc .tag {
-  background: rgba(245,133,31,.14); color: var(--accent-2); align-self: flex-start;
+  background: rgba(201,144,63,.16); color: var(--aur-deschis); align-self: flex-start;
 }
 
 /* --- Întrebarea spre care s-a venit dintr-o legătură -------------------- */
@@ -591,7 +596,7 @@ a.valoare:hover { color: var(--accent); }
    dintr-o privire unde ai aterizat. */
 .prose h3:target,
 .prose h3:target + p {
-  background: #fff4e8;
+  background: var(--accent-soft);
   border-left: 3px solid var(--accent-2);
 }
 .prose h3:target {
@@ -611,8 +616,132 @@ a.valoare:hover { color: var(--accent); }
 /* --- Print --------------------------------------------------------------- */
 
 @media print {
-  .topbar, .masthead, footer, form, .callback, .btn { display: none; }
+  .topbar, .masthead, footer, form, .callback, .btn,
+  .ws-plutitor, .art-anim, .ornament-cota { display: none; }
   body { font-size: 11pt; color: #000; }
   section { padding: 16px 0; border-top: 1px solid #ccc; }
   a { color: #000; text-decoration: none; }
 }
+
+/* ==========================================================================
+   Butonul plutitor de WhatsApp — pe toate paginile, dreapta-jos.
+   Verdele e cel oficial WhatsApp; ca sigla, e exceptat de pragul WCAG,
+   iar chenarul interior il desparte de fundalurile albe.
+   ========================================================================== */
+
+.ws-plutitor {
+  position: fixed; right: 18px; bottom: 18px; z-index: 90;
+  width: 58px; height: 58px; border-radius: 50%;
+  background: #25d366; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 18px rgba(9,29,47,.35), inset 0 0 0 1px rgba(0,0,0,.08);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.ws-plutitor svg { width: 30px; height: 30px; fill: currentColor; display: block; }
+.ws-plutitor:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 26px rgba(9,29,47,.4), inset 0 0 0 1px rgba(0,0,0,.08);
+}
+.ws-plutitor:focus-visible { outline: 3px solid var(--aur); outline-offset: 3px; }
+
+/* inelul care respira: atrage ochiul o clipa, apoi sta cuminte */
+.ws-plutitor::after {
+  content: ""; position: absolute; inset: 0; border-radius: 50%;
+  animation: ws-inel 4.5s ease-out infinite;
+}
+@keyframes ws-inel {
+  0%   { box-shadow: 0 0 0 0 rgba(37,211,102,.5); }
+  30%  { box-shadow: 0 0 0 16px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+
+@media (max-width: 560px) {
+  .ws-plutitor {
+    width: 54px; height: 54px;
+    right: 14px; bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+  }
+  .ws-plutitor svg { width: 28px; height: 28px; }
+}
+
+/* ==========================================================================
+   Animatii: plansele tehnice din capul paginilor de serviciu, dezvaluirea
+   la derulare si ornamentul de cota de sub titluri. Totul e desenat, nu
+   filmat: cateva kilobiti, zero cereri in plus. Scriptul: animatii.js.
+   ========================================================================== */
+
+/* --- plansa tehnica animata (SVG in .page-hero .art) --------------------- */
+
+.art-anim { width: 100%; height: auto; display: block; max-width: 420px; margin: 0 auto; }
+.art-anim .c1  { stroke: var(--brand); stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.art-anim .c2  { stroke: var(--aur);   stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.art-anim .fin { stroke: #7d92a5;      stroke-width: 1.2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.art-anim .pn  { fill: var(--brand); stroke: none; }
+.art-anim .pa  { fill: var(--aur);   stroke: none; }
+.art-anim .pd  { fill: #e7eef5;      stroke: none; }
+
+/* fiecare linie se traseaza singura; umplerile apar dupa linii */
+.art-anim .tras { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.art-anim.porneste .tras {
+  animation: traseaza 1s ease forwards;
+  animation-delay: var(--tras-d, 0s);
+}
+@keyframes traseaza { to { stroke-dashoffset: 0; } }
+
+.art-anim .pn, .art-anim .pa, .art-anim .pd { opacity: 0; }
+.art-anim.porneste .pn, .art-anim.porneste .pa, .art-anim.porneste .pd {
+  animation: apare .6s ease forwards;
+  animation-delay: var(--apare-d, .8s);
+}
+@keyframes apare { to { opacity: 1; } }
+
+/* miscarile continue, discrete: drona leviteaza, flacara pulseaza,
+   lupa baleiaza, acul manometrului penduleaza */
+.art-anim.porneste .pluteste { animation: pluteste 4.5s ease-in-out infinite; animation-delay: 1.8s; }
+@keyframes pluteste { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+
+.art-anim.porneste .puls { animation: apare .6s ease forwards, puls 2.4s ease-in-out 2.4s infinite; }
+@keyframes puls { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+
+.art-anim.porneste .baleiaj { animation: baleiaj 6s ease-in-out infinite; animation-delay: 1.8s; }
+@keyframes baleiaj { 0%, 100% { transform: translateX(-13px); } 50% { transform: translateX(13px); } }
+
+.art-anim.porneste .pendul {
+  animation: pendul 3.6s ease-in-out infinite; animation-delay: 1.8s;
+  transform-box: fill-box; transform-origin: 50% 90%;
+}
+@keyframes pendul { 0%, 100% { transform: rotate(-7deg); } 50% { transform: rotate(7deg); } }
+
+/* --- dezvaluirea la derulare: cardurile si titlurile urca usor ----------- */
+
+.anima {
+  opacity: 0; transform: translateY(16px);
+  transition: opacity .55s ease, transform .55s ease;
+  transition-delay: var(--anima-d, 0ms);
+}
+.anima.vazut { opacity: 1; transform: none; }
+
+/* --- ornamentul de cota de sub h1: o linie de masurare care se traseaza -- */
+
+.ornament-cota { display: block; width: 190px; height: 20px; margin: 6px 0 18px; }
+.page-hero .ornament-cota, .hero .ornament-cota { margin-bottom: 8px; }
+.ornament-cota .tras { stroke-dasharray: 1; stroke-dashoffset: 1; animation: traseaza .9s ease forwards; animation-delay: var(--tras-d, 0s); }
+
+/* --- cine a cerut miscare redusa primeste totul desenat, fara miscare ---- */
+
+@media (prefers-reduced-motion: reduce) {
+  .art-anim .tras, .ornament-cota .tras {
+    stroke-dashoffset: 0 !important; animation: none !important;
+  }
+  .art-anim .pn, .art-anim .pa, .art-anim .pd { opacity: 1 !important; animation: none !important; }
+  .art-anim .pluteste, .art-anim .puls, .art-anim .baleiaj, .art-anim .pendul { animation: none !important; }
+  .anima { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .ws-plutitor::after { animation: none !important; }
+  .ws-plutitor, .ws-plutitor:hover { transition: none; transform: none; }
+}
+
+/* culorile ornamentului de cota (liniile le construieste animatii.js) */
+.ornament-cota .oc-lin { stroke: var(--aur); stroke-width: 2.5; fill: none; stroke-linecap: round; }
+.ornament-cota .oc-fin { stroke: #7d92a5; stroke-width: 1.2; fill: none; stroke-linecap: round; }
+
+/* fraza de context de deasupra butonului de oferta, pe paginile de servicii */
+.cta-fraza { font-weight: 600; max-width: 58ch; margin-bottom: .9em; }
