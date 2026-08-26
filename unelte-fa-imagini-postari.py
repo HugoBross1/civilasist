@@ -9,8 +9,9 @@ MARJA = 118              # 11% — sub asta scrisul se ciuntește în previzuali
 BOLD = "C:/Windows/Fonts/segoeuib.ttf"
 SEMI = "C:/Windows/Fonts/seguisb.ttf"
 REG  = "C:/Windows/Fonts/segoeui.ttf"
-PORTOCALIU = (245, 133, 31)
+AURIU = (201, 144, 63)          # auriul logoului, #c9903f
 ALB = (255, 255, 255)
+LOGO = "C:/Users/user/Documents/00 Claude/site/imagini/logo-antet.png"
 
 
 def font(cale, dim):
@@ -40,23 +41,13 @@ def intunec(im):
     return Image.composite(Image.new("RGB", (L, L), (10, 14, 22)), im, masca)
 
 
-def emblema(d, x, y):
-    r = 34
-    d.ellipse([x, y, x + 2 * r, y + 2 * r], fill=(31, 111, 196))
-    g = r / 26.0                      # casca se scaleaza odata cu cercul
-    d.ellipse([x + 8 * g, y + 8 * g, x + 2 * r - 8 * g, y + 2 * r - 8 * g],
-              fill=(20, 49, 94))
-    cx, cy = x + r, y + r
-    d.rounded_rectangle([cx - 2 * g, cy - 11 * g, cx + 2 * g, cy - 6 * g],
-                        radius=max(1, 1 * g), fill=ALB)
-    d.pieslice([cx - 10 * g, cy - 8 * g, cx + 10 * g, cy + 12 * g], 180, 360, fill=ALB)
-    d.rectangle([cx - 10 * g, cy + 1 * g, cx + 10 * g, cy + 5 * g], fill=ALB)
-    d.rounded_rectangle([cx - 13 * g, cy + 6 * g, cx + 13 * g, cy + 11 * g],
-                        radius=max(1, 2 * g), fill=ALB)
-    f = font(BOLD, 56)
-    d.text((x + 2 * r + 20, cy), "CivilAsist", font=f, fill=ALB, anchor="lm")
-    w = d.textlength("CivilAsist", font=f)
-    d.text((x + 2 * r + 20 + w, cy), ".ro", font=f, fill=PORTOCALIU, anchor="lm")
+def emblema(im, x, y):
+    """Logoul adevarat (varianta pentru fundal inchis), nu un desen de mana."""
+    logo = Image.open(LOGO).convert("RGBA")
+    h = 66
+    w = round(logo.width * h / logo.height)
+    logo = logo.resize((w, h), Image.LANCZOS)
+    im.paste(logo, (x, y), logo)
 
 
 def rupe(d, text, f, lat):
@@ -76,8 +67,8 @@ def rupe(d, text, f, lat):
 
 def fa(foto, intrebare, iesire):
     im = intunec(patrat(foto))
+    emblema(im, MARJA, 78)
     d = ImageDraw.Draw(im)
-    emblema(d, MARJA, 76)
 
     lat = L - 2 * MARJA
     dim = 88
@@ -97,11 +88,11 @@ def fa(foto, intrebare, iesire):
     y_text = y_mic - 54 - len(linii) * pas
 
     d.rounded_rectangle([MARJA, y_text - 46, MARJA + 104, y_text - 37], radius=5,
-                        fill=PORTOCALIU)
+                        fill=AURIU)
     for i, ln in enumerate(linii):
         d.text((MARJA, y_text + i * pas), ln, font=f, fill=ALB)
     d.text((MARJA, y_mic), "Răspunsul întreg pe", font=f_mic, fill=(196, 202, 212))
-    d.text((MARJA, y_dom), "civilasist.ro", font=f_dom, fill=PORTOCALIU)
+    d.text((MARJA, y_dom), "civilasist.ro", font=f_dom, fill=AURIU)
 
     im.save(iesire, quality=90, optimize=True)
     return len(linii), dim

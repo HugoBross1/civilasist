@@ -92,7 +92,9 @@ Culorile sunt definite o singură dată, la începutul lui `style.css`; fiecare
 pereche text/fundal a fost calculată WCAG înainte de alegere. Vechea paletă
 (albastru `#1e6bb8` + portocaliu `#f5851f`, după uzinex.ro) a fost înlocuită
 în august 2026, când site-ul a trecut pe culorile logoului. Imaginile de
-postare Facebook încă folosesc paleta veche cu emblema cu cască — de regenerat.
+postare Facebook au fost regenerate cu logoul adevărat (august 2026):
+`unelte-fa-imagini-postari.py` lipește `imagini/logo-antet.png` în colț,
+iar accentele sunt aurii. Fotografia de fond a fiecărei imagini a fost păstrată.
 
 **Butonul plutitor de WhatsApp** (`.ws-plutitor`) e pe toate paginile, verde
 oficial WhatsApp, dreapta-jos; ca siglă, e exceptat de pragul de contrast.
