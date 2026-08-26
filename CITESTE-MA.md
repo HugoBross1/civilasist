@@ -101,7 +101,12 @@ oficial WhatsApp, dreapta-jos; ca siglă, e exceptat de pragul de contrast.
 stilul unei planșe tehnice, care se trasează singure (`animatii.js` +
 secțiunea de animații din `style.css`). Regula jocului: liniile poartă clasa
 `tras` **și** `pathLength="1"` (perechea e obligatorie — dasharray-ul e
-calibrat pe 1); culorile vin doar din clasele `c1/c2/fin/pn/pa/pd`; mișcările
+calibrat pe 1); culorile vin doar din clasele `c1/c2/fin/pn/pa/pd` — fără
+stroke/fill în atribute, iar umplerile NU pun stroke:none, ca să nu omoare
+conturul elementelor combinate (`c1 pd` etc.); `pg` marchează umplerile cu
+gradient, doar pentru ritmul apariției. Ascunderea dinaintea animației o pune
+scriptul (clasa `armat`), deci fără JavaScript planșele rămân desenate
+complet. Mișcările
 continue permise sunt `pluteste/puls/baleiaj/pendul`. Sub fiecare `h1`,
 scriptul pune un ornament de cotă. Cine cere „mișcare redusă" primește totul
 desenat complet, nemișcat; la tipărire, desenele și butonul plutitor dispar.

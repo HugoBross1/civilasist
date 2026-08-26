@@ -50,8 +50,10 @@
       for (var j = 0; j < linii.length; j++) {
         linii[j].style.setProperty("--tras-d", Math.min(j * 70, 1500) + "ms");
       }
-      var dupa = Math.min(linii.length * 70, 1500) + 350;
+      /* ultima linie termina la intarzierea ei + 1s de trasare */
+      var dupa = Math.min(linii.length * 70, 1500) + 1050;
       svg.style.setProperty("--apare-d", dupa + "ms");
+      svg.classList.add("armat");   /* abia acum se ascunde desenul */
 
       /* Ce e deja pe ecran porneste direct, din masuratoare — nu asteapta
          observatorul (care in taburi de fundal poate tacea pana la focus). */

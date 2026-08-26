@@ -246,7 +246,7 @@ section { padding: 66px 0; }
 .project .thumb {
   aspect-ratio: 4 / 3; background: var(--bg-alt);
   display: flex; align-items: center; justify-content: center;
-  color: var(--text-light); font-size: .84rem; text-align: center; padding: 12px;
+  color: var(--text-muted); font-size: .84rem; text-align: center; padding: 12px;
 }
 .project .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .project .body { padding: 18px 22px 22px; }
@@ -362,8 +362,8 @@ footer .legal {
   .page-head.cu-foto .wrap { grid-template-columns: 1fr; gap: 24px; }
   .page-head.cu-foto .foto { order: -1; }
 }
-.breadcrumb { font-size: .85rem; color: var(--text-light); margin-bottom: 14px; }
-.breadcrumb a { color: var(--text-light); }
+.breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 14px; }
+.breadcrumb a { color: var(--text-muted); }
 .breadcrumb a:hover { color: var(--accent); }
 
 .prose { max-width: 68ch; }
@@ -434,7 +434,7 @@ a.valoare:hover { color: var(--accent); }
 .formular .randuri { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .formular .camp { min-width: 0; }
 .formular .oblig { color: var(--accent-2-dark); }
-.formular ::placeholder { color: var(--text-light); opacity: .75; }
+.formular ::placeholder { color: var(--text-muted); }
 
 /* Bifa de acord: caseta si textul pe acelasi rand, aliniate sus */
 .acord {
@@ -479,7 +479,7 @@ a.valoare:hover { color: var(--accent); }
 
 .cautare { position: relative; max-width: 620px; margin: 0 auto 4px; }
 /* Caseta stă pe fundalul aproape negru al benzii. Închisă pe închis nu se
-   vedea deloc, deci e albă, cu chenar portocaliu: se citește de la distanță
+   vedea deloc, deci e albă, cu chenar auriu: se citește de la distanță
    ca un loc unde se scrie. */
 .cautare input {
   width: 100%; padding: 15px 22px; font-size: 1rem;
@@ -555,15 +555,6 @@ a.valoare:hover { color: var(--accent); }
 
 /* Cine a cerut mișcare redusă nu primește mișcare automată — dar poate
    derula banda cu mâna, ca oricine altcineva. De asta se ocupă scriptul. */
-
-/* --- Buton portocaliu ---------------------------------------------------- */
-
-.btn.portocaliu {
-  background: var(--aur); border-color: var(--aur); color: var(--brand);
-}
-.btn.portocaliu:hover {
-  background: var(--aur-hover); border-color: var(--aur-hover); color: var(--brand);
-}
 
 /* --- Ghidurile scoase în față ------------------------------------------- */
 
@@ -648,7 +639,7 @@ a.valoare:hover { color: var(--accent); }
 /* inelul care respira: atrage ochiul o clipa, apoi sta cuminte */
 .ws-plutitor::after {
   content: ""; position: absolute; inset: 0; border-radius: 50%;
-  animation: ws-inel 4.5s ease-out infinite;
+  animation: ws-inel 4.5s ease-out 4;
 }
 @keyframes ws-inel {
   0%   { box-shadow: 0 0 0 0 rgba(37,211,102,.5); }
@@ -676,41 +667,59 @@ a.valoare:hover { color: var(--accent); }
 .art-anim .c1  { stroke: var(--brand); stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .art-anim .c2  { stroke: var(--aur);   stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .art-anim .fin { stroke: #7d92a5;      stroke-width: 1.2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-.art-anim .pn  { fill: var(--brand); stroke: none; }
-.art-anim .pa  { fill: var(--aur);   stroke: none; }
-.art-anim .pd  { fill: #e7eef5;      stroke: none; }
+/* Umplerile NU pun stroke:none — pe elementele combinate (c1 pd etc.) ar
+   omori conturul, iar cine are doar umplere n-are stroke oricum, din nastere. */
+.art-anim .pn { fill: var(--brand); }
+.art-anim .pa { fill: var(--aur); }
+.art-anim .pd { fill: #e7eef5; }
+/* .pg se pune pe umplerile cu gradient (fill="url(#...)"), doar pentru ritmul
+   aparitiei — nu atinge culoarea */
 
-/* fiecare linie se traseaza singura; umplerile apar dupa linii */
-.art-anim .tras { stroke-dasharray: 1; stroke-dashoffset: 1; }
+/* Ascunderea e conditionata de .armat, pe care o pune DOAR animatii.js chiar
+   inainte de pornire: fara JavaScript, plansele raman desenate complet. */
+.art-anim.armat .tras { stroke-dasharray: 1; stroke-dashoffset: 1; }
 .art-anim.porneste .tras {
   animation: traseaza 1s ease forwards;
   animation-delay: var(--tras-d, 0s);
 }
 @keyframes traseaza { to { stroke-dashoffset: 0; } }
 
-.art-anim .pn, .art-anim .pa, .art-anim .pd { opacity: 0; }
-.art-anim.porneste .pn, .art-anim.porneste .pa, .art-anim.porneste .pd {
-  animation: apare .6s ease forwards;
+/* umplerile apar dupa ce liniile au terminat de trasat (fill-opacity, ca sa
+   nu stinga si conturul elementelor combinate) */
+.art-anim.armat .pn, .art-anim.armat .pa, .art-anim.armat .pd, .art-anim.armat .pg { fill-opacity: 0; }
+.art-anim.porneste .pn, .art-anim.porneste .pa, .art-anim.porneste .pd, .art-anim.porneste .pg {
+  animation: umple .6s ease forwards;
   animation-delay: var(--apare-d, .8s);
 }
-@keyframes apare { to { opacity: 1; } }
+@keyframes umple { to { fill-opacity: 1; } }
+
+/* elementele si-cu-contur-si-cu-umplere au nevoie de AMBELE animatii; regula
+   sta ultima, ca sa castige cascada asupra celor doua de mai sus */
+.art-anim.porneste .tras.pn, .art-anim.porneste .tras.pa,
+.art-anim.porneste .tras.pd, .art-anim.porneste .tras.pg {
+  animation: traseaza 1s ease var(--tras-d, 0s) forwards,
+             umple .6s ease var(--apare-d, .8s) forwards;
+}
 
 /* miscarile continue, discrete: drona leviteaza, flacara pulseaza,
    lupa baleiaza, acul manometrului penduleaza */
 .art-anim.porneste .pluteste { animation: pluteste 4.5s ease-in-out infinite; animation-delay: 1.8s; }
 @keyframes pluteste { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
 
-.art-anim.porneste .puls { animation: apare .6s ease forwards, puls 2.4s ease-in-out 2.4s infinite; }
+.art-anim.porneste .puls {
+  animation: umple .6s ease var(--apare-d, .8s) forwards,
+             puls 2.4s ease-in-out calc(var(--apare-d, .8s) + 1.4s) infinite;
+}
 @keyframes puls { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
 
 .art-anim.porneste .baleiaj { animation: baleiaj 6s ease-in-out infinite; animation-delay: 1.8s; }
-@keyframes baleiaj { 0%, 100% { transform: translateX(-13px); } 50% { transform: translateX(13px); } }
+@keyframes baleiaj { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-13px); } 75% { transform: translateX(13px); } }
 
 .art-anim.porneste .pendul {
   animation: pendul 3.6s ease-in-out infinite; animation-delay: 1.8s;
   transform-box: fill-box; transform-origin: 50% 90%;
 }
-@keyframes pendul { 0%, 100% { transform: rotate(-7deg); } 50% { transform: rotate(7deg); } }
+@keyframes pendul { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-7deg); } 75% { transform: rotate(7deg); } }
 
 /* --- dezvaluirea la derulare: cardurile si titlurile urca usor ----------- */
 
@@ -733,7 +742,9 @@ a.valoare:hover { color: var(--accent); }
   .art-anim .tras, .ornament-cota .tras {
     stroke-dashoffset: 0 !important; animation: none !important;
   }
-  .art-anim .pn, .art-anim .pa, .art-anim .pd { opacity: 1 !important; animation: none !important; }
+  .art-anim .pn, .art-anim .pa, .art-anim .pd, .art-anim .pg {
+    opacity: 1 !important; fill-opacity: 1 !important; animation: none !important;
+  }
   .art-anim .pluteste, .art-anim .puls, .art-anim .baleiaj, .art-anim .pendul { animation: none !important; }
   .anima { opacity: 1 !important; transform: none !important; transition: none !important; }
   .ws-plutitor::after { animation: none !important; }
