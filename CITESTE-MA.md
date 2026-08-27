@@ -269,6 +269,34 @@ previzualizările care taie lateral.
 
 ---
 
+## SEO și GEO (implementat pe 27 august 2026)
+
+Site-ul a fost optimizat după un raport de cercetare de cuvinte cheie
+(`Raport_SEO_CivilAsist.docx`, la beneficiar). Regulile care trebuie păstrate:
+
+- **Title/meta/H1** sunt pe ținte de cuvinte cheie — nu le rescrieți fără să
+  verificați raportul. Titluri ≤ 62 de caractere, descrieri ≤ 158.
+- **Primul paragraf** al fiecărei pagini răspunde direct la întrebarea
+  principală, în 40–60 de cuvinte — e ce citează Google și motoarele AI.
+- **Dirigintele e „autorizat I.S.C.", nu „atestat"** — atestați sunt
+  verificatorii de proiect și experții.
+- **FAQ pe servicii**: fiecare pagină de serviciu are secțiune de întrebări cu
+  schema FAQPage. Textul din JSON-LD trebuie să fie identic cu cel vizibil.
+  Răspunsurile nu se copiază cuvânt cu cuvânt din ghiduri (conținut duplicat).
+- **`cautare.json` se regenerează** după orice schimbare de H1 sau de întrebări
+  (titlurile și ancorele intră în indexul căutării interne).
+- **Calculatorul de taxă** din ghidul autorizației folosește cotele din Codul
+  fiscal art. 474 (0,5% rezidențiale / 1% restul) — de verificat anual.
+- **Modelele descărcabile** din `descarcari/` (PV de recepție pe forma
+  HG 343/2017 — doar admitere/respingere; cerere CU pe F.1) se regenerează din
+  scripturile păstrate de beneficiar; nu editați .docx-ul direct.
+- **Anul din titlul ghidului autorizației** („2026") se actualizează anual.
+
+Rămase din raport, cer decizia sau materialele beneficiarului: cumpărarea
+domeniilor de protecție (expertiza-constructii.ro etc., cu redirect 301),
+catalogul „Proiecte de case", pagina de serviciu „Expertiză tehnică" (doar
+dacă există atestatul), pagina „Despre noi", testimoniale reale.
+
 ## Ce a mai rămas de făcut
 
 ### Blochează lansarea
