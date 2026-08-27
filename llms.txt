@@ -1,6 +1,6 @@
 # CivilAsist.ro
 
-> Echipă de ingineri constructori și proiectanți din Huși, județul Vaslui, care acoperă o lucrare de construcții de la primul act până la recepția finală: proiectare, diriginție de șantier atestată de Inspectoratul de Stat în Construcții, responsabil tehnic cu execuția, RSVTI și responsabil cu verificarea tehnică pentru instalații sub incidența ISCIR, management de proiect, cartea tehnică a construcției, termografie, inspecții și măsurători cu drona, încercări nedistructive prin examinare vizuală și lichide penetrante, ofertare și devize tehnice.
+> Echipă de ingineri constructori și proiectanți din Huși, județul Vaslui, care acoperă o lucrare de construcții de la primul act până la recepția finală: proiectare, diriginție de șantier autorizată de Inspectoratul de Stat în Construcții, responsabil tehnic cu execuția, RSVTI și responsabil cu verificarea tehnică pentru instalații sub incidența ISCIR, management de proiect, cartea tehnică a construcției, termografie, inspecții și măsurători cu drona, încercări nedistructive prin examinare vizuală și lichide penetrante, ofertare și devize tehnice.
 
 Serviciile se prestează în Huși, Vaslui, Bârlad, Negrești, Iași și comunele limitrofe, pentru persoane fizice, firme și administrații publice. Serviciile se contractează prin INDUSTRIAL IMOBIL S.R.L., J37/713/2020, CUI 43308030, cu sediul în municipiul Huși, județul Vaslui. Autorizările sunt personale și emise pe numele membrilor echipei.
 
@@ -48,3 +48,8 @@ Fiecare ghid are un bloc de întrebări și răspunsuri, marcate ca date structu
 
 - Ghidurile descriu proceduri din legislația română a construcțiilor, în special Legea nr. 50/1991 privind autorizarea executării lucrărilor de construcții și Legea nr. 10/1995 privind calitatea în construcții. Sunt orientative: lista fermă pentru un caz anume este cea din certificatul de urbanism emis de primărie.
 - Site-ul nu folosește cookie-uri. Statisticile de vizitare sunt agregate și nu identifică persoane.
+
+## Modele descărcabile (gratuite)
+
+- [Model proces-verbal de recepție la terminarea lucrărilor (Word)](https://civilasist.ro/descarcari/model-proces-verbal-receptie-terminarea-lucrarilor.docx): pe structura H.G. 273/1994.
+- [Model cerere certificat de urbanism (Word)](https://civilasist.ro/descarcari/model-cerere-certificat-de-urbanism.docx): pe structura formularului F.1 din normele Legii 50/1991.
