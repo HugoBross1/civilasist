@@ -248,10 +248,33 @@ FB_PAGINA_3_ID      706458899219948
 FB_PAGINA_3_NUME    Verificari Centrale Termice VTP
 FB_PAGINA_3_TEME    iscir
 FB_START            data de la care se numără seria
-FB_ACTIV            da   <- NU E PUS. Fără el nu se publică nimic.
+FB_ACTIV            da   <- E PUS pe „da".
+CRON_SECRET         o parolă lungă  <- NU E PUS. Fără el publicarea e ÎNCUIATĂ.
 ```
 
 **Variabilele intră în funcțiune doar după Redeploy.**
+
+### Două capcane care au produs pagube reale
+
+**1. Nu interogați endpointul ca să vedeți dacă s-a publicat un deploy.**
+Funcția decide pe query-string, iar modurile de diagnostic (`?stare=1`,
+`?proba=1`, `?verifica=1`, `?permisiuni=1`, `?ultimele=1`, `?test=N`,
+`?reeltest=N`, `?videotest=N`) returnează înainte de calea de publicare —
+**dar numai în versiunea care le conține**. Cât timp Vercel încă publică,
+versiunea veche nu recunoaște parametrul nou, cererea cade prin toate `if`-urile
+și **programează o postare reală pe fiecare pagină**. Așa s-au strâns 15
+postări identice în coadă pe 3 septembrie 2026. Ca să confirmați un deploy,
+cereți un fișier static (`style.css`) sau un mod care exista deja.
+
+**2. „Oprit" nu însemna oprit.** Scoaterea programării din `vercel.json` ia
+doar ceasul; `FB_ACTIV` rămâne pe `da` și oricine cere adresa publică. Acum
+calea de publicare cere `Authorization: Bearer <CRON_SECRET>`, deci fără
+`CRON_SECRET` pus e închisă pentru toată lumea. Verificați cu `?stare=1` →
+câmpul `incuiat`. Ca să reporniți: puneți `CRON_SECRET` în Vercel **și**
+readuceți programarea în `vercel.json`.
+
+**Înainte de orice publicare, uitați-vă în coadă cu `?ultimele=1`** — arată ce
+s-a publicat și, mai important, ce stă programat și pleacă singur.
 
 ### Pe partea Facebook
 
