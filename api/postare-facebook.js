@@ -404,8 +404,7 @@ module.exports = async function (req, res) {
             cand: x.scheduled_publish_time
               ? new Date(x.scheduled_publish_time * 1000).toISOString()
               : x.created_time,
-            text: (x.message || "").split("
-")[0].slice(0, 70),
+            text: (x.message || "").split(/\r?\n/)[0].slice(0, 70),
           }));
         };
         rand.publicate = await cere("published_posts");
