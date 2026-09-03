@@ -393,22 +393,24 @@ module.exports = async function (req, res) {
       const rand = { pagina: pg.nume };
       try {
         const jeton = await jetonPagina(pg);
-        const cere = async (ce, camp) => {
+        const cere = async (ce, cate) => {
           const r = await fetch(GRAPH + "/" + pg.id + "/" + ce +
-            "?fields=id,created_time,scheduled_publish_time,message&limit=6" +
+            "?fields=id,created_time,scheduled_publish_time,message&limit=" + cate +
             "&access_token=" + encodeURIComponent(jeton));
           const j = await r.json();
           if (!r.ok) return { eroare: (j.error && j.error.message) || "necunoscut" };
           return (j.data || []).map(x => ({
             id: x.id,
-            cand: x.scheduled_publish_time
+            facuta: x.created_time,
+            pleaca: x.scheduled_publish_time
               ? new Date(x.scheduled_publish_time * 1000).toISOString()
-              : x.created_time,
-            text: (x.message || "").split(/\r?\n/)[0].slice(0, 70),
+              : null,
+            text: (x.message || "").split(/\r?\n/)[0].slice(0, 60),
           }));
         };
-        rand.publicate = await cere("published_posts");
-        rand.programate = await cere("scheduled_posts");
+        rand.publicate = await cere("published_posts", 4);
+        rand.programate = await cere("scheduled_posts", 50);
+        if (Array.isArray(rand.programate)) rand.cateProgramate = rand.programate.length;
       } catch (e) {
         rand.eroare = e.message;
       }
