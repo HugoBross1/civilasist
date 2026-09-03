@@ -267,6 +267,32 @@ module.exports = async function (req, res) {
     }
   }
 
+  /* Ce permisiuni are jetonul, de fapt. Reels cere pages_show_list,
+     pages_read_engagement și pages_manage_posts; postarea cu fotografie merge
+     și fără prima. Jetonul nu apare în răspuns, doar lista de drepturi. */
+  if (req.query && (req.query.permisiuni === "1" || req.query.permisiuni === "da")) {
+    const NECESARE = ["pages_show_list", "pages_read_engagement", "pages_manage_posts"];
+    const raport = [];
+    for (const pg of lista) {
+      try {
+        const r = await fetch(GRAPH + "/debug_token?input_token=" +
+          encodeURIComponent(pg.token) + "&access_token=" + encodeURIComponent(pg.token));
+        const j = await r.json();
+        const are = (j.data && j.data.scopes) || [];
+        raport.push({
+          pagina: pg.nume,
+          tip: (j.data && j.data.type) || "?",
+          are: are,
+          lipsesc: NECESARE.filter(x => !are.includes(x)),
+          potReels: NECESARE.every(x => are.includes(x)),
+        });
+      } catch (e) {
+        raport.push({ pagina: pg.nume, eroare: e.message });
+      }
+    }
+    return res.status(200).json({ permisiuni: true, necesarePentruReels: NECESARE, pagini: raport });
+  }
+
   /* Reel de probă, ciornă: apare în Business Suite la conținut nepublicat,
      nu în feed. Nu ține cont de FB_ACTIV, fiindcă nimic nu devine public. */
   if (req.query && req.query.reeltest) {
