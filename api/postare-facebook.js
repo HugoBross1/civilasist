@@ -52,6 +52,34 @@ async function jetonPagina(pg) {
   return pg._jeton;
 }
 
+/* Calea clasica de video, nu cea de Reels. O pastram ca plasa de siguranta:
+   /video_reels cere pages_show_list, pe care jetonul de utilizator de sistem
+   nu-l are. Atentie: un video vertical urcat aici NU e un Reel — ajunge in
+   feedul de video, iar Facebook il poate arata si in Reels, dar nu garanteaza.
+   De aceea nu se foloseste automat; doar la cerere explicita. */
+async function publicaVideo(pagina, p, acum, nepublicat) {
+  const jeton = await jetonPagina(pagina);
+  const corp = {
+    file_url: SITE + caleReel(p),
+    description: compune(p),
+    access_token: jeton,
+  };
+  if (nepublicat) {
+    corp.published = false;
+  } else if (!acum) {
+    corp.published = false;
+    corp.scheduled_publish_time = maineLaOpt();
+  }
+  const r = await fetch(GRAPH + "/" + pagina.id + "/videos", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(corp),
+  });
+  const j = await r.json();
+  if (!r.ok || !j.id) throw new Error("video: " + JSON.stringify(j));
+  return j.id;
+}
+
 function ziuaCurenta() {
   const start = Date.parse((process.env.FB_START || "2026-08-23") + "T00:00:00Z");
   return Math.floor((Date.now() - start) / 86400000);
@@ -315,6 +343,30 @@ module.exports = async function (req, res) {
       });
     } catch (e) {
       return res.status(502).json({ reeltest: true, pagina: pg.nume, eroare: e.message });
+    }
+  }
+
+  /* Probă pe calea clasică de video: ciornă, deci nimic public. Ne spune dacă
+     permisiunea care lipsește blochează numai Reels sau și video-ul obișnuit.
+     Nu ține cont de FB_ACTIV, fiindcă nimic nu devine public. */
+  if (req.query && req.query.videotest) {
+    const care = String(req.query.videotest);
+    const pg = lista.find(x => x.nume === care) || lista[parseInt(care, 10) - 1] || lista[0];
+    const p = pentru(pg, zi + 1);
+    if (!p) return res.status(400).json({ eroare: "Pagina nu are nicio întrebare pe temele ei" });
+    if (!(await areReel(p))) {
+      return res.status(400).json({ eroare: "Fișierul video nu e generat", asteptat: SITE + caleReel(p) });
+    }
+    try {
+      const id = await publicaVideo(pg, p, false, true);
+      return res.status(200).json({
+        videotest: true, nepublicat: true, cale: "/videos (nu /video_reels)",
+        pagina: pg.nume, idVideo: id, intrebare: p.i, fisier: SITE + caleReel(p),
+        atentie: "Un video vertical urcat aici NU e un Reel. Facebook îl poate arăta în Reels, dar nu garantează.",
+        unde: "Meta Business Suite → Conținut → nepublicate, pe pagina " + pg.nume,
+      });
+    } catch (e) {
+      return res.status(502).json({ videotest: true, pagina: pg.nume, eroare: e.message });
     }
   }
 
