@@ -854,3 +854,27 @@ a.valoare:hover { color: var(--accent); }
   border-radius: 0 var(--radius) var(--radius) 0; padding: 20px 24px; margin: 30px 0;
 }
 .descarcare p:last-child { margin-bottom: 0; }
+
+/* Confirmarea de la butoanele de telefon si mail: pe desktop, unde tel: si
+   mailto: pot sa nu aiba aplicatie, clicul copiaza valoarea si o spune aici,
+   ca vizitatorul sa nu creada ca butonul e stricat. */
+.bp-confirmare {
+  position: fixed; right: 88px; bottom: 26px; z-index: 91;
+  max-width: min(74vw, 330px);
+  padding: 9px 14px; border-radius: 8px;
+  background: var(--brand); color: #fff;
+  font-size: .88rem; line-height: 1.35; font-weight: 600;
+  box-shadow: 0 8px 22px rgba(9,29,47,.34);
+  opacity: 0; transform: translateX(10px);
+  transition: opacity .18s ease, transform .18s ease;
+  pointer-events: none;
+}
+.bp-confirmare.vazut { opacity: 1; transform: translateX(0); }
+
+@media (max-width: 560px) {
+  .bp-confirmare { right: 14px; bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bp-confirmare { transition: none; transform: none; }
+}

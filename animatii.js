@@ -109,3 +109,66 @@
     obAnima.observe(el2);
   }
 })();
+
+/* --- Butoanele de telefon si mail, pe desktop -----------------------------
+
+   tel: si mailto: depind de o aplicatie inregistrata in sistem. Pe telefon
+   exista mereu; pe un desktop fara client de mail configurat (adica la cei
+   mai multi, care folosesc webmail) clicul nu face absolut nimic, iar
+   vizitatorul crede ca butonul e stricat.
+
+   Nu oprim navigarea: cine ARE aplicatie trebuie sa o vada deschizandu-se.
+   Doar adaugam, in paralel, copierea valorii in clipboard si o confirmare
+   scurta — asa clicul da un rezultat vizibil in ambele cazuri. */
+(function () {
+  var butoane = document.querySelectorAll("[data-copiaza]");
+  if (!butoane.length) return;
+
+  /* numai unde exista cursor: pe telefon aplicatia se deschide oricum */
+  var desktop = !window.matchMedia || window.matchMedia("(pointer: fine)").matches;
+  if (!desktop) return;
+
+  var vorbitor = document.createElement("div");
+  vorbitor.className = "bp-confirmare";
+  vorbitor.setAttribute("role", "status");
+  vorbitor.setAttribute("aria-live", "polite");
+  document.body.appendChild(vorbitor);
+
+  var ceas = null;
+  function arata(text) {
+    vorbitor.textContent = text;
+    vorbitor.classList.add("vazut");
+    if (ceas) clearTimeout(ceas);
+    ceas = setTimeout(function () { vorbitor.classList.remove("vazut"); }, 2600);
+  }
+
+  function copiaza(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    /* browsere vechi: trecem prin a caseta ascunsa */
+    var c = document.createElement("textarea");
+    c.value = text;
+    c.setAttribute("readonly", "");
+    c.style.position = "fixed";
+    c.style.left = "-9999px";
+    document.body.appendChild(c);
+    c.select();
+    try { document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(c);
+    return Promise.resolve();
+  }
+
+  for (var i = 0; i < butoane.length; i++) {
+    (function (b) {
+      b.addEventListener("click", function () {
+        var val = b.getAttribute("data-copiaza");
+        var zis = b.getAttribute("data-copiat") || "Copiat";
+        copiaza(val).then(
+          function () { arata(zis + ": " + val); },
+          function () { arata(val); }   /* refuzata copierea: aratam valoarea */
+        );
+      });
+    })(butoane[i]);
+  }
+})();
