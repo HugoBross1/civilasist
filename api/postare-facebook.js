@@ -370,6 +370,47 @@ module.exports = async function (req, res) {
     }
   }
 
+  /* TEMPORAR - se sterge din cod imediat dupa folosire, o singura data.
+     Sterge exact cele 15 postari duplicate programate din greseala pe
+     3 septembrie 2026 (bucle de asteptare a unui deploy care au nimerit
+     calea de publicare). Lista e FIXATA aici, nu "orice e programat" -
+     asa incat nici o cerere gresita nu poate atinge altceva. */
+  if (req.query && req.query.curataDuplicate === "confirmat-2026-09-03") {
+    const DE_STERS = [
+      "113574381706396_1006881835707532", "113574381706396_1006879992374383",
+      "113574381706396_1006878949041154", "113574381706396_1006784722383910",
+      "113574381706396_1006784552383927",
+      "1197148686823384_122112435609436169", "1197148686823384_122112435207436169",
+      "1197148686823384_122112434409436169", "1197148686823384_122112404013436169",
+      "1197148686823384_122112403851436169",
+      "706458899219948_122180084348959444", "706458899219948_122180084012959444",
+      "706458899219948_122180083868959444", "706458899219948_122180072384959444",
+      "706458899219948_122180072336959444",
+    ];
+    const rezultate = [];
+    for (const id of DE_STERS) {
+      const idPagina = id.split("_")[0];
+      const pg = lista.find(x => x.id === idPagina);
+      if (!pg) { rezultate.push({ id, sters: false, eroare: "pagina necunoscuta" }); continue; }
+      try {
+        const jeton = await jetonPagina(pg);
+        const r = await fetch(GRAPH + "/" + id + "?access_token=" + encodeURIComponent(jeton), {
+          method: "DELETE",
+        });
+        const j = await r.json();
+        rezultate.push({ id, pagina: pg.nume, sters: r.ok && j.success !== false, raspuns: j });
+      } catch (e) {
+        rezultate.push({ id, sters: false, eroare: e.message });
+      }
+    }
+    return res.status(200).json({
+      curatare: true,
+      cerute: DE_STERS.length,
+      sterse: rezultate.filter(r => r.sters).length,
+      rezultate,
+    });
+  }
+
   /* Starea comutatoarelor, ca sa se vada dintr-o privire daca postarile sunt
      pornite sau oprite. Nu intoarce nicio valoare secreta, doar daca exista. */
   if (req.query && (req.query.stare === "1" || req.query.stare === "da")) {
