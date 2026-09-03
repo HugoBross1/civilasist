@@ -297,6 +297,8 @@ footer ul { list-style: none; padding: 0; margin: 0; }
 footer li { padding: 4px 0; }
 footer .legal {
   margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--brand-3);
+  /* coloana din dreapta rimane libera: acolo pluteste stiva de butoane */
+  padding-right: 84px;
   color: #8ba0b4; font-size: .85rem;
 }
 
@@ -632,20 +634,26 @@ a.valoare:hover { color: var(--accent); }
   position: relative;
   width: 58px; height: 58px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 6px 18px rgba(9,29,47,.35), inset 0 0 0 1px rgba(0,0,0,.08);
+  /* inelul deschis din exterior desparte butonul de orice fundal: pe subsolul
+     bleumarin, un disc bleumarin ar fi invizibil */
+  box-shadow: 0 0 0 2px rgba(255,255,255,.92),
+              0 6px 18px rgba(9,29,47,.35),
+              inset 0 0 0 1px rgba(0,0,0,.10);
   transition: transform .15s ease, box-shadow .15s ease;
 }
 .buton-plutitor svg { width: 30px; height: 30px; fill: currentColor; display: block; }
 .buton-plutitor:hover {
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 10px 26px rgba(9,29,47,.4), inset 0 0 0 1px rgba(0,0,0,.08);
+  box-shadow: 0 0 0 2px rgba(255,255,255,.92),
+              0 10px 26px rgba(9,29,47,.4),
+              inset 0 0 0 1px rgba(0,0,0,.10);
 }
 .buton-plutitor:focus-visible { outline: 3px solid var(--aur); outline-offset: 3px; }
 
 /* Telefonul ia auriul casei — e cea mai directa dintre cele trei porti, deci
    si cea mai vizibila; mailul, bleumarinul; WhatsApp, verdele lui. */
 .bp-tel  { background: var(--aur);   color: #091d2f; }
-.bp-mail { background: var(--brand); color: #fff; }
+.bp-mail { background: var(--brand-3); color: #fff; }
 .bp-ws   { background: #25d366;      color: #fff; }
 
 /* Cate doua unde din fiecare buton, in culoarea butonului. Se anima transform
@@ -659,7 +667,7 @@ a.valoare:hover { color: var(--accent); }
   animation: bp-unda 6s cubic-bezier(.22,.61,.36,1) infinite;
 }
 .bp-tel::before,  .bp-tel::after  { border-color: var(--aur); }
-.bp-mail::before, .bp-mail::after { border-color: var(--brand); }
+.bp-mail::before, .bp-mail::after { border-color: var(--brand-3); }
 .bp-ws::before,   .bp-ws::after   { border-color: #25d366; }
 
 /* Unda calatoreste in primele 2,6 secunde din ciclu; restul e liniste. Cu
@@ -713,7 +721,8 @@ a.valoare:hover { color: var(--accent); }
   .buton-plutitor { width: 52px; height: 52px; }
   .buton-plutitor svg { width: 27px; height: 27px; }
   /* stiva e inalta: lasam loc sub subsol ca sa nu acopere ultimul rand */
-  footer { padding-bottom: 92px; }
+  footer { padding-bottom: 56px; }
+  footer .legal { padding-right: 74px; }
 }
 
 /* ==========================================================================
