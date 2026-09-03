@@ -96,8 +96,23 @@ postare Facebook au fost regenerate cu logoul adevărat (august 2026):
 `unelte-fa-imagini-postari.py` lipește `imagini/logo-antet.png` în colț,
 iar accentele sunt aurii. Fotografia de fond a fiecărei imagini a fost păstrată.
 
-**Butonul plutitor de WhatsApp** (`.ws-plutitor`) e pe toate paginile, verde
-oficial WhatsApp, dreapta-jos; ca siglă, e exceptat de pragul de contrast.
+**Stiva de butoane plutitoare** (`.butoane-plutitoare` > `.buton-plutitor`) e
+pe toate paginile, dreapta-jos, în ordinea fixă de sus în jos: **apelare
+directă** (`.bp-tel`, auriu), **e-mail** (`.bp-mail`, bleumarinul de borduri),
+**WhatsApp** (`.bp-ws`, verdele oficial — ca siglă, e exceptat de pragul de
+contrast). Trei reguli de care depinde:
+
+- Mailul folosește `--brand-3`, **nu** `--brand`: `--brand` e identică cu
+  `--bg-deep`, deci pe subsol discul ar fi invizibil (contrast 1,00:1).
+- Fiecare buton are un **inel deschis** în box-shadow. Fără el, orice buton
+  în culoarea unui fundal se pierde în el.
+- `footer .legal` are `padding-right`, ca stiva să nu treacă peste datele
+  firmei când pagina e derulată până jos.
+
+Undele sunt decalate cu 2 secunde între butoane (`animation-delay` pe
+`::before`/`::after` și pe `svg`), ca să coboare prin stivă ca o singură
+mișcare și apoi să fie liniște; se animă `transform` și `opacity`, nu
+`box-shadow`, ca treaba s-o facă placa video, nu procesorul.
 
 **Animațiile.** Paginile din `servicii/` au în cap planșe SVG desenate în
 stilul unei planșe tehnice, care se trasează singure (`animatii.js` +
@@ -111,7 +126,14 @@ scriptul (clasa `armat`), deci fără JavaScript planșele rămân desenate
 complet. Mișcările
 continue permise sunt `pluteste/puls/baleiaj/pendul`. Sub fiecare `h1`,
 scriptul pune un ornament de cotă. Cine cere „mișcare redusă" primește totul
-desenat complet, nemișcat; la tipărire, desenele și butonul plutitor dispar.
+desenat complet, nemișcat; la tipărire, desenele și butoanele plutitoare dispar.
+
+**Iconițele cardurilor** (`imagini/carduri/*.jpg`) stau într-o casetă de
+220×148, cu `object-fit: contain`. Deci fiecare fișier trebuie tăiat la
+proporția **420×284 (1,479)**, altfel rămâne alb pe laturi și iconița arată
+mai mică decât vecinele. Când înlocuiți una, reîncadrați-o la proporția asta
+și aduceți la zi `width`/`height` din `index.html` — dacă rămân cele vechi,
+browserul rezervă alt loc și pagina tresare la încărcare.
 
 **Fonturile sunt găzduite local, intenționat.** Nu se pun înapoi de la Google:
 ar trimite adresa IP a fiecărui vizitator către Google înainte de orice
