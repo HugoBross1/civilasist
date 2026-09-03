@@ -608,7 +608,7 @@ a.valoare:hover { color: var(--accent); }
 
 @media print {
   .topbar, .masthead, footer, form, .callback, .btn,
-  .ws-plutitor, .art-anim, .ornament-cota { display: none; }
+  .butoane-plutitoare, .art-anim, .ornament-cota { display: none; }
   .anima { opacity: 1 !important; transform: none !important; }
   body { font-size: 11pt; color: #000; }
   section { padding: 16px 0; border-top: 1px solid #ccc; }
@@ -616,70 +616,104 @@ a.valoare:hover { color: var(--accent); }
 }
 
 /* ==========================================================================
-   Butonul plutitor de WhatsApp — pe toate paginile, dreapta-jos.
-   Verdele e cel oficial WhatsApp; ca sigla, e exceptat de pragul WCAG,
-   iar chenarul interior il desparte de fundalurile albe.
+   Stiva de butoane plutitoare — pe toate paginile, dreapta-jos, in ordinea
+   de sus in jos: apelare directa, e-mail, WhatsApp. Acelasi model pentru
+   toate trei: forma, marimea, undele, umbra, hover. Difera doar culoarea:
+   verdele WhatsApp e cel oficial (ca sigla, e exceptat de pragul WCAG),
+   celelalte doua iau culorile casei.
    ========================================================================== */
 
-.ws-plutitor {
+.butoane-plutitoare {
   position: fixed; right: 18px; bottom: 18px; z-index: 90;
+  display: flex; flex-direction: column; gap: 12px;
+}
+
+.buton-plutitor {
+  position: relative;
   width: 58px; height: 58px; border-radius: 50%;
-  background: #25d366; color: #fff;
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 6px 18px rgba(9,29,47,.35), inset 0 0 0 1px rgba(0,0,0,.08);
   transition: transform .15s ease, box-shadow .15s ease;
 }
-.ws-plutitor svg { width: 30px; height: 30px; fill: currentColor; display: block; }
-.ws-plutitor:hover {
+.buton-plutitor svg { width: 30px; height: 30px; fill: currentColor; display: block; }
+.buton-plutitor:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 10px 26px rgba(9,29,47,.4), inset 0 0 0 1px rgba(0,0,0,.08);
 }
-.ws-plutitor:focus-visible { outline: 3px solid var(--aur); outline-offset: 3px; }
+.buton-plutitor:focus-visible { outline: 3px solid var(--aur); outline-offset: 3px; }
 
-/* Doua unde care pleaca din buton, decalate la jumatate de ciclu, ca sa
-   existe mereu una pe drum. Se anima transform si opacity, nu box-shadow:
-   asa treaba o face placa video, nu procesorul, si nu se simte pe telefon. */
-.ws-plutitor::before,
-.ws-plutitor::after {
+/* Telefonul ia auriul casei — e cea mai directa dintre cele trei porti, deci
+   si cea mai vizibila; mailul, bleumarinul; WhatsApp, verdele lui. */
+.bp-tel  { background: var(--aur);   color: #091d2f; }
+.bp-mail { background: var(--brand); color: #fff; }
+.bp-ws   { background: #25d366;      color: #fff; }
+
+/* Cate doua unde din fiecare buton, in culoarea butonului. Se anima transform
+   si opacity, nu box-shadow: asa treaba o face placa video, nu procesorul, si
+   nu se simte pe telefon. */
+.buton-plutitor::before,
+.buton-plutitor::after {
   content: ""; position: absolute; inset: 0; border-radius: 50%;
-  border: 2px solid #25d366;
+  border: 2px solid currentColor;
   pointer-events: none;
-  animation: ws-unda 2.6s cubic-bezier(.22,.61,.36,1) infinite;
+  animation: bp-unda 6s cubic-bezier(.22,.61,.36,1) infinite;
 }
-.ws-plutitor::after { animation-delay: 1.3s; }
+.bp-tel::before,  .bp-tel::after  { border-color: var(--aur); }
+.bp-mail::before, .bp-mail::after { border-color: var(--brand); }
+.bp-ws::before,   .bp-ws::after   { border-color: #25d366; }
 
-@keyframes ws-unda {
-  0%   { transform: scale(1);    opacity: .7; }
-  70%  { opacity: 0; }
-  100% { transform: scale(2.15); opacity: 0; }
+/* Unda calatoreste in primele 2,6 secunde din ciclu; restul e liniste. Cu
+   decalajele de mai jos, o pereche de unde coboara prin stiva o data la doua
+   secunde, apoi tot ansamblul tace — trei butoane care pulseaza in acelasi
+   timp ar fi zgomot, nu semn. */
+@keyframes bp-unda {
+  0%          { transform: scale(1);    opacity: .7; }
+  30%         { opacity: 0; }
+  44%, 100%   { transform: scale(2.15); opacity: 0; }
 }
 
-/* Semnul dinauntru trage aer si, o data la sapte secunde, se scutura scurt,
-   ca sa prinda ochiul si la a doua privire. Ambele intr-un singur set de
-   cadre: doua animatii pe acelasi transform s-ar anula una pe alta. */
-.ws-plutitor svg { animation: ws-viata 7s ease-in-out infinite; }
+/* Semnul dinauntru trage aer cand pleaca undele si se scutura scurt inainte
+   de tura urmatoare — la telefon, exact ca un aparat care suna. Amandoua
+   intr-un singur set de cadre: doua animatii pe acelasi transform s-ar anula
+   una pe alta. */
+.buton-plutitor svg { animation: bp-viata 6s ease-in-out infinite; }
 
-@keyframes ws-viata {
-  0%,  16%, 74%, 100% { transform: rotate(0) scale(1); }
-  8%                  { transform: rotate(0) scale(1.09); }
+@keyframes bp-viata {
+  0%,  14%, 74%, 100% { transform: rotate(0) scale(1); }
+  7%                  { transform: rotate(0) scale(1.09); }
   79%                 { transform: rotate(-15deg) scale(1.09); }
   84%                 { transform: rotate(12deg)  scale(1.09); }
   88%                 { transform: rotate(-8deg)  scale(1.05); }
   92%                 { transform: rotate(4deg)   scale(1.02); }
 }
 
-/* Cat sta cursorul pe el, undele se opresc si semnul sta drept: butonul e
-   deja gasit, n-are rost sa mai facem semne. */
-.ws-plutitor:hover::before,
-.ws-plutitor:hover::after { animation-play-state: paused; opacity: 0; }
-.ws-plutitor:hover svg { animation: none; transform: none; }
+/* Decalajele: apelarea porneste, mailul la 2 secunde, WhatsApp la 4. Undele
+   si semnul fiecarui buton pleaca odata, ca sa fie o singura miscare. */
+.bp-tel::before  { animation-delay: 0s; }
+.bp-tel::after   { animation-delay: .55s; }
+.bp-tel svg      { animation-delay: 0s; }
+.bp-mail::before { animation-delay: 2s; }
+.bp-mail::after  { animation-delay: 2.55s; }
+.bp-mail svg     { animation-delay: 2s; }
+.bp-ws::before   { animation-delay: 4s; }
+.bp-ws::after    { animation-delay: 4.55s; }
+.bp-ws svg       { animation-delay: 4s; }
+
+/* Cat sta cursorul pe un buton, undele lui se opresc si semnul sta drept:
+   butonul e deja gasit, n-are rost sa mai facem semne. */
+.buton-plutitor:hover::before,
+.buton-plutitor:hover::after { animation-play-state: paused; opacity: 0; }
+.buton-plutitor:hover svg { animation: none; transform: none; }
 
 @media (max-width: 560px) {
-  .ws-plutitor {
-    width: 54px; height: 54px;
+  .butoane-plutitoare {
     right: 14px; bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+    gap: 10px;
   }
-  .ws-plutitor svg { width: 28px; height: 28px; }
+  .buton-plutitor { width: 52px; height: 52px; }
+  .buton-plutitor svg { width: 27px; height: 27px; }
+  /* stiva e inalta: lasam loc sub subsol ca sa nu acopere ultimul rand */
+  footer { padding-bottom: 92px; }
 }
 
 /* ==========================================================================
@@ -774,11 +808,11 @@ a.valoare:hover { color: var(--accent); }
   }
   .art-anim .pluteste, .art-anim .puls, .art-anim .baleiaj, .art-anim .pendul { animation: none !important; }
   .anima { opacity: 1 !important; transform: none !important; transition: none !important; }
-  .ws-plutitor::before, .ws-plutitor::after {
+  .buton-plutitor::before, .buton-plutitor::after {
     animation: none !important; opacity: 0 !important;
   }
-  .ws-plutitor svg { animation: none !important; transform: none !important; }
-  .ws-plutitor, .ws-plutitor:hover { transition: none; transform: none; }
+  .buton-plutitor svg { animation: none !important; transform: none !important; }
+  .buton-plutitor, .buton-plutitor:hover { transition: none; transform: none; }
 }
 
 /* culorile ornamentului de cota (liniile le construieste animatii.js) */
