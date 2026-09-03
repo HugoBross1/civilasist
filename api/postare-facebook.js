@@ -106,6 +106,84 @@ async function publica(pagina, p, acum) {
   return raspuns.id;
 }
 
+/* --- Reels ---------------------------------------------------------------
+
+   Aceeași întrebare, același material, dar pe verticală. Fișierul se cheamă
+   ca fotografia postării: /imagini/postari/04.jpg -> /reels/04.mp4. Dacă nu
+   există încă, pagina primește doar postarea cu fotografie, fără Reel — nu e
+   o eroare, doar n-a fost generat.
+
+   Publicarea are trei faze (documentația Meta, Reels Publishing API):
+     1. start   — Facebook deschide o sesiune și dă video_id
+     2. upload  — nu trecem octeții prin funcție: trimitem antetul file_url,
+                  iar Facebook aduce singur fișierul de pe site
+     3. finish  — PUBLISHED pe loc, ori SCHEDULED pentru mâine
+
+   Reels acceptă și programare, deci se poartă la fel ca postările: implicit
+   pe mâine, cu ?acum=1 pe loc. */
+
+const VERSIUNE = GRAPH.split("/").pop();
+const RUPLOAD  = "https://rupload.facebook.com/video-upload/" + VERSIUNE;
+
+function caleReel(p) {
+  const nume = p.img.split("/").pop().replace(/\.jpe?g$/i, ".mp4");
+  return "/reels/" + nume;
+}
+
+/* Ne uităm dacă fișierul e chiar acolo înainte să deranjăm Facebook. */
+async function areReel(p) {
+  try {
+    const r = await fetch(SITE + caleReel(p), { method: "HEAD" });
+    return r.ok;
+  } catch (e) {
+    return false;
+  }
+}
+
+async function publicaReel(pagina, p, acum, stare) {
+  const jeton = await jetonPagina(pagina);
+  const url = SITE + caleReel(p);
+
+  const r1 = await fetch(GRAPH + "/" + pagina.id + "/video_reels", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ upload_phase: "start", access_token: jeton }),
+  });
+  const start = await r1.json();
+  if (!r1.ok || !start.video_id) {
+    throw new Error("faza start: " + JSON.stringify(start));
+  }
+
+  const r2 = await fetch(RUPLOAD + "/" + start.video_id, {
+    method: "POST",
+    headers: { Authorization: "OAuth " + jeton, file_url: url },
+  });
+  const incarcat = await r2.json().catch(() => ({}));
+  if (!r2.ok || incarcat.success === false) {
+    throw new Error("faza upload: " + JSON.stringify(incarcat));
+  }
+
+  const final = {
+    upload_phase: "finish",
+    video_id: start.video_id,
+    description: compune(p),
+    video_state: stare || (acum ? "PUBLISHED" : "SCHEDULED"),
+    access_token: jeton,
+  };
+  if (final.video_state === "SCHEDULED") final.scheduled_publish_time = maineLaOpt();
+
+  const r3 = await fetch(GRAPH + "/" + pagina.id + "/video_reels", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(final),
+  });
+  const gata = await r3.json();
+  if (!r3.ok || gata.success === false) {
+    throw new Error("faza finish: " + JSON.stringify(gata));
+  }
+  return start.video_id;
+}
+
 module.exports = async function (req, res) {
   const zi = ziuaCurenta();
   const lista = pagini();
@@ -189,7 +267,33 @@ module.exports = async function (req, res) {
     }
   }
 
+  /* Reel de probă, ciornă: apare în Business Suite la conținut nepublicat,
+     nu în feed. Nu ține cont de FB_ACTIV, fiindcă nimic nu devine public. */
+  if (req.query && req.query.reeltest) {
+    const care = String(req.query.reeltest);
+    const pg = lista.find(x => x.nume === care) || lista[parseInt(care, 10) - 1] || lista[0];
+    const p = pentru(pg, zi + 1);
+    if (!p) return res.status(400).json({ eroare: "Pagina nu are nicio întrebare pe temele ei" });
+    if (!(await areReel(p))) {
+      return res.status(400).json({
+        eroare: "Reel-ul nu e generat pentru întrebarea asta",
+        asteptat: SITE + caleReel(p), intrebare: p.i,
+      });
+    }
+    try {
+      const id = await publicaReel(pg, p, false, "DRAFT");
+      return res.status(200).json({
+        reeltest: true, nepublicat: true, pagina: pg.nume,
+        idVideo: id, intrebare: p.i, fisier: SITE + caleReel(p),
+        unde: "Meta Business Suite → Conținut → nepublicate, pe pagina " + pg.nume,
+      });
+    } catch (e) {
+      return res.status(502).json({ reeltest: true, pagina: pg.nume, eroare: e.message });
+    }
+  }
+
   if (proba) {
+    for (const x of planul) x.reel = x._p && (await areReel(x._p)) ? SITE + caleReel(x._p) : null;
     return res.status(200).json({
       proba: true, zi,
       pagini: planul.map(({ _p, _pg, ...restul }) => restul),
@@ -215,14 +319,31 @@ module.exports = async function (req, res) {
   const rezultate = [];
   for (const x of planul) {
     if (!x._p) { rezultate.push({ pagina: x.pagina, sarit: "nicio întrebare pe temele ei" }); continue; }
+    const r = { pagina: x.pagina, intrebare: x._p.i };
     try {
-      const id = await publica(x._pg, x._p, acum);
+      r.id = await publica(x._pg, x._p, acum);
+      r.programat = !acum;
+      r.publicat = acum;
       console.log((acum ? "Publicat pe " : "Programat pe ") + x.pagina + ": " + x._p.i);
-      rezultate.push({ pagina: x.pagina, programat: !acum, publicat: acum, id, intrebare: x._p.i });
     } catch (e) {
       console.error("Eșec pe " + x.pagina + ": " + e.message);
-      rezultate.push({ pagina: x.pagina, publicat: false, eroare: e.message });
+      r.publicat = false;
+      r.eroare = e.message;
     }
+
+    /* Reel-ul merge separat: dacă el cade, postarea cu fotografie rămâne. */
+    if (await areReel(x._p)) {
+      try {
+        r.idReel = await publicaReel(x._pg, x._p, acum);
+        console.log("Reel " + (acum ? "publicat" : "programat") + " pe " + x.pagina);
+      } catch (e) {
+        console.error("Reel eșuat pe " + x.pagina + ": " + e.message);
+        r.eroareReel = e.message;
+      }
+    } else {
+      r.reel = "nu e generat";
+    }
+    rezultate.push(r);
   }
   const reusite = rezultate.filter(r => r.programat || r.publicat).length;
   return res.status(reusite ? 200 : 502).json({ zi, rezultate });
