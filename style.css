@@ -869,7 +869,7 @@ a.valoare:hover { color: var(--accent); }
   transition: opacity .18s ease, transform .18s ease;
   pointer-events: none;
 }
-.bp-confirmare.vazut { opacity: 1; transform: translateX(0); }
+.bp-confirmare.bp-vazut { opacity: 1; transform: translateX(0); }
 
 @media (max-width: 560px) {
   .bp-confirmare { right: 14px; bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }

@@ -137,16 +137,14 @@
   var ceas = null;
   function arata(text) {
     vorbitor.textContent = text;
-    vorbitor.classList.add("vazut");
+    vorbitor.classList.add("bp-vazut");
     if (ceas) clearTimeout(ceas);
-    ceas = setTimeout(function () { vorbitor.classList.remove("vazut"); }, 2600);
+    ceas = setTimeout(function () { vorbitor.classList.remove("bp-vazut"); }, 2600);
   }
 
-  function copiaza(text) {
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      return navigator.clipboard.writeText(text);
-    }
-    /* browsere vechi: trecem prin a caseta ascunsa */
+  /* calea veche, prin a caseta ascunsa: merge si acolo unde API-ul modern
+     refuza (pagina fara permisiune, browser vechi, lipsa de gest al utilizatorului) */
+  function copiazaVechi(text) {
     var c = document.createElement("textarea");
     c.value = text;
     c.setAttribute("readonly", "");
@@ -154,8 +152,20 @@
     c.style.left = "-9999px";
     document.body.appendChild(c);
     c.select();
-    try { document.execCommand("copy"); } catch (e) {}
+    var mers = false;
+    try { mers = document.execCommand("copy"); } catch (e) {}
     document.body.removeChild(c);
+    return mers;
+  }
+
+  function copiaza(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      /* daca API-ul modern refuza, nu ne oprim: incercam calea veche */
+      return navigator.clipboard.writeText(text).catch(function () {
+        if (!copiazaVechi(text)) throw new Error("nu s-a putut copia");
+      });
+    }
+    if (!copiazaVechi(text)) return Promise.reject(new Error("nu s-a putut copia"));
     return Promise.resolve();
   }
 
