@@ -370,6 +370,20 @@ module.exports = async function (req, res) {
     }
   }
 
+  /* Starea comutatoarelor, ca sa se vada dintr-o privire daca postarile sunt
+     pornite sau oprite. Nu intoarce nicio valoare secreta, doar daca exista. */
+  if (req.query && (req.query.stare === "1" || req.query.stare === "da")) {
+    return res.status(200).json({
+      stare: true,
+      zi,
+      publicareaEPornita: process.env.FB_ACTIV === "da",
+      comutator: "FB_ACTIV (=da porneste, orice altceva opreste)",
+      cereSecret: Boolean(process.env.CRON_SECRET),
+      pagini: lista.map(pg => ({ pagina: pg.nume, teme: pg.teme, jetonPropriu: Boolean(process.env["FB_PAGINA_" + (lista.indexOf(pg) + 1) + "_TOKEN"]) })),
+      urmatoarea: planul.map(x => ({ pagina: x.pagina, intrebare: x.intrebare })),
+    });
+  }
+
   if (proba) {
     for (const x of planul) x.reel = x._p && (await areReel(x._p)) ? SITE + caleReel(x._p) : null;
     return res.status(200).json({
