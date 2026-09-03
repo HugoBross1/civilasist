@@ -636,16 +636,43 @@ a.valoare:hover { color: var(--accent); }
 }
 .ws-plutitor:focus-visible { outline: 3px solid var(--aur); outline-offset: 3px; }
 
-/* inelul care respira: atrage ochiul o clipa, apoi sta cuminte */
+/* Doua unde care pleaca din buton, decalate la jumatate de ciclu, ca sa
+   existe mereu una pe drum. Se anima transform si opacity, nu box-shadow:
+   asa treaba o face placa video, nu procesorul, si nu se simte pe telefon. */
+.ws-plutitor::before,
 .ws-plutitor::after {
   content: ""; position: absolute; inset: 0; border-radius: 50%;
-  animation: ws-inel 4.5s ease-out 4;
+  border: 2px solid #25d366;
+  pointer-events: none;
+  animation: ws-unda 2.6s cubic-bezier(.22,.61,.36,1) infinite;
 }
-@keyframes ws-inel {
-  0%   { box-shadow: 0 0 0 0 rgba(37,211,102,.5); }
-  30%  { box-shadow: 0 0 0 16px rgba(37,211,102,0); }
-  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+.ws-plutitor::after { animation-delay: 1.3s; }
+
+@keyframes ws-unda {
+  0%   { transform: scale(1);    opacity: .7; }
+  70%  { opacity: 0; }
+  100% { transform: scale(2.15); opacity: 0; }
 }
+
+/* Semnul dinauntru trage aer si, o data la sapte secunde, se scutura scurt,
+   ca sa prinda ochiul si la a doua privire. Ambele intr-un singur set de
+   cadre: doua animatii pe acelasi transform s-ar anula una pe alta. */
+.ws-plutitor svg { animation: ws-viata 7s ease-in-out infinite; }
+
+@keyframes ws-viata {
+  0%,  16%, 74%, 100% { transform: rotate(0) scale(1); }
+  8%                  { transform: rotate(0) scale(1.09); }
+  79%                 { transform: rotate(-15deg) scale(1.09); }
+  84%                 { transform: rotate(12deg)  scale(1.09); }
+  88%                 { transform: rotate(-8deg)  scale(1.05); }
+  92%                 { transform: rotate(4deg)   scale(1.02); }
+}
+
+/* Cat sta cursorul pe el, undele se opresc si semnul sta drept: butonul e
+   deja gasit, n-are rost sa mai facem semne. */
+.ws-plutitor:hover::before,
+.ws-plutitor:hover::after { animation-play-state: paused; opacity: 0; }
+.ws-plutitor:hover svg { animation: none; transform: none; }
 
 @media (max-width: 560px) {
   .ws-plutitor {
@@ -747,7 +774,10 @@ a.valoare:hover { color: var(--accent); }
   }
   .art-anim .pluteste, .art-anim .puls, .art-anim .baleiaj, .art-anim .pendul { animation: none !important; }
   .anima { opacity: 1 !important; transform: none !important; transition: none !important; }
-  .ws-plutitor::after { animation: none !important; }
+  .ws-plutitor::before, .ws-plutitor::after {
+    animation: none !important; opacity: 0 !important;
+  }
+  .ws-plutitor svg { animation: none !important; transform: none !important; }
   .ws-plutitor, .ws-plutitor:hover { transition: none; transform: none; }
 }
 
