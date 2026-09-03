@@ -46,10 +46,10 @@ Fiecare ghid are un bloc de întrebări și răspunsuri, marcate ca date structu
 
 ## De reținut
 
-- Ghidurile descriu proceduri din legislația română a construcțiilor, în special Legea nr. 50/1991 privind autorizarea executării lucrărilor de construcții și Legea nr. 10/1995 privind calitatea în construcții. Sunt orientative: lista fermă pentru un caz anume este cea din certificatul de urbanism emis de primărie.
+- Ghidurile descriu proceduri din legislația română a construcțiilor, în special Legea nr. 169/2026 — Codul amenajării teritoriului, urbanismului și construcțiilor, în vigoare de la 25 august 2026, care a înlocuit Legea nr. 50/1991 și a preluat aproape tot din Legea nr. 10/1995 privind calitatea în construcții. Sunt orientative: lista fermă pentru un caz anume este cea din certificatul de urbanism emis de primărie.
 - Site-ul nu folosește cookie-uri. Statisticile de vizitare sunt agregate și nu identifică persoane.
 
 ## Modele descărcabile (gratuite)
 
-- [Model proces-verbal de recepție la terminarea lucrărilor (Word)](https://civilasist.ro/descarcari/model-proces-verbal-receptie-terminarea-lucrarilor.docx): pe structura H.G. 273/1994.
-- [Model cerere certificat de urbanism (Word)](https://civilasist.ro/descarcari/model-cerere-certificat-de-urbanism.docx): pe structura formularului F.1 din normele Legii 50/1991.
+- [Model proces-verbal de recepție la terminarea lucrărilor (Word)](https://civilasist.ro/descarcari/model-proces-verbal-receptie-terminarea-lucrarilor.docx): pe structura regulamentului de recepție aprobat prin H.G. 273/1994, cu anexa înlocuită prin H.G. 343/2017.
+- [Model cerere certificat de urbanism (Word)](https://civilasist.ro/descarcari/model-cerere-certificat-de-urbanism.docx): pe structura cererii de certificat de urbanism. De la 25 august 2026 se folosesc formularele Legii nr. 169/2026, iar vechiul F.1 nu mai e în vigoare - verificați la primărie ce formular cere.
