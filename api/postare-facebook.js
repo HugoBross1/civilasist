@@ -379,6 +379,9 @@ module.exports = async function (req, res) {
       publicareaEPornita: process.env.FB_ACTIV === "da",
       comutator: "FB_ACTIV (=da porneste, orice altceva opreste)",
       cereSecret: Boolean(process.env.CRON_SECRET),
+      /* incuiat = nimeni nu poate publica, nici din greseala: calea de postare
+         cere Authorization: Bearer <CRON_SECRET>, iar secretul nu e pus. */
+      incuiat: !process.env.CRON_SECRET,
       pagini: lista.map(pg => ({ pagina: pg.nume, teme: pg.teme, jetonPropriu: Boolean(process.env["FB_PAGINA_" + (lista.indexOf(pg) + 1) + "_TOKEN"]) })),
       urmatoarea: planul.map(x => ({ pagina: x.pagina, intrebare: x.intrebare })),
     });
@@ -427,10 +430,23 @@ module.exports = async function (req, res) {
     });
   }
 
-  // Programarea Vercel se autentifică singură; în rest cerem secretul.
+  /* Publicarea cere strict secretul. Programarea Vercel il trimite singura,
+     ca antet Authorization, cand CRON_SECRET e pus in setari.
+
+     Nu ne mai uitam la antetul x-vercel-cron: el vine de la client, deci
+     putea fi imitat de oricine. Iar cand CRON_SECRET lipsea, conditia se
+     scurtcircuita si adresa publica pe cele trei pagini fara nicio parola.
+     Acum, fara secret pus, publicarea e inchisa pentru toata lumea. */
   const secret = process.env.CRON_SECRET;
-  if (!req.headers["x-vercel-cron"] && secret &&
-      req.headers["authorization"] !== "Bearer " + secret) {
+  if (!secret) {
+    return res.status(503).json({
+      publicat: false,
+      motiv: "Publicarea e incuiata: CRON_SECRET nu e pus in setarile Vercel.",
+      cumSePorneste: "Adaugati CRON_SECRET in Vercel (o parola lunga, aleasa de dumneavoastra) si repuneti programarea in vercel.json.",
+      zi,
+    });
+  }
+  if (req.headers["authorization"] !== "Bearer " + secret) {
     return res.status(401).json({ eroare: "Neautorizat" });
   }
 
