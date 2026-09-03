@@ -384,6 +384,40 @@ module.exports = async function (req, res) {
     });
   }
 
+  /* Ce e pe pagini: ultimele postari publicate si, mai important, cele care
+     stau programate. Cand s-a oprit ceasul, o postare deja programata pleaca
+     singura la ora ei - deci "oprit" nu inseamna nimic pana nu o vedem. */
+  if (req.query && (req.query.ultimele === "1" || req.query.ultimele === "da")) {
+    const raport = [];
+    for (const pg of lista) {
+      const rand = { pagina: pg.nume };
+      try {
+        const jeton = await jetonPagina(pg);
+        const cere = async (ce, camp) => {
+          const r = await fetch(GRAPH + "/" + pg.id + "/" + ce +
+            "?fields=id,created_time,scheduled_publish_time,message&limit=6" +
+            "&access_token=" + encodeURIComponent(jeton));
+          const j = await r.json();
+          if (!r.ok) return { eroare: (j.error && j.error.message) || "necunoscut" };
+          return (j.data || []).map(x => ({
+            id: x.id,
+            cand: x.scheduled_publish_time
+              ? new Date(x.scheduled_publish_time * 1000).toISOString()
+              : x.created_time,
+            text: (x.message || "").split("
+")[0].slice(0, 70),
+          }));
+        };
+        rand.publicate = await cere("published_posts");
+        rand.programate = await cere("scheduled_posts");
+      } catch (e) {
+        rand.eroare = e.message;
+      }
+      raport.push(rand);
+    }
+    return res.status(200).json({ ultimele: true, pagini: raport });
+  }
+
   if (proba) {
     for (const x of planul) x.reel = x._p && (await areReel(x._p)) ? SITE + caleReel(x._p) : null;
     return res.status(200).json({
