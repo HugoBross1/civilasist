@@ -200,7 +200,24 @@ Proprietate de tip **domeniu** pentru `civilasist.ro` — acoperă și `www` și
 ambele protocoale. Confirmată prin TXT `google-site-verification=...`, tot în
 panoul Vercel. **Nu ștergeți acea înregistrare**, altfel se pierde confirmarea.
 
-Sitemap trimis: `https://civilasist.ro/sitemap.xml`, 26 de adrese.
+Sitemap trimis: `https://civilasist.ro/sitemap.xml`, 27 de adrese.
+
+**Sitemap-ul NU se mai scrie de mână.** Se generează, cu datele de modificare
+luate din Git:
+
+```bash
+cd "C:/Users/user/Documents/00 Claude/site" && py unelte-fa-sitemap.py
+```
+
+Se rulează după orice modificare de conținut, **înainte** de publicare. Motivul
+e o pățanie: sitemap-ul scris de mână a rămas cu `lastmod` înțepenit pe
+27 august pentru toate adresele, inclusiv după ce pe 3 septembrie s-au corectat
+41 de afirmații juridice în ghiduri. Google folosește exact acel câmp ca să
+decidă ce merită recitit, deci corecțiile nu i-au fost niciodată semnalate.
+Un sitemap care minte e mai rău decât unul care lipsește.
+
+**Ce nu se pune în sitemap:** `404.html`. Restul paginilor intră automat, deci
+o pagină nouă nu mai poate fi uitată — cum fusese uitată `confidentialitate.html`.
 
 ## Confidențialitate
 
