@@ -3,6 +3,13 @@
 User-agent: *
 Allow: /
 
+# Endpointul de statistici nu are ce indexa, dar Googlebot il cerea la fiecare
+# randare: 33 din 186 de cereri, adica 18% din bugetul de accesare (verificat
+# in Search Console, sept. 2026). Pe un site nou bugetul e strimt, iar el
+# trebuie sa ajunga la pagini. Vizitatorii reali nu sunt afectati - robots.txt
+# se aplica doar crawlerelor, nu browserelor, deci statisticile merg la fel.
+Disallow: /_vercel/
+
 # Roboții asistenților AI au voie explicit. Fără asta, unii nu citesc site-ul,
 # deci nu îl pot cita când cineva îi întreabă despre autorizații sau ISCIR.
 User-agent: GPTBot
