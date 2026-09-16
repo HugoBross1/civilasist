@@ -16,8 +16,11 @@
   --aur-hover:    #d9a54f;
   --aur-deschis:  #d8b36a;  /* auriu lizibil pe bleumarin (8.6:1) */
 
-  /* bronzul: auriul intunecat pana devine lizibil ca TEXT pe alb (5.5:1) */
-  --accent:        #8a6220;
+  /* bronzul: auriul intunecat pana devine lizibil ca TEXT.
+     Coborat o treapta pe 16.09.2026, odata cu fundalul bej: pe banda
+     alternata calda ajunsese la 4.48:1, adica sub prag. Acum 4.77:1 acolo,
+     5.25:1 pe fundal si 5.81:1 pe cardurile albe. (Era #8a6220.) */
+  --accent:        #855e1d;
   --accent-dark:   #6f4e18;
   --accent-soft:   #f6efe2;
   --accent-2:      #c9903f;   /* accente pe fundal inchis si borduri */
@@ -26,11 +29,16 @@
 
   --text:          #10202d;   /* bleumarin aproape negru */
   --text-muted:    #4d5c6b;
-  --text-light:    #64748b;
-  --bg:            #ffffff;
-  --bg-alt:        #f2f5f8;   /* alternat, cu tenta rece de bleumarin */
+  --text-light:    #5a6675;   /* coborat cu fundalul bej: pe alb avea 4.76:1,
+                                 pe bej ar fi scazut la 4.30. Acum 5.29 si 4.80.
+                                 (Era #64748b.) */
+  /* PROBA 16.09.2026: fundal bej-hartie in loc de alb.
+     Cardurile si tabelele raman #fff, deci se ridica de pe pagina.
+     Ca sa revii la alb: #ffffff / #f2f5f8 / #e1e8ef. */
+  --bg:            #f7f3ec;   /* hartie calda, se leaga de auriul marcii */
+  --bg-alt:        #efe8dc;   /* benzile alternate, cu o treapta mai adanc */
   --bg-deep:       #091d2f;   /* benzile inchise si subsolul */
-  --border:        #e1e8ef;
+  --border:        #e3dbcb;   /* bordura calda, nu rece */
   --header:        #091d2f;   /* bara de navigatie */
 
   --radius:  10px;
