@@ -58,7 +58,7 @@
   <h1>Politica de confidențialitate</h1>
   <p class="lead">
     Pagina asta spune, pe scurt și fără ocolișuri, ce se întâmplă cu datele pe care ni le trimiteți
-    prin site. Ultima actualizare: 22 august 2026.
+    prin site. Ultima actualizare: 3 octombrie 2026.
   </p>
 </div></header>
 
@@ -114,6 +114,12 @@
       <strong>Vercel</strong> — firma care găzduiește site-ul. Serverele ei păstrează, pentru scurt
       timp, jurnale tehnice obișnuite: adresa IP, pagina cerută, ora.
     </li>
+    <li>
+      <strong>Google</strong> — numai dacă ați apăsat „Sunt de acord" pe banda de la prima vizită.
+      Atunci browserul trimite către Google Analytics pagina pe care o citiți, ora, țara, felul
+      dispozitivului și sursa din care ați ajuns la noi. Datele ajung pe serverele Google, inclusiv
+      în afara Uniunii Europene. Dacă n-ați fost de acord, nu pleacă nimic.
+    </li>
   </ul>
   <p>În rest, nimeni. Nu transmitem datele altor terți și nu le folosim pentru publicitate.</p>
 
@@ -127,14 +133,30 @@
   <h2>Cookie-uri și statistici</h2>
   <div class="callout">
     <p>
-      <strong>Site-ul acesta nu pune niciun cookie.</strong> Nici al nostru, nici al altcuiva. De
-      aceea nu vedeți fereastra care vă cere acordul — nu avem pentru ce să vi-l cerem.
+      <strong>Fără acordul dumneavoastră, site-ul nu pune niciun cookie.</strong> Vă întrebăm o
+      singură dată, la prima vizită. Dacă răspundeți „Doar ce e strict necesar", nu se încarcă
+      nimic de la Google — nici măcar scriptul — și nu pleacă niciun semnal.
     </p>
   </div>
+  <p>Măsurăm traficul în două feluri, iar diferența dintre ele contează:</p>
+  <ul>
+    <li>
+      <strong>Statistica de bază</strong>, de la Vercel, merge pentru toată lumea. Numără câți
+      oameni intră, ce pagini citesc și de unde vin. Datele sunt <strong>agregate</strong>: nu
+      identifică persoane, nu urmăresc pe nimeni de la un site la altul și nu lasă nimic în
+      browserul dumneavoastră. De aceea nu are nevoie de acordul dumneavoastră.
+    </li>
+    <li>
+      <strong>Google Analytics</strong> pornește numai dacă ați fost de acord. El pune cookie-uri
+      în browser, ca să deosebească un vizitator nou de unul care revine, și ne arată mai în
+      amănunt ce pagini se citesc până la capăt. <strong>Nu îl folosim pentru publicitate</strong>:
+      părțile de reclamă și de profilare sunt oprite din configurare.
+    </li>
+  </ul>
   <p>
-    Folosim un serviciu care numără câți oameni intră, ce pagini citesc și de unde vin. Datele sunt
-    <strong>agregate</strong>: nu identifică persoane, nu urmăresc pe nimeni de la un site la altul
-    și nu lasă nimic în browserul dumneavoastră.
+    Alegerea dumneavoastră se ține în memoria browserului, nu într-un cookie, și vă întrebăm din
+    nou după șase luni. Dacă vă răzgândiți mai devreme, ștergeți datele site-ului din setările
+    browserului și banda apare iar.
   </p>
   <p>
     Fonturile paginii sunt găzduite pe serverul nostru, nu la Google, tocmai ca adresa dumneavoastră
@@ -165,8 +187,8 @@
 
   <h2>Modificări</h2>
   <p>
-    Dacă schimbăm ceva important — de pildă dacă adăugăm cândva statistici cu cookie-uri — actualizăm
-    pagina asta și schimbăm data de la început.
+    Dacă schimbăm ceva important — cum am făcut în octombrie 2026, când am adăugat Google Analytics
+    și banda de consimțământ — actualizăm pagina asta și schimbăm data de la început.
   </p>
 
   <p><a class="btn" href="index.html#contact">Înapoi la contact</a></p>
@@ -253,9 +275,13 @@
   </div>
 </footer>
 
-<!-- Statistici Vercel: numara vizite si pagini, fara cookie-uri si fara
-     sa identifice persoane. De aceea nu cere banner de consimtamant. -->
+<!-- Doua masuratori, diferite ca regim juridic:
+     - Vercel numara vizite si pagini fara cookie-uri, deci merge pentru toata
+       lumea si nu cere acord;
+     - consimtamant.js arata banda si incarca Google Analytics NUMAI dupa un da
+       explicit. Pana atunci nu se cere nimic de la Google. -->
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/consimtamant.js"></script>
 
 <script src="cautare.js" defer></script>
 <script src="banda.js" defer></script>

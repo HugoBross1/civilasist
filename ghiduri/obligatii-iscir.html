@@ -364,9 +364,13 @@
   </div>
 </footer>
 
-<!-- Statistici Vercel: numara vizite si pagini, fara cookie-uri si fara
-     sa identifice persoane. De aceea nu cere banner de consimtamant. -->
+<!-- Doua masuratori, diferite ca regim juridic:
+     - Vercel numara vizite si pagini fara cookie-uri, deci merge pentru toata
+       lumea si nu cere acord;
+     - consimtamant.js arata banda si incarca Google Analytics NUMAI dupa un da
+       explicit. Pana atunci nu se cere nimic de la Google. -->
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/consimtamant.js"></script>
 
 <script src="../cautare.js" defer></script>
 <script src="../banda.js" defer></script>
